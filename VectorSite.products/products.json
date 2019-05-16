@@ -1,0 +1,6 @@
+{
+	"emscripten":{
+		"Application Name":"VectorSite",
+		"Application Type":"wasm"
+	}
+}
