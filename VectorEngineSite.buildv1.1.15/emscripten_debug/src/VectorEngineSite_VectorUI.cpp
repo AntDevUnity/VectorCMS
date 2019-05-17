@@ -14,7 +14,7 @@ void t_VectorSite_VectorUI::dbEmit(){
 }
 
 t_VectorSite_VectorUI::t_VectorSite_VectorUI(){
-  bbDBFrame db_f{"new:Void()","D:/VectorSite/VectorUI.monkey2"};
+  bbDBFrame db_f{"new:Void()","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
 }
@@ -23,7 +23,7 @@ t_VectorSite_VectorUI::~t_VectorSite_VectorUI(){
 
 void t_VectorSite_VectorUI::m_RenderList(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"RenderList:Void(list:std.collections.List<VectorSite.VectorUIForm>)","D:/VectorSite/VectorUI.monkey2"};
+  bbDBFrame db_f{"RenderList:Void(list:std.collections.List<VectorSite.VectorUIForm>)","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("list",&l_list);
@@ -64,7 +64,7 @@ void t_VectorSite_VectorUI::m_Render(){
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Render:Void()","D:/VectorSite/VectorUI.monkey2"};
+  bbDBFrame db_f{"Render:Void()","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(57352);
@@ -78,7 +78,7 @@ void t_VectorSite_VectorUI::m_Render(){
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t_VectorSite_VectorUI::m_InvertList(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"InvertList:std.collections.List<VectorSite.VectorUIForm>(list:std.collections.List<VectorSite.VectorUIForm>)","D:/VectorSite/VectorUI.monkey2"};
+  bbDBFrame db_f{"InvertList:std.collections.List<VectorSite.VectorUIForm>(list:std.collections.List<VectorSite.VectorUIForm>)","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("list",&l_list);
@@ -88,7 +88,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t_VectorSite_VectorUI::m_I
 
 void t_VectorSite_VectorUI::m_AddToListForward(t_VectorSite_VectorUIForm* l_ui,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"AddToListForward:Void(ui:VectorSite.VectorUIForm,list:std.collections.List<VectorSite.VectorUIForm>)","D:/VectorSite/VectorUI.monkey2"};
+  bbDBFrame db_f{"AddToListForward:Void(ui:VectorSite.VectorUIForm,list:std.collections.List<VectorSite.VectorUIForm>)","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("ui",&l_ui);

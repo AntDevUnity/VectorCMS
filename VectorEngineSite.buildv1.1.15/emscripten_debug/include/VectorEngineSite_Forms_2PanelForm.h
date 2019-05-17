@@ -4,8 +4,8 @@
 
 #include <bbmonkey.h>
 
-#include "std/std.buildv1.1.15/emscripten_debug/include/std_graphics_2color.h"
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorUIForm.h"
+#include "std/std.buildv1.1.15/emscripten_debug/include/std_graphics_2color.h"
 
 BB_CLASS(t_VectorSite_PanelForm)
 

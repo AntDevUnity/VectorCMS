@@ -1,4 +1,4 @@
-D:/VectorSite\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_Forms_2PanelForm.h
+D:/Git/VectorCMS\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_Forms_2PanelForm.h
 D:/Monkey2-v2018.09/modules/monkey/native\bbmonkey.h
 D:/Monkey2-v2018.09/modules/monkey/native/bbstd.h
 D:/Monkey2-v2018.09/modules/monkey/native/bbtypes.h
@@ -14,8 +14,12 @@ D:/Monkey2-v2018.09/modules/monkey/native/bbvariant.h
 D:/Monkey2-v2018.09/modules/monkey/native/bbtypeinfo.h
 D:/Monkey2-v2018.09/modules/monkey/native/bbtypeinfo_t.h
 D:/Monkey2-v2018.09/modules/monkey/native/bbdeclinfo.h
-D:/Monkey2-v2018.09/modules\std/std.buildv1.1.15/emscripten_debug/include/std_graphics_2color.h
-D:/VectorSite\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorUIForm.h
-D:/VectorSite\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorObject.h
+D:/Git/VectorCMS\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorUIForm.h
+D:/Git/VectorCMS\VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorObject.h
 D:/Monkey2-v2018.09/modules\monkey/monkey.buildv1.1.15/emscripten_debug/include/monkey_types.h
 D:/Monkey2-v2018.09/modules\std/std.buildv1.1.15/emscripten_debug/include/std_geom_2vec2.h
+D:/Monkey2-v2018.09/modules\std/std.buildv1.1.15/emscripten_debug/include/std_graphics_2color.h
+D:/Monkey2-v2018.09/modules\mojo/mojo.buildv1.1.15/emscripten_debug/include/mojo_graphics_2image.h
+D:/Monkey2-v2018.09/modules\std/std.buildv1.1.15/emscripten_debug/include/std_geom_2rect.h
+D:/Monkey2-v2018.09/modules\std/std.buildv1.1.15/emscripten_debug/include/std_resource_2resource.h
+D:/Monkey2-v2018.09/modules\std/resource/native/bbresource.h

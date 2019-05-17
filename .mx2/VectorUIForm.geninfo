@@ -1,5 +1,5 @@
 {
-	"endpos":"73:3",
+	"endpos":"106:3",
 	"flags":0,
 	"ident":"VectorEngineSite_VectorUIForm",
 	"kind":"file",
@@ -47,7 +47,7 @@
 		}],
 		"srcpos":"3:0"
 	},{
-		"endpos":"73:3",
+		"endpos":"106:3",
 		"flags":1,
 		"ident":"VectorUIForm",
 		"kind":"class",
@@ -112,321 +112,656 @@
 				"srcpos":"15:11"
 			}
 		},{
-			"endpos":"32:0",
+			"endpos":"16:20",
+			"flags":1,
+			"ident":"BackImg",
+			"kind":"field",
+			"semtype":"mojo.graphics.Image",
+			"srcpos":"16:7",
+			"type":{
+				"endpos":"16:20",
+				"ident":"Image",
+				"kind":"ident",
+				"srcpos":"16:15"
+			}
+		},{
+			"endpos":"17:18",
+			"flags":1,
+			"ident":"Text",
+			"kind":"field",
+			"semtype":"monkey.types.String",
+			"srcpos":"17:7",
+			"type":{
+				"endpos":"17:18",
+				"ident":"string",
+				"kind":"ident",
+				"srcpos":"17:12"
+			}
+		},{
+			"endpos":"18:41",
+			"flags":1,
+			"ident":"TextCol",
+			"init":{
+				"args":[{
+					"endpos":"18:34",
+					"kind":"literal",
+					"srcpos":"18:33",
+					"toke":"1"
+				},{
+					"endpos":"18:36",
+					"kind":"literal",
+					"srcpos":"18:35",
+					"toke":"1"
+				},{
+					"endpos":"18:38",
+					"kind":"literal",
+					"srcpos":"18:37",
+					"toke":"1"
+				},{
+					"endpos":"18:40",
+					"kind":"literal",
+					"srcpos":"18:39",
+					"toke":"1"
+				}],
+				"endpos":"18:41",
+				"kind":"newobject",
+				"srcpos":"18:23",
+				"type":{
+					"endpos":"18:32",
+					"ident":"Color",
+					"kind":"ident",
+					"srcpos":"18:27"
+				}
+			},
+			"kind":"field",
+			"semtype":"std.graphics.Color",
+			"srcpos":"18:7",
+			"type":{
+				"endpos":"18:20",
+				"ident":"Color",
+				"kind":"ident",
+				"srcpos":"18:15"
+			}
+		},{
+			"endpos":"26:0",
+			"flags":1,
+			"ident":"Add",
+			"kind":"method",
+			"srcpos":"20:1",
+			"stmts":[],
+			"type":{
+				"endpos":"20:42",
+				"kind":"functype",
+				"params":[{
+					"endpos":"20:41",
+					"flags":1,
+					"ident":"add",
+					"kind":"param",
+					"semtype":"VectorSite.VectorUIForm",
+					"srcpos":"20:25",
+					"type":{
+						"endpos":"20:41",
+						"ident":"VectorUIForm",
+						"kind":"ident",
+						"srcpos":"20:29"
+					}
+				}],
+				"retType":{
+					"endpos":"20:24",
+					"ident":"VectorUIForm",
+					"kind":"ident",
+					"srcpos":"20:12"
+				},
+				"srcpos":"20:12"
+			}
+		},{
+			"endpos":"42:0",
 			"flags":1,
 			"ident":"DrawX",
 			"kind":"method",
-			"srcpos":"17:1",
+			"srcpos":"27:1",
 			"stmts":[{
-				"endpos":"19:18",
+				"endpos":"29:18",
 				"flags":1,
 				"ident":"rx",
 				"init":{
-					"endpos":"19:18",
+					"endpos":"29:18",
 					"kind":"literal",
-					"srcpos":"19:17",
+					"srcpos":"29:17",
 					"toke":"0"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.Int",
-				"srcpos":"19:8",
+				"srcpos":"29:8",
 				"type":{
-					"endpos":"19:14",
+					"endpos":"29:14",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"19:11"
+					"srcpos":"29:11"
 				}
 			},{
-				"endpos":"22:0",
+				"endpos":"32:0",
 				"kind":"block",
-				"srcpos":"21:2",
+				"srcpos":"31:2",
 				"stmts":[]
-			},{
-				"endpos":"28:0",
-				"kind":"block",
-				"srcpos":"23:2",
-				"stmts":[]
-			}],
-			"type":{
-				"endpos":"17:19",
-				"kind":"functype",
-				"params":[],
-				"retType":{
-					"endpos":"17:17",
-					"ident":"int",
-					"kind":"ident",
-					"srcpos":"17:14"
-				},
-				"srcpos":"17:14"
-			}
-		},{
-			"endpos":"48:0",
-			"flags":1,
-			"ident":"DrawY",
-			"kind":"method",
-			"srcpos":"33:1",
-			"stmts":[{
-				"endpos":"35:18",
-				"flags":1,
-				"ident":"ry",
-				"init":{
-					"endpos":"35:18",
-					"kind":"literal",
-					"srcpos":"35:17",
-					"toke":"0"
-				},
-				"kind":"local",
-				"semtype":"monkey.types.Int",
-				"srcpos":"35:8",
-				"type":{
-					"endpos":"35:14",
-					"ident":"int",
-					"kind":"ident",
-					"srcpos":"35:11"
-				}
 			},{
 				"endpos":"38:0",
 				"kind":"block",
-				"srcpos":"37:2",
-				"stmts":[]
-			},{
-				"endpos":"44:0",
-				"kind":"block",
-				"srcpos":"39:2",
+				"srcpos":"33:2",
 				"stmts":[]
 			}],
 			"type":{
-				"endpos":"33:19",
+				"endpos":"27:19",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"33:17",
+					"endpos":"27:17",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"33:14"
+					"srcpos":"27:14"
 				},
-				"srcpos":"33:14"
+				"srcpos":"27:14"
 			}
 		},{
-			"endpos":"53:0",
+			"endpos":"58:0",
+			"flags":1,
+			"ident":"DrawY",
+			"kind":"method",
+			"srcpos":"43:1",
+			"stmts":[{
+				"endpos":"45:18",
+				"flags":1,
+				"ident":"ry",
+				"init":{
+					"endpos":"45:18",
+					"kind":"literal",
+					"srcpos":"45:17",
+					"toke":"0"
+				},
+				"kind":"local",
+				"semtype":"monkey.types.Int",
+				"srcpos":"45:8",
+				"type":{
+					"endpos":"45:14",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"45:11"
+				}
+			},{
+				"endpos":"48:0",
+				"kind":"block",
+				"srcpos":"47:2",
+				"stmts":[]
+			},{
+				"endpos":"54:0",
+				"kind":"block",
+				"srcpos":"49:2",
+				"stmts":[]
+			}],
+			"type":{
+				"endpos":"43:19",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"43:17",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"43:14"
+				},
+				"srcpos":"43:14"
+			}
+		},{
+			"endpos":"63:0",
 			"flags":257,
 			"ident":"OnDraw",
 			"kind":"method",
-			"srcpos":"50:1",
+			"srcpos":"60:1",
 			"type":{
-				"endpos":"50:16",
+				"endpos":"60:16",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"50:14",
+					"endpos":"60:14",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"50:14"
+					"srcpos":"60:14"
 				},
-				"srcpos":"50:14"
+				"srcpos":"60:14"
 			}
 		},{
-			"endpos":"57:0",
+			"endpos":"67:0",
 			"flags":257,
 			"ident":"OnUpdate",
 			"kind":"method",
-			"srcpos":"54:1",
+			"srcpos":"64:1",
 			"type":{
-				"endpos":"54:18",
+				"endpos":"64:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"54:16",
+					"endpos":"64:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"54:16"
+					"srcpos":"64:16"
 				},
-				"srcpos":"54:16"
+				"srcpos":"64:16"
 			}
 		},{
-			"endpos":"61:0",
+			"endpos":"71:0",
 			"flags":1,
 			"ident":"OnMouseMove",
 			"kind":"method",
-			"srcpos":"58:1",
+			"srcpos":"68:1",
 			"type":{
-				"endpos":"58:46",
+				"endpos":"68:46",
 				"kind":"functype",
 				"params":[{
-					"endpos":"58:25",
+					"endpos":"68:25",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"58:20",
+					"srcpos":"68:20",
 					"type":{
-						"endpos":"58:25",
+						"endpos":"68:25",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"58:22"
+						"srcpos":"68:22"
 					}
 				},{
-					"endpos":"58:31",
+					"endpos":"68:31",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"58:26",
+					"srcpos":"68:26",
 					"type":{
-						"endpos":"58:31",
+						"endpos":"68:31",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"58:28"
+						"srcpos":"68:28"
 					}
 				},{
-					"endpos":"58:38",
+					"endpos":"68:38",
 					"flags":1,
 					"ident":"dx",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"58:32",
+					"srcpos":"68:32",
 					"type":{
-						"endpos":"58:38",
+						"endpos":"68:38",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"58:35"
+						"srcpos":"68:35"
 					}
 				},{
-					"endpos":"58:45",
+					"endpos":"68:45",
 					"flags":1,
 					"ident":"dy",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"58:39",
+					"srcpos":"68:39",
 					"type":{
-						"endpos":"58:45",
+						"endpos":"68:45",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"58:42"
+						"srcpos":"68:42"
 					}
 				}],
 				"retType":{
-					"endpos":"58:19",
+					"endpos":"68:19",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"58:19"
+					"srcpos":"68:19"
 				},
-				"srcpos":"58:19"
+				"srcpos":"68:19"
 			}
 		},{
-			"endpos":"65:0",
+			"endpos":"75:0",
 			"flags":1,
 			"ident":"OnMouseDown",
 			"kind":"method",
-			"srcpos":"62:1",
+			"srcpos":"72:1",
 			"type":{
-				"endpos":"62:29",
+				"endpos":"72:29",
 				"kind":"functype",
 				"params":[{
-					"endpos":"62:28",
+					"endpos":"72:28",
 					"flags":1,
 					"ident":"b",
 					"kind":"param",
 					"semtype":"VectorSite.Button",
-					"srcpos":"62:20",
+					"srcpos":"72:20",
 					"type":{
-						"endpos":"62:28",
+						"endpos":"72:28",
 						"ident":"Button",
 						"kind":"ident",
-						"srcpos":"62:22"
+						"srcpos":"72:22"
 					}
 				}],
 				"retType":{
-					"endpos":"62:19",
+					"endpos":"72:19",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"62:19"
+					"srcpos":"72:19"
 				},
-				"srcpos":"62:19"
+				"srcpos":"72:19"
 			}
 		},{
-			"endpos":"72:0",
+			"endpos":"81:0",
 			"flags":1,
-			"ident":"DrawRect",
+			"ident":"DrawText",
 			"kind":"method",
-			"srcpos":"67:1",
+			"srcpos":"76:1",
 			"stmts":[],
 			"type":{
-				"endpos":"67:51",
+				"endpos":"76:51",
 				"kind":"functype",
 				"params":[{
-					"endpos":"67:22",
+					"endpos":"76:28",
+					"flags":1,
+					"ident":"text",
+					"kind":"param",
+					"semtype":"monkey.types.String",
+					"srcpos":"76:17",
+					"type":{
+						"endpos":"76:28",
+						"ident":"string",
+						"kind":"ident",
+						"srcpos":"76:22"
+					}
+				},{
+					"endpos":"76:34",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"67:17",
+					"srcpos":"76:29",
 					"type":{
-						"endpos":"67:22",
+						"endpos":"76:34",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"67:19"
+						"srcpos":"76:31"
 					}
 				},{
-					"endpos":"67:28",
+					"endpos":"76:40",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"67:23",
+					"srcpos":"76:35",
 					"type":{
-						"endpos":"67:28",
+						"endpos":"76:40",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"67:25"
+						"srcpos":"76:37"
 					}
 				},{
-					"endpos":"67:34",
-					"flags":1,
-					"ident":"w",
-					"kind":"param",
-					"semtype":"monkey.types.Int",
-					"srcpos":"67:29",
-					"type":{
-						"endpos":"67:34",
-						"ident":"int",
-						"kind":"ident",
-						"srcpos":"67:31"
-					}
-				},{
-					"endpos":"67:40",
-					"flags":1,
-					"ident":"h",
-					"kind":"param",
-					"semtype":"monkey.types.Int",
-					"srcpos":"67:35",
-					"type":{
-						"endpos":"67:40",
-						"ident":"int",
-						"kind":"ident",
-						"srcpos":"67:37"
-					}
-				},{
-					"endpos":"67:50",
+					"endpos":"76:50",
 					"flags":1,
 					"ident":"col",
 					"kind":"param",
 					"semtype":"std.graphics.Color",
-					"srcpos":"67:41",
+					"srcpos":"76:41",
 					"type":{
-						"endpos":"67:50",
+						"endpos":"76:50",
 						"ident":"Color",
 						"kind":"ident",
-						"srcpos":"67:45"
+						"srcpos":"76:45"
 					}
 				}],
 				"retType":{
-					"endpos":"67:16",
+					"endpos":"76:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"67:16"
+					"srcpos":"76:16"
 				},
-				"srcpos":"67:16"
+				"srcpos":"76:16"
+			}
+		},{
+			"endpos":"87:0",
+			"flags":1,
+			"ident":"TextW",
+			"kind":"method",
+			"srcpos":"82:1",
+			"stmts":[],
+			"type":{
+				"endpos":"82:30",
+				"kind":"functype",
+				"params":[{
+					"endpos":"82:29",
+					"flags":1,
+					"ident":"text",
+					"kind":"param",
+					"semtype":"monkey.types.String",
+					"srcpos":"82:18",
+					"type":{
+						"endpos":"82:29",
+						"ident":"string",
+						"kind":"ident",
+						"srcpos":"82:23"
+					}
+				}],
+				"retType":{
+					"endpos":"82:17",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"82:14"
+				},
+				"srcpos":"82:14"
+			}
+		},{
+			"endpos":"93:0",
+			"flags":1,
+			"ident":"TextH",
+			"kind":"method",
+			"srcpos":"88:1",
+			"stmts":[],
+			"type":{
+				"endpos":"88:30",
+				"kind":"functype",
+				"params":[{
+					"endpos":"88:29",
+					"flags":1,
+					"ident":"text",
+					"kind":"param",
+					"semtype":"monkey.types.String",
+					"srcpos":"88:18",
+					"type":{
+						"endpos":"88:29",
+						"ident":"string",
+						"kind":"ident",
+						"srcpos":"88:23"
+					}
+				}],
+				"retType":{
+					"endpos":"88:17",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"88:14"
+				},
+				"srcpos":"88:14"
+			}
+		},{
+			"endpos":"99:0",
+			"flags":1,
+			"ident":"DrawImage",
+			"kind":"method",
+			"srcpos":"94:1",
+			"stmts":[],
+			"type":{
+				"endpos":"94:62",
+				"kind":"functype",
+				"params":[{
+					"endpos":"94:27",
+					"flags":1,
+					"ident":"img",
+					"kind":"param",
+					"semtype":"mojo.graphics.Image",
+					"srcpos":"94:18",
+					"type":{
+						"endpos":"94:27",
+						"ident":"Image",
+						"kind":"ident",
+						"srcpos":"94:22"
+					}
+				},{
+					"endpos":"94:33",
+					"flags":1,
+					"ident":"x",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"94:28",
+					"type":{
+						"endpos":"94:33",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"94:30"
+					}
+				},{
+					"endpos":"94:39",
+					"flags":1,
+					"ident":"y",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"94:34",
+					"type":{
+						"endpos":"94:39",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"94:36"
+					}
+				},{
+					"endpos":"94:45",
+					"flags":1,
+					"ident":"w",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"94:40",
+					"type":{
+						"endpos":"94:45",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"94:42"
+					}
+				},{
+					"endpos":"94:51",
+					"flags":1,
+					"ident":"h",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"94:46",
+					"type":{
+						"endpos":"94:51",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"94:48"
+					}
+				},{
+					"endpos":"94:61",
+					"flags":1,
+					"ident":"col",
+					"kind":"param",
+					"semtype":"std.graphics.Color",
+					"srcpos":"94:52",
+					"type":{
+						"endpos":"94:61",
+						"ident":"Color",
+						"kind":"ident",
+						"srcpos":"94:56"
+					}
+				}],
+				"retType":{
+					"endpos":"94:17",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"94:17"
+				},
+				"srcpos":"94:17"
+			}
+		},{
+			"endpos":"105:0",
+			"flags":1,
+			"ident":"DrawRect",
+			"kind":"method",
+			"srcpos":"100:1",
+			"stmts":[],
+			"type":{
+				"endpos":"100:51",
+				"kind":"functype",
+				"params":[{
+					"endpos":"100:22",
+					"flags":1,
+					"ident":"x",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"100:17",
+					"type":{
+						"endpos":"100:22",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"100:19"
+					}
+				},{
+					"endpos":"100:28",
+					"flags":1,
+					"ident":"y",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"100:23",
+					"type":{
+						"endpos":"100:28",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"100:25"
+					}
+				},{
+					"endpos":"100:34",
+					"flags":1,
+					"ident":"w",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"100:29",
+					"type":{
+						"endpos":"100:34",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"100:31"
+					}
+				},{
+					"endpos":"100:40",
+					"flags":1,
+					"ident":"h",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"100:35",
+					"type":{
+						"endpos":"100:40",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"100:37"
+					}
+				},{
+					"endpos":"100:50",
+					"flags":1,
+					"ident":"col",
+					"kind":"param",
+					"semtype":"std.graphics.Color",
+					"srcpos":"100:41",
+					"type":{
+						"endpos":"100:50",
+						"ident":"Color",
+						"kind":"ident",
+						"srcpos":"100:45"
+					}
+				}],
+				"retType":{
+					"endpos":"100:16",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"100:16"
+				},
+				"srcpos":"100:16"
 			}
 		}],
 		"srcpos":"12:0",

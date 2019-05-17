@@ -1,10 +1,12 @@
 
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorEngineSite.h"
 
-#include "mojo/mojo.buildv1.1.15/emscripten_debug/include/mojo_app_2app.h"
+#include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_Forms_2ButtonForm.h"
+#include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_Forms_2LabelForm.h"
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_Forms_2PanelForm.h"
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorUI.h"
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorUIForm.h"
+#include "mojo/mojo.buildv1.1.15/emscripten_debug/include/mojo_app_2app.h"
 
 BB_ENUM(t_mojo_app_WindowFlags)
 
@@ -23,6 +25,8 @@ void bbMain(){
   void mx2_VectorEngineSite_VectorUIForm_init_f();mx2_VectorEngineSite_VectorUIForm_init_f();
   void mx2_VectorEngineSite_VectorUI_init_f();mx2_VectorEngineSite_VectorUI_init_f();
   void mx2_VectorEngineSite_Forms_2PanelForm_init_f();mx2_VectorEngineSite_Forms_2PanelForm_init_f();
+  void mx2_VectorEngineSite_Forms_2LabelForm_init_f();mx2_VectorEngineSite_Forms_2LabelForm_init_f();
+  void mx2_VectorEngineSite_Forms_2ButtonForm_init_f();mx2_VectorEngineSite_Forms_2ButtonForm_init_f();
   void mx2_VectorEngineSite_VectorSite_init_f();mx2_VectorEngineSite_VectorSite_init_f();
   void mx2_VectorEngineSite_VectorEngineSite_init_f();mx2_VectorEngineSite_VectorEngineSite_init_f();
   struct f0_t : public bbGCFrame{
@@ -31,12 +35,12 @@ void bbMain(){
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Main:Void()","D:/VectorSite/VectorEngineSite.monkey2"};
-  bbDBStmt(151553);
+  bbDBFrame db_f{"Main:Void()","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
+  bbDBStmt(184321);
   bbGCNew<t_mojo_app_AppInstance>();
-  bbDBStmt(159745);
+  bbDBStmt(192513);
   bbGCNew<t_VectorSite_VectorEngineSite>();
-  bbDBStmt(167937);
+  bbDBStmt(200705);
   (f0.t0=g_mojo_app_App.get())->m_Run();
 }
 
@@ -46,26 +50,46 @@ void t_VectorSite_VectorEngineSite::dbEmit(){
 }
 
 t_VectorSite_VectorEngineSite::t_VectorSite_VectorEngineSite():t_VectorSite_VectorSite(bbString(L"VectorEngine-Official Website",29),1024,768,t_mojo_app_WindowFlags(8)){
-  bbDBFrame db_f{"new:Void()","D:/VectorSite/VectorEngineSite.monkey2"};
+  struct f0_t : public bbGCFrame{
+    t_VectorSite_ButtonForm* l_but1{};
+    t_VectorSite_LabelForm* l_test{};
+    t_VectorSite_VectorUIForm* t0{};
+    void gcMark(){
+      bbGCMark(l_but1);
+      bbGCMark(l_test);
+      bbGCMark(t0);
+    }
+  }f0{};
+  bbDBFrame db_f{"new:Void()","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
   t_VectorSite_VectorEngineSite*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(53250);
   this->m_UI.get()->m_Root=((t_VectorSite_VectorUIForm*)(bbGCNew<t_VectorSite_PanelForm>(10,10,400,400)));
+  bbDBStmt(61448);
+  f0.l_test=bbGCNew<t_VectorSite_LabelForm>(bbString(L"Testing",7),5,5);
+  bbDBLocal("test",&f0.l_test);
+  bbDBStmt(69634);
+  (f0.t0=this->m_UI.get()->m_Root.get())->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_test)));
+  bbDBStmt(77832);
+  f0.l_but1=bbGCNew<t_VectorSite_ButtonForm>(40,50,180,35,bbString(L"VectorEngine",12));
+  bbDBLocal("but1",&f0.l_but1);
+  bbDBStmt(86018);
+  f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but1)));
 }
 t_VectorSite_VectorEngineSite::~t_VectorSite_VectorEngineSite(){
 }
 
 void t_VectorSite_VectorEngineSite::m_DoRender(){
-  bbDBFrame db_f{"DoRender:Void()","D:/VectorSite/VectorEngineSite.monkey2"};
+  bbDBFrame db_f{"DoRender:Void()","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
   t_VectorSite_VectorEngineSite*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(90114);
+  bbDBStmt(122882);
   this->m_BeginRender();
-  bbDBStmt(98306);
+  bbDBStmt(131074);
   this->m_RenderUI();
-  bbDBStmt(106498);
+  bbDBStmt(139266);
   this->m_EndRender();
-  bbDBStmt(114690);
+  bbDBStmt(147458);
   this->m_DrawString(bbString(L"Hey!",4),5,5);
 }
 bbString bbDBType(t_VectorSite_VectorEngineSite**){
