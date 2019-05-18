@@ -24,11 +24,21 @@ Class LoginPage Extends VectorPage
 		
 		back.Add(LoginWin)	
 		
-		Local user:TextBoxForm = New TextBoxForm(20,40,180,25,"Admin")
-		Local pass:TextBoxForm = New TextBoxForm(20,75,180,25,"")
+		Local user_lab:LabelForm = New LabelForm("Username",10,46)
+		Local pass_lab:LabelForm = New LabelForm("Password",10,81)
+		
+		Local user:TextBoxForm = New TextBoxForm(85,40,300,25,"Admin")
+		Local pass:TextBoxForm = New TextBoxForm(85,75,300,25,"")
+		
+		Local login:ButtonForm = New ButtonForm(20,260,100,30,"Login")
+		Local signup:ButtonForm = New ButtonForm(140,260,100,30,"SignUp")
 		
 		LoginWin.Add(user)
 		LoginWin.Add(pass)
+		LoginWin.Add(user_lab)
+		LoginWin.Add(pass_lab)
+		LoginWin.Add(login)
+		LoginWin.Add(signup)
 		
 	End 
 	

@@ -1,15 +1,15 @@
 {
-	"endpos":"20:0",
+	"endpos":"22:0",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2LabelForm",
 	"kind":"file",
 	"members":[{
-		"endpos":"20:0",
+		"endpos":"22:0",
 		"flags":1,
 		"ident":"LabelForm",
 		"kind":"class",
 		"members":[{
-			"endpos":"12:0",
+			"endpos":"14:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
@@ -67,23 +67,23 @@
 				"srcpos":"5:11"
 			}
 		},{
-			"endpos":"18:0",
+			"endpos":"20:0",
 			"flags":513,
 			"ident":"OnDraw",
 			"kind":"method",
-			"srcpos":"13:1",
+			"srcpos":"15:1",
 			"stmts":[],
 			"type":{
-				"endpos":"13:16",
+				"endpos":"15:16",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"13:14",
+					"endpos":"15:14",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"13:14"
+					"srcpos":"15:14"
 				},
-				"srcpos":"13:14"
+				"srcpos":"15:14"
 			}
 		}],
 		"srcpos":"3:0",

@@ -1,10 +1,10 @@
 {
-	"endpos":"47:3",
+	"endpos":"57:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Pages_2LoginPage",
 	"kind":"file",
 	"members":[{
-		"endpos":"47:3",
+		"endpos":"57:3",
 		"flags":1,
 		"ident":"LoginPage",
 		"kind":"class",
@@ -41,7 +41,7 @@
 				"srcpos":"7:11"
 			}
 		},{
-			"endpos":"34:0",
+			"endpos":"44:0",
 			"flags":513,
 			"ident":"OnInit",
 			"kind":"method",
@@ -90,104 +90,284 @@
 					"srcpos":"17:13"
 				}
 			},{
-				"endpos":"27:64",
+				"endpos":"27:60",
+				"flags":1,
+				"ident":"user_lab",
+				"init":{
+					"args":[{
+						"endpos":"27:53",
+						"kind":"literal",
+						"srcpos":"27:43",
+						"toke":"\"Username\""
+					},{
+						"endpos":"27:56",
+						"kind":"literal",
+						"srcpos":"27:54",
+						"toke":"10"
+					},{
+						"endpos":"27:59",
+						"kind":"literal",
+						"srcpos":"27:57",
+						"toke":"46"
+					}],
+					"endpos":"27:60",
+					"kind":"newobject",
+					"srcpos":"27:29",
+					"type":{
+						"endpos":"27:42",
+						"ident":"LabelForm",
+						"kind":"ident",
+						"srcpos":"27:33"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.LabelForm",
+				"srcpos":"27:8",
+				"type":{
+					"endpos":"27:26",
+					"ident":"LabelForm",
+					"kind":"ident",
+					"srcpos":"27:17"
+				}
+			},{
+				"endpos":"28:60",
+				"flags":1,
+				"ident":"pass_lab",
+				"init":{
+					"args":[{
+						"endpos":"28:53",
+						"kind":"literal",
+						"srcpos":"28:43",
+						"toke":"\"Password\""
+					},{
+						"endpos":"28:56",
+						"kind":"literal",
+						"srcpos":"28:54",
+						"toke":"10"
+					},{
+						"endpos":"28:59",
+						"kind":"literal",
+						"srcpos":"28:57",
+						"toke":"81"
+					}],
+					"endpos":"28:60",
+					"kind":"newobject",
+					"srcpos":"28:29",
+					"type":{
+						"endpos":"28:42",
+						"ident":"LabelForm",
+						"kind":"ident",
+						"srcpos":"28:33"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.LabelForm",
+				"srcpos":"28:8",
+				"type":{
+					"endpos":"28:26",
+					"ident":"LabelForm",
+					"kind":"ident",
+					"srcpos":"28:17"
+				}
+			},{
+				"endpos":"30:64",
 				"flags":1,
 				"ident":"user",
 				"init":{
 					"args":[{
-						"endpos":"27:45",
+						"endpos":"30:45",
 						"kind":"literal",
-						"srcpos":"27:43",
-						"toke":"20"
+						"srcpos":"30:43",
+						"toke":"85"
 					},{
-						"endpos":"27:48",
+						"endpos":"30:48",
 						"kind":"literal",
-						"srcpos":"27:46",
+						"srcpos":"30:46",
 						"toke":"40"
 					},{
-						"endpos":"27:52",
+						"endpos":"30:52",
 						"kind":"literal",
-						"srcpos":"27:49",
-						"toke":"180"
+						"srcpos":"30:49",
+						"toke":"300"
 					},{
-						"endpos":"27:55",
+						"endpos":"30:55",
 						"kind":"literal",
-						"srcpos":"27:53",
+						"srcpos":"30:53",
 						"toke":"25"
 					},{
-						"endpos":"27:63",
+						"endpos":"30:63",
 						"kind":"literal",
-						"srcpos":"27:56",
+						"srcpos":"30:56",
 						"toke":"\"Admin\""
 					}],
-					"endpos":"27:64",
+					"endpos":"30:64",
 					"kind":"newobject",
-					"srcpos":"27:27",
+					"srcpos":"30:27",
 					"type":{
-						"endpos":"27:42",
+						"endpos":"30:42",
 						"ident":"TextBoxForm",
 						"kind":"ident",
-						"srcpos":"27:31"
+						"srcpos":"30:31"
 					}
 				},
 				"kind":"local",
 				"semtype":"VectorSite.TextBoxForm",
-				"srcpos":"27:8",
+				"srcpos":"30:8",
 				"type":{
-					"endpos":"27:24",
+					"endpos":"30:24",
 					"ident":"TextBoxForm",
 					"kind":"ident",
-					"srcpos":"27:13"
+					"srcpos":"30:13"
 				}
 			},{
-				"endpos":"28:59",
+				"endpos":"31:59",
 				"flags":1,
 				"ident":"pass",
 				"init":{
 					"args":[{
-						"endpos":"28:45",
+						"endpos":"31:45",
 						"kind":"literal",
-						"srcpos":"28:43",
-						"toke":"20"
+						"srcpos":"31:43",
+						"toke":"85"
 					},{
-						"endpos":"28:48",
+						"endpos":"31:48",
 						"kind":"literal",
-						"srcpos":"28:46",
+						"srcpos":"31:46",
 						"toke":"75"
 					},{
-						"endpos":"28:52",
+						"endpos":"31:52",
 						"kind":"literal",
-						"srcpos":"28:49",
-						"toke":"180"
+						"srcpos":"31:49",
+						"toke":"300"
 					},{
-						"endpos":"28:55",
+						"endpos":"31:55",
 						"kind":"literal",
-						"srcpos":"28:53",
+						"srcpos":"31:53",
 						"toke":"25"
 					},{
-						"endpos":"28:58",
+						"endpos":"31:58",
 						"kind":"literal",
-						"srcpos":"28:56",
+						"srcpos":"31:56",
 						"toke":"\"\""
 					}],
-					"endpos":"28:59",
+					"endpos":"31:59",
 					"kind":"newobject",
-					"srcpos":"28:27",
+					"srcpos":"31:27",
 					"type":{
-						"endpos":"28:42",
+						"endpos":"31:42",
 						"ident":"TextBoxForm",
 						"kind":"ident",
-						"srcpos":"28:31"
+						"srcpos":"31:31"
 					}
 				},
 				"kind":"local",
 				"semtype":"VectorSite.TextBoxForm",
-				"srcpos":"28:8",
+				"srcpos":"31:8",
 				"type":{
-					"endpos":"28:24",
+					"endpos":"31:24",
 					"ident":"TextBoxForm",
 					"kind":"ident",
-					"srcpos":"28:13"
+					"srcpos":"31:13"
+				}
+			},{
+				"endpos":"33:64",
+				"flags":1,
+				"ident":"login",
+				"init":{
+					"args":[{
+						"endpos":"33:44",
+						"kind":"literal",
+						"srcpos":"33:42",
+						"toke":"20"
+					},{
+						"endpos":"33:48",
+						"kind":"literal",
+						"srcpos":"33:45",
+						"toke":"260"
+					},{
+						"endpos":"33:52",
+						"kind":"literal",
+						"srcpos":"33:49",
+						"toke":"100"
+					},{
+						"endpos":"33:55",
+						"kind":"literal",
+						"srcpos":"33:53",
+						"toke":"30"
+					},{
+						"endpos":"33:63",
+						"kind":"literal",
+						"srcpos":"33:56",
+						"toke":"\"Login\""
+					}],
+					"endpos":"33:64",
+					"kind":"newobject",
+					"srcpos":"33:27",
+					"type":{
+						"endpos":"33:41",
+						"ident":"ButtonForm",
+						"kind":"ident",
+						"srcpos":"33:31"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.ButtonForm",
+				"srcpos":"33:8",
+				"type":{
+					"endpos":"33:24",
+					"ident":"ButtonForm",
+					"kind":"ident",
+					"srcpos":"33:14"
+				}
+			},{
+				"endpos":"34:67",
+				"flags":1,
+				"ident":"signup",
+				"init":{
+					"args":[{
+						"endpos":"34:46",
+						"kind":"literal",
+						"srcpos":"34:43",
+						"toke":"140"
+					},{
+						"endpos":"34:50",
+						"kind":"literal",
+						"srcpos":"34:47",
+						"toke":"260"
+					},{
+						"endpos":"34:54",
+						"kind":"literal",
+						"srcpos":"34:51",
+						"toke":"100"
+					},{
+						"endpos":"34:57",
+						"kind":"literal",
+						"srcpos":"34:55",
+						"toke":"30"
+					},{
+						"endpos":"34:66",
+						"kind":"literal",
+						"srcpos":"34:58",
+						"toke":"\"SignUp\""
+					}],
+					"endpos":"34:67",
+					"kind":"newobject",
+					"srcpos":"34:28",
+					"type":{
+						"endpos":"34:42",
+						"ident":"ButtonForm",
+						"kind":"ident",
+						"srcpos":"34:32"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.ButtonForm",
+				"srcpos":"34:8",
+				"type":{
+					"endpos":"34:25",
+					"ident":"ButtonForm",
+					"kind":"ident",
+					"srcpos":"34:15"
 				}
 			}],
 			"type":{
@@ -203,42 +383,42 @@
 				"srcpos":"15:14"
 			}
 		},{
-			"endpos":"40:0",
+			"endpos":"50:0",
 			"flags":513,
 			"ident":"OnUpdate",
 			"kind":"method",
-			"srcpos":"35:1",
+			"srcpos":"45:1",
 			"stmts":[],
 			"type":{
-				"endpos":"35:18",
+				"endpos":"45:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"35:16",
+					"endpos":"45:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"35:16"
+					"srcpos":"45:16"
 				},
-				"srcpos":"35:16"
+				"srcpos":"45:16"
 			}
 		},{
-			"endpos":"46:0",
+			"endpos":"56:0",
 			"flags":513,
 			"ident":"OnRender",
 			"kind":"method",
-			"srcpos":"41:1",
+			"srcpos":"51:1",
 			"stmts":[],
 			"type":{
-				"endpos":"41:18",
+				"endpos":"51:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"41:16",
+					"endpos":"51:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"41:16"
+					"srcpos":"51:16"
 				},
-				"srcpos":"41:16"
+				"srcpos":"51:16"
 			}
 		}],
 		"srcpos":"3:0",

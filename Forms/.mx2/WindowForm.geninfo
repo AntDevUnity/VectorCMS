@@ -1,10 +1,10 @@
 {
-	"endpos":"45:3",
+	"endpos":"52:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2WindowForm",
 	"kind":"file",
 	"members":[{
-		"endpos":"45:3",
+		"endpos":"52:3",
 		"flags":1,
 		"ident":"WindowForm",
 		"kind":"class",
@@ -61,7 +61,7 @@
 				"srcpos":"9:13"
 			}
 		},{
-			"endpos":"36:0",
+			"endpos":"37:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
@@ -145,49 +145,94 @@
 				"srcpos":"11:11"
 			}
 		},{
-			"endpos":"44:0",
+			"endpos":"43:0",
 			"flags":1,
-			"ident":"ON_TitleDrag",
+			"ident":"ON_SizeDrag",
 			"kind":"method",
-			"srcpos":"37:1",
+			"srcpos":"38:1",
 			"stmts":[],
 			"type":{
-				"endpos":"37:38",
+				"endpos":"38:37",
 				"kind":"functype",
 				"params":[{
-					"endpos":"37:31",
+					"endpos":"38:30",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"37:26",
+					"srcpos":"38:25",
 					"type":{
-						"endpos":"37:31",
+						"endpos":"38:30",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"37:28"
+						"srcpos":"38:27"
 					}
 				},{
-					"endpos":"37:37",
+					"endpos":"38:36",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"37:32",
+					"srcpos":"38:31",
 					"type":{
-						"endpos":"37:37",
+						"endpos":"38:36",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"37:34"
+						"srcpos":"38:33"
 					}
 				}],
 				"retType":{
-					"endpos":"37:25",
+					"endpos":"38:24",
 					"ident":"bool",
 					"kind":"ident",
-					"srcpos":"37:21"
+					"srcpos":"38:20"
 				},
-				"srcpos":"37:21"
+				"srcpos":"38:20"
+			}
+		},{
+			"endpos":"51:0",
+			"flags":1,
+			"ident":"ON_TitleDrag",
+			"kind":"method",
+			"srcpos":"44:1",
+			"stmts":[],
+			"type":{
+				"endpos":"44:38",
+				"kind":"functype",
+				"params":[{
+					"endpos":"44:31",
+					"flags":1,
+					"ident":"x",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"44:26",
+					"type":{
+						"endpos":"44:31",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"44:28"
+					}
+				},{
+					"endpos":"44:37",
+					"flags":1,
+					"ident":"y",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"44:32",
+					"type":{
+						"endpos":"44:37",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"44:34"
+					}
+				}],
+				"retType":{
+					"endpos":"44:25",
+					"ident":"bool",
+					"kind":"ident",
+					"srcpos":"44:21"
+				},
+				"srcpos":"44:21"
 			}
 		}],
 		"srcpos":"4:0",

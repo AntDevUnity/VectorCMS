@@ -7,6 +7,7 @@
 t_VectorSite_LabelForm::t_VectorSite_LabelForm(bbString l_text,bbInt l_x,bbInt l_y){
   this->m_Pos=t_std_geom_Vec2_1f{bbFloat(l_x),bbFloat(l_y)};
   this->m_Text=l_text;
+  this->m_TextCol=t_std_graphics_Color{0.10000000000000001f,0.10000000000000001f,0.10000000000000001f,1.0f};
 }
 t_VectorSite_LabelForm::~t_VectorSite_LabelForm(){
 }

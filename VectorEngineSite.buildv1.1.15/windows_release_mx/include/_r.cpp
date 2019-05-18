@@ -194,7 +194,7 @@ struct rt_VectorSite_WindowForm : public bbClassTypeInfo{
   static struct decls_t : public bbClassDecls{
     decls_t():bbClassDecls(&instance){}
     bbDeclInfo **initDecls(){
-      return bbMembers(bbCtorDecl<t_VectorSite_WindowForm,bbInt,bbInt,bbInt,bbInt,bbString>(),bbFieldDecl("Body",&t_VectorSite_WindowForm::m_Body),bbFieldDecl("Title",&t_VectorSite_WindowForm::m_Title),bbFieldDecl("Resize",&t_VectorSite_WindowForm::m_Resize),bbFieldDecl("Close",&t_VectorSite_WindowForm::m_Close),bbMethodDecl<t_VectorSite_WindowForm,bbBool,bbInt,bbInt>("ON_TitleDrag",&t_VectorSite_WindowForm::m_ON_0TitleDrag));
+      return bbMembers(bbCtorDecl<t_VectorSite_WindowForm,bbInt,bbInt,bbInt,bbInt,bbString>(),bbFieldDecl("Body",&t_VectorSite_WindowForm::m_Body),bbFieldDecl("Title",&t_VectorSite_WindowForm::m_Title),bbFieldDecl("Resize",&t_VectorSite_WindowForm::m_Resize),bbFieldDecl("Close",&t_VectorSite_WindowForm::m_Close),bbMethodDecl<t_VectorSite_WindowForm,bbBool,bbInt,bbInt>("ON_TitleDrag",&t_VectorSite_WindowForm::m_ON_0TitleDrag),bbMethodDecl<t_VectorSite_WindowForm,bbBool,bbInt,bbInt>("ON_SizeDrag",&t_VectorSite_WindowForm::m_ON_0SizeDrag));
     }
   }decls;
   rt_VectorSite_WindowForm():bbClassTypeInfo("VectorSite.WindowForm","Class"){

@@ -28,6 +28,7 @@ struct t_VectorSite_WindowForm : public t_VectorSite_VectorUIForm{
   ~t_VectorSite_WindowForm();
 
   bbBool m_ON_0TitleDrag(bbInt l_x,bbInt l_y);
+  bbBool m_ON_0SizeDrag(bbInt l_x,bbInt l_y);
 
   t_VectorSite_WindowForm(){
   }

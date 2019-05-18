@@ -15,22 +15,29 @@ Class WindowForm Extends VectorUIForm
 		Size = New Vec2f(w,h)
 		
 		Body = New PanelForm(0,0,w,h)
-		Title = New ButtonForm(0,0,w-24,25,title)
+		Title = New ButtonForm(0,0,w,25,title)
 		Resize = New ButtonForm(w-24,h-24,24,24,"o")
 		Close = New ButtonForm(w-24,0,24,25,"x")
 		
 		Body.PanelCol = New Color(0.7,0.7,0.7,1.0)
 		
 		Title.OnDrag = ON_TitleDrag
+		Resize.OnDrag = ON_SizeDrag
 		
 		Add(Body)
 			
 		Body.Add(Title)
-		Body.Add(Resize)
-		Body.Add(Close)
+	'	Body.Add(Resize)
+	'	Body.Add(Close)
 		
 		
 		
+		
+	End 
+	
+	Method ON_SizeDrag:Bool(x:Int,y:Int)
+		
+		Return False
 		
 	End 
 	
