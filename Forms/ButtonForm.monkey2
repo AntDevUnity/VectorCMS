@@ -1,9 +1,10 @@
 Namespace VectorSite
 
+#Import "data/button1.png"
 
 Class ButtonForm Extends VectorUIForm
 	
-	Field ButCol:Color = New Color(0.8,0.8,0.8,1)
+	Field ButCol:Color = New Color(1,1,1,1)
 	
 	Method New(x:Int,y:Int,w:Int,h:Int,text:String)
 		
@@ -17,19 +18,19 @@ Class ButtonForm Extends VectorUIForm
 	
 	Method OnMouseEnter() Override
 		
-		ButCol = New Color(1,1,1,1)
+		ButCol = New Color(0.6,1,1,1)
 		
 	End 
 	
 	Method OnMouseLeave() Override 
 		
-		ButCol = New Color(0.8,0.8,0.8,1.0)
+		ButCol = New Color(1,1,1,1.0)
 		
 	End 
 	
 	Method OnMouseDown(b:Button) Override 
 		
-		ButCol = New Color(1,0,0,1)
+		ButCol = New Color(1,0.6,1,1)
 		Down = True
 		
 		If OnClick <> Null
@@ -44,7 +45,7 @@ Class ButtonForm Extends VectorUIForm
 	
 	Method OnMouseUp(b:Button) Override 
 		
-		ButCol = New Color(0.8,0.8,0.8,1)
+		ButCol = New Color(1,1,1,1)
 		Down = False
 		
 		

@@ -8,6 +8,8 @@
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Forms_2ButtonForm.h"
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Forms_2LabelForm.h"
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Forms_2PanelForm.h"
+#include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Forms_2TextBoxForm.h"
+#include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Forms_2WindowForm.h"
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_Pages_2LoginPage.h"
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_VectorEngineSite.h"
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_VectorObject.h"
@@ -102,7 +104,7 @@ struct rt_VectorSite_LoginPage : public bbClassTypeInfo{
   static struct decls_t : public bbClassDecls{
     decls_t():bbClassDecls(&instance){}
     bbDeclInfo **initDecls(){
-      return bbMembers(bbCtorDecl<t_VectorSite_LoginPage>(),bbMethodDecl<t_VectorSite_LoginPage,void>("OnUpdate",&t_VectorSite_LoginPage::m_OnUpdate),bbMethodDecl<t_VectorSite_LoginPage,void>("OnRender",&t_VectorSite_LoginPage::m_OnRender),bbMethodDecl<t_VectorSite_LoginPage,void>("OnInit",&t_VectorSite_LoginPage::m_OnInit));
+      return bbMembers(bbCtorDecl<t_VectorSite_LoginPage>(),bbFieldDecl("LoginWin",&t_VectorSite_LoginPage::m_LoginWin),bbMethodDecl<t_VectorSite_LoginPage,void>("OnUpdate",&t_VectorSite_LoginPage::m_OnUpdate),bbMethodDecl<t_VectorSite_LoginPage,void>("OnRender",&t_VectorSite_LoginPage::m_OnRender),bbMethodDecl<t_VectorSite_LoginPage,void>("OnInit",&t_VectorSite_LoginPage::m_OnInit));
     }
   }decls;
   rt_VectorSite_LoginPage():bbClassTypeInfo("VectorSite.LoginPage","Class"){
@@ -155,6 +157,66 @@ bbTypeInfo *bbGetType(t_VectorSite_VectorPage*const&){
 }
 bbTypeInfo *t_VectorSite_VectorPage::typeof()const{
   return &rt_VectorSite_VectorPage::instance;
+}
+
+struct rt_VectorSite_TextBoxForm : public bbClassTypeInfo{
+  static rt_VectorSite_TextBoxForm instance;
+  static struct decls_t : public bbClassDecls{
+    decls_t():bbClassDecls(&instance){}
+    bbDeclInfo **initDecls(){
+      return bbMembers(bbCtorDecl<t_VectorSite_TextBoxForm,bbInt,bbInt,bbInt,bbInt,bbString>(),bbMethodDecl<t_VectorSite_TextBoxForm,void>("OnDraw",&t_VectorSite_TextBoxForm::m_OnDraw));
+    }
+  }decls;
+  rt_VectorSite_TextBoxForm():bbClassTypeInfo("VectorSite.TextBoxForm","Class"){
+  }
+  bbTypeInfo *superType(){
+    return bbGetType<t_VectorSite_VectorUIForm*>();
+  }
+  bbVariant nullValue(){
+    return bbVariant((t_VectorSite_TextBoxForm*)0);
+  }
+  bbVariant newArray( int length ){
+    return bbVariant(bbArray<bbGCVar<t_VectorSite_TextBoxForm>>(length));
+  }
+};
+rt_VectorSite_TextBoxForm rt_VectorSite_TextBoxForm::instance;
+rt_VectorSite_TextBoxForm::decls_t rt_VectorSite_TextBoxForm::decls;
+
+bbTypeInfo *bbGetType(t_VectorSite_TextBoxForm*const&){
+  return &rt_VectorSite_TextBoxForm::instance;
+}
+bbTypeInfo *t_VectorSite_TextBoxForm::typeof()const{
+  return &rt_VectorSite_TextBoxForm::instance;
+}
+
+struct rt_VectorSite_WindowForm : public bbClassTypeInfo{
+  static rt_VectorSite_WindowForm instance;
+  static struct decls_t : public bbClassDecls{
+    decls_t():bbClassDecls(&instance){}
+    bbDeclInfo **initDecls(){
+      return bbMembers(bbCtorDecl<t_VectorSite_WindowForm,bbInt,bbInt,bbInt,bbInt,bbString>(),bbFieldDecl("Body",&t_VectorSite_WindowForm::m_Body),bbFieldDecl("Title",&t_VectorSite_WindowForm::m_Title),bbFieldDecl("Resize",&t_VectorSite_WindowForm::m_Resize),bbFieldDecl("Close",&t_VectorSite_WindowForm::m_Close),bbMethodDecl<t_VectorSite_WindowForm,bbBool,bbInt,bbInt>("ON_TitleDrag",&t_VectorSite_WindowForm::m_ON_0TitleDrag));
+    }
+  }decls;
+  rt_VectorSite_WindowForm():bbClassTypeInfo("VectorSite.WindowForm","Class"){
+  }
+  bbTypeInfo *superType(){
+    return bbGetType<t_VectorSite_VectorUIForm*>();
+  }
+  bbVariant nullValue(){
+    return bbVariant((t_VectorSite_WindowForm*)0);
+  }
+  bbVariant newArray( int length ){
+    return bbVariant(bbArray<bbGCVar<t_VectorSite_WindowForm>>(length));
+  }
+};
+rt_VectorSite_WindowForm rt_VectorSite_WindowForm::instance;
+rt_VectorSite_WindowForm::decls_t rt_VectorSite_WindowForm::decls;
+
+bbTypeInfo *bbGetType(t_VectorSite_WindowForm*const&){
+  return &rt_VectorSite_WindowForm::instance;
+}
+bbTypeInfo *t_VectorSite_WindowForm::typeof()const{
+  return &rt_VectorSite_WindowForm::instance;
 }
 
 struct rt_VectorSite_ButtonForm : public bbClassTypeInfo{
@@ -306,7 +368,7 @@ struct rt_VectorSite_VectorUIForm : public bbClassTypeInfo{
   static struct decls_t : public bbClassDecls{
     decls_t():bbClassDecls(&instance){}
     bbDeclInfo **initDecls(){
-      return bbMembers(bbCtorDecl<t_VectorSite_VectorUIForm>(),bbFieldDecl("Root",&t_VectorSite_VectorUIForm::m_Root),bbFieldDecl("Sub",&t_VectorSite_VectorUIForm::m_Sub),bbFieldDecl("BackImg",&t_VectorSite_VectorUIForm::m_BackImg),bbFieldDecl("Text",&t_VectorSite_VectorUIForm::m_Text),bbFieldDecl("TextCol",&t_VectorSite_VectorUIForm::m_TextCol),bbFieldDecl("OnClick",&t_VectorSite_VectorUIForm::m_OnClick),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt,bbString>("TextW",&t_VectorSite_VectorUIForm::m_TextW),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt,bbString>("TextH",&t_VectorSite_VectorUIForm::m_TextH),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnUpdate",&t_VectorSite_VectorUIForm::m_OnUpdate),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_VectorSite_Button>("OnMouseUp",&t_VectorSite_VectorUIForm::m_OnMouseUp),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbInt,bbInt,bbInt,bbInt>("OnMouseMove",&t_VectorSite_VectorUIForm::m_OnMouseMove),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnMouseLeave",&t_VectorSite_VectorUIForm::m_OnMouseLeave),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnMouseEnter",&t_VectorSite_VectorUIForm::m_OnMouseEnter),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_VectorSite_Button>("OnMouseDown",&t_VectorSite_VectorUIForm::m_OnMouseDown),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnDraw",&t_VectorSite_VectorUIForm::m_OnDraw),bbMethodDecl<t_VectorSite_VectorUIForm,bbBool,bbInt,bbInt>("InBounds",&t_VectorSite_VectorUIForm::m_InBounds),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt>("DrawY",&t_VectorSite_VectorUIForm::m_DrawY),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt>("DrawX",&t_VectorSite_VectorUIForm::m_DrawX),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbString,bbInt,bbInt,t_std_graphics_Color>("DrawText",&t_VectorSite_VectorUIForm::m_DrawText),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbInt,bbInt,bbInt,bbInt,t_std_graphics_Color>("DrawRect",&t_VectorSite_VectorUIForm::m_DrawRect),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_mojo_graphics_Image*,bbInt,bbInt,bbInt,bbInt,t_std_graphics_Color>("DrawImage",&t_VectorSite_VectorUIForm::m_DrawImage),bbMethodDecl<t_VectorSite_VectorUIForm,t_VectorSite_VectorUIForm*,t_VectorSite_VectorUIForm*>("Add",&t_VectorSite_VectorUIForm::m_Add));
+      return bbMembers(bbCtorDecl<t_VectorSite_VectorUIForm>(),bbFieldDecl("Root",&t_VectorSite_VectorUIForm::m_Root),bbFieldDecl("Sub",&t_VectorSite_VectorUIForm::m_Sub),bbFieldDecl("BackImg",&t_VectorSite_VectorUIForm::m_BackImg),bbFieldDecl("Text",&t_VectorSite_VectorUIForm::m_Text),bbFieldDecl("TextCol",&t_VectorSite_VectorUIForm::m_TextCol),bbFieldDecl("OnClick",&t_VectorSite_VectorUIForm::m_OnClick),bbFieldDecl("OnDrag",&t_VectorSite_VectorUIForm::m_OnDrag),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt,bbString>("TextW",&t_VectorSite_VectorUIForm::m_TextW),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt,bbString>("TextH",&t_VectorSite_VectorUIForm::m_TextH),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnUpdate",&t_VectorSite_VectorUIForm::m_OnUpdate),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_VectorSite_Button>("OnMouseUp",&t_VectorSite_VectorUIForm::m_OnMouseUp),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbInt,bbInt,bbInt,bbInt>("OnMouseMove",&t_VectorSite_VectorUIForm::m_OnMouseMove),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnMouseLeave",&t_VectorSite_VectorUIForm::m_OnMouseLeave),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnMouseEnter",&t_VectorSite_VectorUIForm::m_OnMouseEnter),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_VectorSite_Button>("OnMouseDown",&t_VectorSite_VectorUIForm::m_OnMouseDown),bbMethodDecl<t_VectorSite_VectorUIForm,void>("OnDraw",&t_VectorSite_VectorUIForm::m_OnDraw),bbMethodDecl<t_VectorSite_VectorUIForm,bbBool,bbInt,bbInt>("InBounds",&t_VectorSite_VectorUIForm::m_InBounds),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt>("DrawY",&t_VectorSite_VectorUIForm::m_DrawY),bbMethodDecl<t_VectorSite_VectorUIForm,bbInt>("DrawX",&t_VectorSite_VectorUIForm::m_DrawX),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbString,bbInt,bbInt,t_std_graphics_Color>("DrawText",&t_VectorSite_VectorUIForm::m_DrawText),bbMethodDecl<t_VectorSite_VectorUIForm,void,bbInt,bbInt,bbInt,bbInt,t_std_graphics_Color>("DrawRect",&t_VectorSite_VectorUIForm::m_DrawRect),bbMethodDecl<t_VectorSite_VectorUIForm,void,t_mojo_graphics_Image*,bbInt,bbInt,bbInt,bbInt,t_std_graphics_Color>("DrawImage",&t_VectorSite_VectorUIForm::m_DrawImage),bbMethodDecl<t_VectorSite_VectorUIForm,t_VectorSite_VectorUIForm*,t_VectorSite_VectorUIForm*>("Add",&t_VectorSite_VectorUIForm::m_Add));
     }
   }decls;
   rt_VectorSite_VectorUIForm():bbClassTypeInfo("VectorSite.VectorUIForm","Class"){
@@ -388,6 +450,20 @@ bbTypeInfo *bbGetType(t_VectorSite_VectorPage*const&){
 }
 bbTypeInfo *t_VectorSite_VectorPage::typeof()const{
   return &rt_VectorSite_VectorPage;
+}
+static bbUnknownTypeInfo rt_VectorSite_TextBoxForm("VectorSite.TextBoxForm");
+bbTypeInfo *bbGetType(t_VectorSite_TextBoxForm*const&){
+  return &rt_VectorSite_TextBoxForm;
+}
+bbTypeInfo *t_VectorSite_TextBoxForm::typeof()const{
+  return &rt_VectorSite_TextBoxForm;
+}
+static bbUnknownTypeInfo rt_VectorSite_WindowForm("VectorSite.WindowForm");
+bbTypeInfo *bbGetType(t_VectorSite_WindowForm*const&){
+  return &rt_VectorSite_WindowForm;
+}
+bbTypeInfo *t_VectorSite_WindowForm::typeof()const{
+  return &rt_VectorSite_WindowForm;
 }
 static bbUnknownTypeInfo rt_VectorSite_ButtonForm("VectorSite.ButtonForm");
 bbTypeInfo *bbGetType(t_VectorSite_ButtonForm*const&){

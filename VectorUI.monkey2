@@ -88,6 +88,11 @@ Class VectorUI
 				Else If PressedForm[0] = OverForm
 					
 					OverForm.OnMouseMove(mx,my,dx,dy)
+					If OverForm.OnDrag <> Null
+						
+						OverForm.OnDrag(dx,dy)
+						
+					End 
 					
 				End 
 				

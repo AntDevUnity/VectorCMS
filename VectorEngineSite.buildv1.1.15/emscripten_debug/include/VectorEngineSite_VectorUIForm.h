@@ -25,6 +25,8 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
   bbGCVar<t_mojo_graphics_Image> m_BackImg{};
   bbString m_Text{};
   t_std_graphics_Color m_TextCol{};
+  bbFunction<bbBool(bbInt)> m_OnClick{};
+  bbFunction<bbBool(bbInt,bbInt)> m_OnDrag{};
 
   void init();
 
@@ -36,10 +38,11 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
   bbInt m_TextW(bbString l_text);
   bbInt m_TextH(bbString l_text);
   virtual void m_OnUpdate();
-  void m_OnMouseMove(bbInt l_x,bbInt l_y,bbInt l_dx,bbInt l_dy);
+  virtual void m_OnMouseUp(t_VectorSite_Button l_b);
+  virtual void m_OnMouseMove(bbInt l_x,bbInt l_y,bbInt l_dx,bbInt l_dy);
   virtual void m_OnMouseLeave();
   virtual void m_OnMouseEnter();
-  void m_OnMouseDown(t_VectorSite_Button l_b);
+  virtual void m_OnMouseDown(t_VectorSite_Button l_b);
   virtual void m_OnDraw();
   bbBool m_InBounds(bbInt l_mx,bbInt l_my);
   bbInt m_DrawY();

@@ -26,6 +26,7 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
   bbString m_Text{};
   t_std_graphics_Color m_TextCol{};
   bbFunction<bbBool(bbInt)> m_OnClick{};
+  bbFunction<bbBool(bbInt,bbInt)> m_OnDrag{};
 
   void init();
 

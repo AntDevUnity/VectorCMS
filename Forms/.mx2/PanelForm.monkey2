@@ -24,7 +24,7 @@ Class PanelForm Extends VectorUIForm
 		dx = DrawX()
 		dy = DrawY()
 		
-		DrawImage(BackImg,dx,dy,Int(Size.x),Int(Size.y),PanelCol)
+		DrawRect(dx,dy,Int(Size.x),Int(Size.y),PanelCol)
 	
 	End 
 	

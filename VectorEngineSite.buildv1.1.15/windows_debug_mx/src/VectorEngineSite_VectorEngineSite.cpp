@@ -24,6 +24,8 @@ void bbMain(){
   void mx2_VectorEngineSite_Forms_2PanelForm_init_f();mx2_VectorEngineSite_Forms_2PanelForm_init_f();
   void mx2_VectorEngineSite_Forms_2LabelForm_init_f();mx2_VectorEngineSite_Forms_2LabelForm_init_f();
   void mx2_VectorEngineSite_Forms_2ButtonForm_init_f();mx2_VectorEngineSite_Forms_2ButtonForm_init_f();
+  void mx2_VectorEngineSite_Forms_2WindowForm_init_f();mx2_VectorEngineSite_Forms_2WindowForm_init_f();
+  void mx2_VectorEngineSite_Forms_2TextBoxForm_init_f();mx2_VectorEngineSite_Forms_2TextBoxForm_init_f();
   void mx2_VectorEngineSite_VectorPage_init_f();mx2_VectorEngineSite_VectorPage_init_f();
   void mx2_VectorEngineSite_Pages_2LoginPage_init_f();mx2_VectorEngineSite_Pages_2LoginPage_init_f();
   void mx2_VectorEngineSite_VectorSite_init_f();mx2_VectorEngineSite_VectorSite_init_f();

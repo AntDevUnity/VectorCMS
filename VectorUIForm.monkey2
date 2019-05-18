@@ -17,10 +17,12 @@ Class VectorUIForm Extends VectorObject
 	Field Text:String 
 	Field TextCol:Color = New Color(1,1,1,1)
 	Field OnClick:Bool(b:Int)
+	Field OnDrag:Bool(mx:Int,my:Int)
 	
 	Method Add:VectorUIForm(add:VectorUIForm)
 		
 		Sub.Add(add)
+		add.Root = Self 
 		Return add
 		
 	End 
@@ -49,7 +51,7 @@ Class VectorUIForm Extends VectorObject
 		
 		Else
 			
-			ry = Root.DrawX()	
+			ry = Root.DrawY()	
 			
 		End 	
 		

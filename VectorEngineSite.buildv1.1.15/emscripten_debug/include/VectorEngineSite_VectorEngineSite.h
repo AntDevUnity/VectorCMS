@@ -6,6 +6,8 @@
 
 #include "VectorEngineSite.buildv1.1.15/emscripten_debug/include/VectorEngineSite_VectorSite.h"
 
+BB_CLASS(t_VectorSite_VectorPage)
+
 BB_CLASS(t_VectorSite_VectorEngineSite)
 
 void bbMain();
@@ -16,6 +18,9 @@ struct t_VectorSite_VectorEngineSite : public t_VectorSite_VectorSite{
   bbTypeInfo *typeof()const;
   const char *typeName()const{return "t_VectorSite_VectorEngineSite";}
 
+  bbGCVar<t_VectorSite_VectorPage> m_CurPage{};
+
+  void gcMark();
   void dbEmit();
 
   t_VectorSite_VectorEngineSite();

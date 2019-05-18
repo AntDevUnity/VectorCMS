@@ -11,6 +11,8 @@ Namespace VectorSite
 #Import "Forms/PanelForm"
 #Import "Forms/LabelForm"
 #Import "Forms/ButtonForm"
+#Import "Forms/WindowForm"
+#Import "Forms/TextBoxForm"
 #Import "data/"
 #Import "VectorPage"
 #Import "Pages/LoginPage"
@@ -58,7 +60,7 @@ Class VectorSite Extends Window
 		
 		Can.Color = col 
 		
-		Can.DrawRect(rr)
+		Can.DrawRect(x,y,w,h)
 		
 	End 
 	

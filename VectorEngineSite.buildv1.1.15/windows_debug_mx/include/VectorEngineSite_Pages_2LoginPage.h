@@ -6,6 +6,8 @@
 
 #include "VectorEngineSite.buildv1.1.15/windows_debug_mx/include/VectorEngineSite_VectorPage.h"
 
+BB_CLASS(t_VectorSite_WindowForm)
+
 BB_CLASS(t_VectorSite_LoginPage)
 
 struct t_VectorSite_LoginPage : public t_VectorSite_VectorPage{
@@ -14,6 +16,9 @@ struct t_VectorSite_LoginPage : public t_VectorSite_VectorPage{
   bbTypeInfo *typeof()const;
   const char *typeName()const{return "t_VectorSite_LoginPage";}
 
+  bbGCVar<t_VectorSite_WindowForm> m_LoginWin{};
+
+  void gcMark();
   void dbEmit();
 
   t_VectorSite_LoginPage();

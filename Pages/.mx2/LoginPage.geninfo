@@ -1,131 +1,244 @@
 {
-	"endpos":"34:3",
+	"endpos":"47:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Pages_2LoginPage",
 	"kind":"file",
 	"members":[{
-		"endpos":"34:3",
+		"endpos":"47:3",
 		"flags":1,
 		"ident":"LoginPage",
 		"kind":"class",
 		"members":[{
-			"endpos":"13:0",
+			"endpos":"5:26",
+			"flags":1,
+			"ident":"LoginWin",
+			"kind":"field",
+			"semtype":"VectorSite.WindowForm",
+			"srcpos":"5:7",
+			"type":{
+				"endpos":"5:26",
+				"ident":"WindowForm",
+				"kind":"ident",
+				"srcpos":"5:16"
+			}
+		},{
+			"endpos":"14:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
-			"srcpos":"6:1",
+			"srcpos":"7:1",
 			"stmts":[],
 			"type":{
-				"endpos":"6:13",
+				"endpos":"7:13",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"6:11",
+					"endpos":"7:11",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"6:11"
+					"srcpos":"7:11"
 				},
-				"srcpos":"6:11"
+				"srcpos":"7:11"
 			}
 		},{
-			"endpos":"21:0",
+			"endpos":"34:0",
 			"flags":513,
 			"ident":"OnInit",
 			"kind":"method",
-			"srcpos":"14:1",
+			"srcpos":"15:1",
 			"stmts":[{
-				"endpos":"16:94",
+				"endpos":"17:94",
 				"flags":1,
 				"ident":"back",
 				"init":{
 					"args":[{
-						"endpos":"16:44",
+						"endpos":"17:44",
 						"kind":"literal",
-						"srcpos":"16:42",
+						"srcpos":"17:42",
 						"toke":"10"
 					},{
-						"endpos":"16:47",
+						"endpos":"17:47",
 						"kind":"literal",
-						"srcpos":"16:45",
+						"srcpos":"17:45",
 						"toke":"10"
 					},{
-						"endpos":"16:68",
+						"endpos":"17:68",
 						"kind":"????Expr?????",
-						"srcpos":"16:48"
+						"srcpos":"17:48"
 					},{
-						"endpos":"16:91",
+						"endpos":"17:91",
 						"kind":"????Expr?????",
-						"srcpos":"16:71"
+						"srcpos":"17:71"
 					}],
-					"endpos":"16:94",
+					"endpos":"17:94",
 					"kind":"newobject",
-					"srcpos":"16:28",
+					"srcpos":"17:28",
 					"type":{
-						"endpos":"16:41",
+						"endpos":"17:41",
 						"ident":"PanelForm",
 						"kind":"ident",
-						"srcpos":"16:32"
+						"srcpos":"17:32"
 					}
 				},
 				"kind":"local",
 				"semtype":"VectorSite.VectorUIForm",
-				"srcpos":"16:8",
+				"srcpos":"17:8",
 				"type":{
-					"endpos":"16:25",
+					"endpos":"17:25",
 					"ident":"VectorUIForm",
 					"kind":"ident",
-					"srcpos":"16:13"
+					"srcpos":"17:13"
+				}
+			},{
+				"endpos":"27:64",
+				"flags":1,
+				"ident":"user",
+				"init":{
+					"args":[{
+						"endpos":"27:45",
+						"kind":"literal",
+						"srcpos":"27:43",
+						"toke":"20"
+					},{
+						"endpos":"27:48",
+						"kind":"literal",
+						"srcpos":"27:46",
+						"toke":"40"
+					},{
+						"endpos":"27:52",
+						"kind":"literal",
+						"srcpos":"27:49",
+						"toke":"180"
+					},{
+						"endpos":"27:55",
+						"kind":"literal",
+						"srcpos":"27:53",
+						"toke":"25"
+					},{
+						"endpos":"27:63",
+						"kind":"literal",
+						"srcpos":"27:56",
+						"toke":"\"Admin\""
+					}],
+					"endpos":"27:64",
+					"kind":"newobject",
+					"srcpos":"27:27",
+					"type":{
+						"endpos":"27:42",
+						"ident":"TextBoxForm",
+						"kind":"ident",
+						"srcpos":"27:31"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.TextBoxForm",
+				"srcpos":"27:8",
+				"type":{
+					"endpos":"27:24",
+					"ident":"TextBoxForm",
+					"kind":"ident",
+					"srcpos":"27:13"
+				}
+			},{
+				"endpos":"28:59",
+				"flags":1,
+				"ident":"pass",
+				"init":{
+					"args":[{
+						"endpos":"28:45",
+						"kind":"literal",
+						"srcpos":"28:43",
+						"toke":"20"
+					},{
+						"endpos":"28:48",
+						"kind":"literal",
+						"srcpos":"28:46",
+						"toke":"75"
+					},{
+						"endpos":"28:52",
+						"kind":"literal",
+						"srcpos":"28:49",
+						"toke":"180"
+					},{
+						"endpos":"28:55",
+						"kind":"literal",
+						"srcpos":"28:53",
+						"toke":"25"
+					},{
+						"endpos":"28:58",
+						"kind":"literal",
+						"srcpos":"28:56",
+						"toke":"\"\""
+					}],
+					"endpos":"28:59",
+					"kind":"newobject",
+					"srcpos":"28:27",
+					"type":{
+						"endpos":"28:42",
+						"ident":"TextBoxForm",
+						"kind":"ident",
+						"srcpos":"28:31"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.TextBoxForm",
+				"srcpos":"28:8",
+				"type":{
+					"endpos":"28:24",
+					"ident":"TextBoxForm",
+					"kind":"ident",
+					"srcpos":"28:13"
 				}
 			}],
 			"type":{
-				"endpos":"14:16",
+				"endpos":"15:16",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"14:14",
+					"endpos":"15:14",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"14:14"
+					"srcpos":"15:14"
 				},
-				"srcpos":"14:14"
+				"srcpos":"15:14"
 			}
 		},{
-			"endpos":"27:0",
+			"endpos":"40:0",
 			"flags":513,
 			"ident":"OnUpdate",
 			"kind":"method",
-			"srcpos":"22:1",
+			"srcpos":"35:1",
 			"stmts":[],
 			"type":{
-				"endpos":"22:18",
+				"endpos":"35:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"22:16",
+					"endpos":"35:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"22:16"
+					"srcpos":"35:16"
 				},
-				"srcpos":"22:16"
+				"srcpos":"35:16"
 			}
 		},{
-			"endpos":"33:0",
+			"endpos":"46:0",
 			"flags":513,
 			"ident":"OnRender",
 			"kind":"method",
-			"srcpos":"28:1",
+			"srcpos":"41:1",
 			"stmts":[],
 			"type":{
-				"endpos":"28:18",
+				"endpos":"41:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"28:16",
+					"endpos":"41:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"28:16"
+					"srcpos":"41:16"
 				},
-				"srcpos":"28:16"
+				"srcpos":"41:16"
 			}
 		}],
 		"srcpos":"3:0",

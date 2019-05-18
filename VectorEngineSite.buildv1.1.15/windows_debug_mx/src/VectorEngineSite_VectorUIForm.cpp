@@ -28,6 +28,7 @@ void t_VectorSite_VectorUIForm::gcMark(){
   bbGCMark(m_Sub);
   bbGCMark(m_BackImg);
   bbGCMark(m_OnClick);
+  bbGCMark(m_OnDrag);
 }
 
 void t_VectorSite_VectorUIForm::dbEmit(){
@@ -39,6 +40,7 @@ void t_VectorSite_VectorUIForm::dbEmit(){
   bbDBEmit("Text",&m_Text);
   bbDBEmit("TextCol",&m_TextCol);
   bbDBEmit("OnClick",&m_OnClick);
+  bbDBEmit("OnDrag",&m_OnDrag);
 }
 t_VectorSite_VectorUIForm::~t_VectorSite_VectorUIForm(){
 }
@@ -49,7 +51,7 @@ bbInt t_VectorSite_VectorUIForm::m_TextW(bbString l_text){
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("text",&l_text);
-  bbDBStmt(462850);
+  bbDBStmt(471042);
   return g_VectorSite_VectorSite_TextW(l_text);
 }
 
@@ -59,7 +61,7 @@ bbInt t_VectorSite_VectorUIForm::m_TextH(bbString l_text){
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("text",&l_text);
-  bbDBStmt(487426);
+  bbDBStmt(495618);
   return g_VectorSite_VectorSite_TextH(this->m_Text);
 }
 
@@ -118,22 +120,22 @@ bbBool t_VectorSite_VectorUIForm::m_InBounds(bbInt l_mx,bbInt l_my){
   bbDBLocal("Self",&self);
   bbDBLocal("mx",&l_mx);
   bbDBLocal("my",&l_my);
-  bbDBStmt(253960);
+  bbDBStmt(262152);
   bbInt l_dx{};
   bbDBLocal("dx",&l_dx);
   bbInt l_dy{};
   bbDBLocal("dy",&l_dy);
-  bbDBStmt(262146);
+  bbDBStmt(270338);
   l_dx=this->m_DrawX();
-  bbDBStmt(266242);
-  l_dy=this->m_DrawY();
   bbDBStmt(274434);
+  l_dy=this->m_DrawY();
+  bbDBStmt(282626);
   if(((((l_mx>=l_dx)&&(l_my>=l_dy))&&(bbFloat(l_mx)<=(bbFloat(l_dx)+this->m_Size.m_x)))&&(bbFloat(l_my)<=(bbFloat(l_dy)+this->m_Size.m_y)))){
     bbDBBlock db_blk;
-    bbDBStmt(282627);
+    bbDBStmt(290819);
     return true;
   }
-  bbDBStmt(299010);
+  bbDBStmt(307202);
   return false;
 }
 
@@ -142,14 +144,14 @@ bbInt t_VectorSite_VectorUIForm::m_DrawY(){
   bbDBFrame db_f{"DrawY:monkey.types.Int()","D:/Git/VectorCMS/VectorUIForm.monkey2"};
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(188424);
+  bbDBStmt(196616);
   bbInt l_ry=bbInt(0);
   bbDBLocal("ry",&l_ry);
-  bbDBStmt(196610);
+  bbDBStmt(204802);
   if((this->m_Root.get()==((t_VectorSite_VectorUIForm*)0))){
     bbDBBlock db_blk;
   }else{
-    bbDBStmt(204802);
+    bbDBStmt(212994);
     struct f1_t : public bbGCFrame{
       t_VectorSite_VectorUIForm* t0{};
       void gcMark(){
@@ -157,10 +159,10 @@ bbInt t_VectorSite_VectorUIForm::m_DrawY(){
       }
     }f1{};
     bbDBBlock db_blk;
-    bbDBStmt(212995);
-    l_ry=(f1.t0=this->m_Root.get())->m_DrawX();
+    bbDBStmt(221187);
+    l_ry=(f1.t0=this->m_Root.get())->m_DrawY();
   }
-  bbDBStmt(229378);
+  bbDBStmt(237570);
   return (l_ry+bbInt(this->m_Pos.m_y));
 }
 
@@ -169,14 +171,14 @@ bbInt t_VectorSite_VectorUIForm::m_DrawX(){
   bbDBFrame db_f{"DrawX:monkey.types.Int()","D:/Git/VectorCMS/VectorUIForm.monkey2"};
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(122888);
+  bbDBStmt(131080);
   bbInt l_rx=bbInt(0);
   bbDBLocal("rx",&l_rx);
-  bbDBStmt(131074);
+  bbDBStmt(139266);
   if((this->m_Root.get()==((t_VectorSite_VectorUIForm*)0))){
     bbDBBlock db_blk;
   }else{
-    bbDBStmt(139266);
+    bbDBStmt(147458);
     struct f1_t : public bbGCFrame{
       t_VectorSite_VectorUIForm* t0{};
       void gcMark(){
@@ -184,10 +186,10 @@ bbInt t_VectorSite_VectorUIForm::m_DrawX(){
       }
     }f1{};
     bbDBBlock db_blk;
-    bbDBStmt(147459);
+    bbDBStmt(155651);
     l_rx=(f1.t0=this->m_Root.get())->m_DrawX();
   }
-  bbDBStmt(163842);
+  bbDBStmt(172034);
   return (l_rx+bbInt(this->m_Pos.m_x));
 }
 
@@ -200,7 +202,7 @@ void t_VectorSite_VectorUIForm::m_DrawText(bbString l_text,bbInt l_x,bbInt l_y,t
   bbDBLocal("x",&l_x);
   bbDBLocal("y",&l_y);
   bbDBLocal("col",&l_col);
-  bbDBStmt(438274);
+  bbDBStmt(446466);
   g_VectorSite_VectorSite_DrawText(l_text,l_x,l_y,l_col);
 }
 
@@ -214,7 +216,7 @@ void t_VectorSite_VectorUIForm::m_DrawRect(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(536578);
+  bbDBStmt(544770);
   g_VectorSite_VectorSite_Rect(l_x,l_y,l_w,l_h,l_col);
 }
 
@@ -229,7 +231,7 @@ void t_VectorSite_VectorUIForm::m_DrawImage(t_mojo_graphics_Image* l_img,bbInt l
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(512002);
+  bbDBStmt(520194);
   g_VectorSite_VectorSite_RectImg(l_img,l_x,l_y,l_w,l_h,l_col);
 }
 
@@ -245,9 +247,11 @@ t_VectorSite_VectorUIForm* t_VectorSite_VectorUIForm::m_Add(t_VectorSite_VectorU
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("add",&l_add);
-  bbDBStmt(94210);
-  (f0.t0=this->m_Sub.get())->m_Add(l_add);
   bbDBStmt(98306);
+  (f0.t0=this->m_Sub.get())->m_Add(l_add);
+  bbDBStmt(102402);
+  l_add->m_Root=this;
+  bbDBStmt(106498);
   return l_add;
 }
 bbString bbDBType(t_VectorSite_VectorUIForm**){

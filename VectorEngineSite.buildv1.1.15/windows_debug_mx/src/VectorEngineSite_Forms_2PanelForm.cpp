@@ -34,12 +34,6 @@ t_VectorSite_PanelForm::~t_VectorSite_PanelForm(){
 }
 
 void t_VectorSite_PanelForm::m_OnDraw(){
-  struct f0_t : public bbGCFrame{
-    t_mojo_graphics_Image* t0{};
-    void gcMark(){
-      bbGCMark(t0);
-    }
-  }f0{};
   bbDBFrame db_f{"OnDraw:Void()","D:/Git/VectorCMS/Forms/PanelForm.monkey2"};
   t_VectorSite_PanelForm*self=this;
   bbDBLocal("Self",&self);
@@ -53,7 +47,7 @@ void t_VectorSite_PanelForm::m_OnDraw(){
   bbDBStmt(102402);
   l_dy=this->m_DrawY();
   bbDBStmt(110594);
-  this->m_DrawImage(f0.t0=this->m_BackImg.get(),l_dx,l_dy,bbInt(this->m_Size.m_x),bbInt(this->m_Size.m_y),this->m_PanelCol);
+  this->m_DrawRect(l_dx,l_dy,bbInt(this->m_Size.m_x),bbInt(this->m_Size.m_y),this->m_PanelCol);
 }
 bbString bbDBType(t_VectorSite_PanelForm**){
   return "VectorSite.PanelForm";
