@@ -2,5 +2,9 @@
 	"emscripten":{
 		"Application Name":"VectorEngineSite",
 		"Application Type":"wasm"
+	},
+	"windows":{
+		"Application Name":"VectorEngineSite",
+		"Application Type":"console"
 	}
 }

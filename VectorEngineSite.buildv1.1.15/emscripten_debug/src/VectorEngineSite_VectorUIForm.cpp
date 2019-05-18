@@ -47,7 +47,7 @@ bbInt t_VectorSite_VectorUIForm::m_TextW(bbString l_text){
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("text",&l_text);
-  bbDBStmt(344066);
+  bbDBStmt(442370);
   return g_VectorSite_VectorSite_TextW(l_text);
 }
 
@@ -57,7 +57,7 @@ bbInt t_VectorSite_VectorUIForm::m_TextH(bbString l_text){
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("text",&l_text);
-  bbDBStmt(368642);
+  bbDBStmt(466946);
   return g_VectorSite_VectorSite_TextH(this->m_Text);
 }
 
@@ -78,6 +78,18 @@ void t_VectorSite_VectorUIForm::m_OnMouseMove(bbInt l_x,bbInt l_y,bbInt l_dx,bbI
   bbDBLocal("dy",&l_dy);
 }
 
+void t_VectorSite_VectorUIForm::m_OnMouseLeave(){
+  bbDBFrame db_f{"OnMouseLeave:Void()","D:/Git/VectorCMS/VectorUIForm.monkey2"};
+  t_VectorSite_VectorUIForm*self=this;
+  bbDBLocal("Self",&self);
+}
+
+void t_VectorSite_VectorUIForm::m_OnMouseEnter(){
+  bbDBFrame db_f{"OnMouseEnter:Void()","D:/Git/VectorCMS/VectorUIForm.monkey2"};
+  t_VectorSite_VectorUIForm*self=this;
+  bbDBLocal("Self",&self);
+}
+
 void t_VectorSite_VectorUIForm::m_OnMouseDown(t_VectorSite_Button l_b){
   bbDBAssertSelf(this);
   bbDBFrame db_f{"OnMouseDown:Void(b:VectorSite.Button)","D:/Git/VectorCMS/VectorUIForm.monkey2"};
@@ -90,6 +102,32 @@ void t_VectorSite_VectorUIForm::m_OnDraw(){
   bbDBFrame db_f{"OnDraw:Void()","D:/Git/VectorCMS/VectorUIForm.monkey2"};
   t_VectorSite_VectorUIForm*self=this;
   bbDBLocal("Self",&self);
+}
+
+bbBool t_VectorSite_VectorUIForm::m_InBounds(bbInt l_mx,bbInt l_my){
+  bbDBAssertSelf(this);
+  bbDBFrame db_f{"InBounds:monkey.types.Bool(mx:monkey.types.Int,my:monkey.types.Int)","D:/Git/VectorCMS/VectorUIForm.monkey2"};
+  t_VectorSite_VectorUIForm*self=this;
+  bbDBLocal("Self",&self);
+  bbDBLocal("mx",&l_mx);
+  bbDBLocal("my",&l_my);
+  bbDBStmt(249864);
+  bbInt l_dx{};
+  bbDBLocal("dx",&l_dx);
+  bbInt l_dy{};
+  bbDBLocal("dy",&l_dy);
+  bbDBStmt(258050);
+  l_dx=this->m_DrawX();
+  bbDBStmt(262146);
+  l_dy=this->m_DrawY();
+  bbDBStmt(270338);
+  if(((((l_mx>=l_dx)&&(l_my>=l_dy))&&(bbFloat(l_mx)<=(bbFloat(l_dx)+this->m_Size.m_x)))&&(bbFloat(l_my)<=(bbFloat(l_dy)+this->m_Size.m_y)))){
+    bbDBBlock db_blk;
+    bbDBStmt(278531);
+    return true;
+  }
+  bbDBStmt(294914);
+  return false;
 }
 
 bbInt t_VectorSite_VectorUIForm::m_DrawY(){
@@ -155,7 +193,7 @@ void t_VectorSite_VectorUIForm::m_DrawText(bbString l_text,bbInt l_x,bbInt l_y,t
   bbDBLocal("x",&l_x);
   bbDBLocal("y",&l_y);
   bbDBLocal("col",&l_col);
-  bbDBStmt(319490);
+  bbDBStmt(417794);
   g_VectorSite_VectorSite_DrawText(l_text,l_x,l_y,l_col);
 }
 
@@ -169,7 +207,7 @@ void t_VectorSite_VectorUIForm::m_DrawRect(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(417794);
+  bbDBStmt(516098);
   g_VectorSite_VectorSite_Rect(l_x,l_y,l_w,l_h,l_col);
 }
 
@@ -184,7 +222,7 @@ void t_VectorSite_VectorUIForm::m_DrawImage(t_mojo_graphics_Image* l_img,bbInt l
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(393218);
+  bbDBStmt(491522);
   g_VectorSite_VectorSite_RectImg(l_img,l_x,l_y,l_w,l_h,l_col);
 }
 

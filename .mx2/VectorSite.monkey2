@@ -42,6 +42,8 @@ Class VectorSite Extends Window
 		
 	End
 	
+
+	
 	Global VirRes:Vec2f 
 	
 	Global Can:Canvas 
@@ -92,6 +94,12 @@ Class VectorSite Extends Window
 		Can.PushMatrix()
 		
 		Can.Scale(Width/VirRes.x,Height/VirRes.y)
+		
+	End 
+	
+	Method UpdateUI()
+		
+		UI.Update()
 		
 	End 
 	

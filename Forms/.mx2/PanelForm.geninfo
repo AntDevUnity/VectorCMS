@@ -2,7 +2,7 @@
 	"endpos":"32:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2PanelForm",
-	"imports":["data/panelbg1.png"],
+	"imports":["data/panel1.png"],
 	"kind":"file",
 	"members":[{
 		"endpos":"32:3",

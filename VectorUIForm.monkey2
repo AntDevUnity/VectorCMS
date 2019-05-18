@@ -56,6 +56,30 @@ Class VectorUIForm Extends VectorObject
 		
 	End 	
 		
+	Method InBounds:Bool(mx:Int,my:Int)
+		
+		Local dx:Int,dy:Int
+		
+		dx = DrawX()
+		dy = DrawY()
+		
+		If mx>=dx And my>=dy And mx<=(dx+Size.x) And my<=(dy+Size.y)
+			
+			Return True
+			
+		End 
+		
+		Return False
+		
+	End 
+	
+	Method OnMouseLeave() Virtual 
+		
+	End 
+	
+	Method OnMouseEnter() Virtual 
+	
+	End 
 	
 	Method OnDraw() Virtual
 	
@@ -69,8 +93,12 @@ Class VectorUIForm Extends VectorObject
 	
 	End 
 	
-	Method OnMouseDown(b:Button)
+	Method OnMouseDown(b:Button) Virtual 
 	
+	End 
+	
+	Method OnMouseUp(b:Button) Virtual 
+		
 	End 
 	
 	Method DrawText(text:String,x:Int,y:Int,col:Color)

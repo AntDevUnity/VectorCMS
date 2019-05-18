@@ -3,14 +3,39 @@ Namespace VectorSite
 
 Class ButtonForm Extends VectorUIForm
 	
-	Field ButCol:Color = New Color(0.8,0.8,0.8,0.8)
+	Field ButCol:Color = New Color(0.8,0.8,0.8,1)
 	
 	Method New(x:Int,y:Int,w:Int,h:Int,text:String)
 		
 		Pos = New Vec2f(x,y)
 		Size = New Vec2f(w,h)
 		Text = text;
+		TextCol = New Color(0.1,0.1,0.1,1.0)
 		BackImg = Image.Load("asset::button1.png")
+		
+	End 
+	
+	Method OnMouseEnter() Override
+		
+		ButCol = New Color(1,1,1,1)
+		
+	End 
+	
+	Method OnMouseLeave() Override 
+		
+		ButCol = New Color(0.8,0.8,0.8,1.0)
+		
+	End 
+	
+	Method OnMouseDown(b:Button) Override 
+		
+		ButCol = New Color(1,0,0,1)
+		
+	End 
+	
+	Method OnMouseUp(b:Button) Override 
+		
+		ButCol = New Color(0.8,0.8,0.8,1)
 		
 	End 
 	

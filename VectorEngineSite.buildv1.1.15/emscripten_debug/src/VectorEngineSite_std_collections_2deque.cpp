@@ -11,7 +11,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::dbEmit(t_st
 }
 
 t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator(t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2* l_deque,bbInt l_index){
-  bbDBFrame db_f{"new:Void(deque:std.collections.Deque<VectorSite.VectorUIForm>,index:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"new:Void(deque:std.collections.Deque<VectorSite.VectorUIForm>,index:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("deque",&l_deque);
@@ -25,7 +25,7 @@ t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::~t_std_collectio
 }
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Insert(t_VectorSite_VectorUIForm* l_value){
-  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("value",&l_value);
@@ -34,7 +34,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Insert(t_
 }
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Erase(){
-  bbDBFrame db_f{"Erase:Void()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Erase:Void()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(303107);
@@ -42,7 +42,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Erase(){
 }
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(t_VectorSite_VectorUIForm* l_current){
-  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("current",&l_current);
@@ -53,7 +53,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(t
 }
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(){
-  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(237571);
@@ -69,7 +69,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Bump(){
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Bump:Void()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Bump:Void()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(278531);
@@ -84,7 +84,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Bump(){
 }
 
 bbBool t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AtEnd(){
-  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(212995);
@@ -92,7 +92,7 @@ bbBool t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AtEnd()
 }
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AssertCurrent(){
-  bbDBFrame db_f{"AssertCurrent:Void()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"AssertCurrent:Void()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(159747);
@@ -127,7 +127,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::dbEmit(){
 }
 
 t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2(bbInt l_length){
-  bbDBFrame db_f{"new:Void(length:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"new:Void(length:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("length",&l_length);
@@ -138,7 +138,7 @@ t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::t_std_collections_Deque_1
 }
 
 t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2(){
-  bbDBFrame db_f{"new:Void()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"new:Void()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(491522);
@@ -149,7 +149,7 @@ t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::~t_std_collections_Deque_
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m__idxeq(bbInt l_index,t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"[]=:Void(index:monkey.types.Int,value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"[]=:Void(index:monkey.types.Int,value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("index",&l_index);
@@ -162,7 +162,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m__idxeq(bbInt l_ind
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m__idx(bbInt l_index){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"[]:VectorSite.VectorUIForm(index:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"[]:VectorSite.VectorUIForm(index:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("index",&l_index);
@@ -180,7 +180,7 @@ bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_Deque_1Tt_VectorSi
       bbGCMark(l_data);
     }
   }f0{};
-  bbDBFrame db_f{"ToArray:VectorSite.VectorUIForm[]()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"ToArray:VectorSite.VectorUIForm[]()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(798728);
@@ -220,7 +220,7 @@ bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_Deque_1Tt_VectorSi
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Set(bbInt l_index,t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Set:Void(index:monkey.types.Int,value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Set:Void(index:monkey.types.Int,value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("index",&l_index);
@@ -233,7 +233,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Set(bbInt l_index,
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Reserve(bbInt l_capacity){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Reserve:Void(capacity:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Reserve:Void(capacity:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("capacity",&l_capacity);
@@ -258,7 +258,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
       bbGCMark(l_value);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveLast:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"RemoveLast:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1241090);
@@ -287,7 +287,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
       bbGCMark(l_value);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveFirst:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"RemoveFirst:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1179650);
@@ -310,7 +310,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PushLast(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"PushLast:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"PushLast:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -320,7 +320,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PushLast(t_VectorS
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PushFirst(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"PushFirst:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"PushFirst:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -330,7 +330,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PushFirst(t_Vector
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PopLast(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"PopLast:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"PopLast:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1323010);
@@ -339,7 +339,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_PopFirst(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"PopFirst:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"PopFirst:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1294338);
@@ -354,7 +354,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Normalize(bbInt l_
       bbGCMark(l_data);
     }
   }f0{};
-  bbDBFrame db_f{"Normalize:Void(capacity:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Normalize:Void(capacity:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("capacity",&l_capacity);
@@ -402,7 +402,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Normalize(bbInt l_
 
 bbInt t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Length(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Length:monkey.types.Int()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Length:monkey.types.Int()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(638978);
@@ -416,7 +416,7 @@ bbInt t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Length(){
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Last(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Last:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Last:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1413122);
@@ -427,7 +427,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Get(bbInt l_index){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Get:VectorSite.VectorUIForm(index:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Get:VectorSite.VectorUIForm(index:monkey.types.Int)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("index",&l_index);
@@ -439,7 +439,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
 
 t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_First(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"First:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"First:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1368066);
@@ -450,7 +450,7 @@ t_VectorSite_VectorUIForm* t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2
 
 bbBool t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Empty(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Empty:monkey.types.Bool()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Empty:monkey.types.Bool()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(536578);
@@ -459,7 +459,7 @@ bbBool t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Empty(){
 
 bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Data(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Data:VectorSite.VectorUIForm[]()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Data:VectorSite.VectorUIForm[]()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(692226);
@@ -475,7 +475,7 @@ bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_Deque_1Tt_VectorSi
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Clear(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Clear:Void()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Clear:Void()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(950274);
@@ -532,7 +532,7 @@ bbInt t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Capacity(){
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Capacity:monkey.types.Int()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"Capacity:monkey.types.Int()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(602114);
@@ -541,7 +541,7 @@ bbInt t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_Capacity(){
 
 t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_All(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"All:std.collections.Deque<VectorSite.VectorUIForm>.Iterator()","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"All:std.collections.Deque<VectorSite.VectorUIForm>.Iterator()","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(757762);
@@ -550,7 +550,7 @@ t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2_Iterator t_std_collections
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_AddLast(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"AddLast:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"AddLast:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -572,7 +572,7 @@ void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_AddLast(t_VectorSi
 
 void t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2::m_AddFirst(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"AddFirst:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/deque.monkey2"};
+  bbDBFrame db_f{"AddFirst:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/deque.monkey2"};
   t_std_collections_Deque_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);

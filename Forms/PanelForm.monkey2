@@ -1,6 +1,6 @@
 Namespace VectorSite
 
-#Import "data/panelbg1.png"
+#Import "data/panel1.png"
 
 Class PanelForm Extends VectorUIForm
 	
@@ -13,7 +13,7 @@ Class PanelForm Extends VectorUIForm
 		
 		PanelCol = New Color(1,1,1,1)
 		
-		BackImg = Image.Load("asset::panelbg1.png")
+		BackImg = Image.Load("asset::panel1.png")
 		
 	End 
 	

@@ -23,6 +23,8 @@ struct t_VectorSite_ButtonForm : public t_VectorSite_VectorUIForm{
   t_VectorSite_ButtonForm(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,bbString l_text);
   ~t_VectorSite_ButtonForm();
 
+  void m_OnMouseLeave();
+  void m_OnMouseEnter();
   void m_OnDraw();
 
   t_VectorSite_ButtonForm(){

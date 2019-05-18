@@ -28,7 +28,7 @@ t_VectorSite_PanelForm::t_VectorSite_PanelForm(bbInt l_x,bbInt l_y,bbInt l_w,bbI
   bbDBStmt(57346);
   this->m_PanelCol=t_std_graphics_Color{1.0f,1.0f,1.0f,1.0f};
   bbDBStmt(65538);
-  this->m_BackImg=g_mojo_graphics_Image_Load(bbString(L"asset::panelbg1.png",19),((t_mojo_graphics_Shader*)0),t_mojo_graphics_TextureFlags(12));
+  this->m_BackImg=g_mojo_graphics_Image_Load(bbString(L"asset::panel1.png",17),((t_mojo_graphics_Shader*)0),t_mojo_graphics_TextureFlags(12));
 }
 t_VectorSite_PanelForm::~t_VectorSite_PanelForm(){
 }

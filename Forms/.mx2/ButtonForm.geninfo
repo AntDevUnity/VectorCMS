@@ -1,15 +1,15 @@
 {
-	"endpos":"27:3",
+	"endpos":"52:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2ButtonForm",
 	"kind":"file",
 	"members":[{
-		"endpos":"27:3",
+		"endpos":"52:3",
 		"flags":1,
 		"ident":"ButtonForm",
 		"kind":"class",
 		"members":[{
-			"endpos":"6:48",
+			"endpos":"6:46",
 			"flags":1,
 			"ident":"ButCol",
 			"init":{
@@ -29,12 +29,12 @@
 					"srcpos":"6:40",
 					"toke":"0.8"
 				},{
-					"endpos":"6:47",
+					"endpos":"6:45",
 					"kind":"literal",
 					"srcpos":"6:44",
-					"toke":"0.8"
+					"toke":"1"
 				}],
-				"endpos":"6:48",
+				"endpos":"6:46",
 				"kind":"newobject",
 				"srcpos":"6:22",
 				"type":{
@@ -54,7 +54,7 @@
 				"srcpos":"6:14"
 			}
 		},{
-			"endpos":"16:0",
+			"endpos":"17:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
@@ -138,23 +138,125 @@
 				"srcpos":"8:11"
 			}
 		},{
-			"endpos":"26:0",
+			"endpos":"23:0",
 			"flags":513,
-			"ident":"OnDraw",
+			"ident":"OnMouseEnter",
 			"kind":"method",
-			"srcpos":"17:1",
+			"srcpos":"18:1",
 			"stmts":[],
 			"type":{
-				"endpos":"17:16",
+				"endpos":"18:22",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"17:14",
+					"endpos":"18:20",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"17:14"
+					"srcpos":"18:20"
 				},
-				"srcpos":"17:14"
+				"srcpos":"18:20"
+			}
+		},{
+			"endpos":"29:0",
+			"flags":513,
+			"ident":"OnMouseLeave",
+			"kind":"method",
+			"srcpos":"24:1",
+			"stmts":[],
+			"type":{
+				"endpos":"24:22",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"24:20",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"24:20"
+				},
+				"srcpos":"24:20"
+			}
+		},{
+			"endpos":"35:0",
+			"flags":513,
+			"ident":"OnMouseDown",
+			"kind":"method",
+			"srcpos":"30:1",
+			"stmts":[],
+			"type":{
+				"endpos":"30:29",
+				"kind":"functype",
+				"params":[{
+					"endpos":"30:28",
+					"flags":1,
+					"ident":"b",
+					"kind":"param",
+					"semtype":"VectorSite.Button",
+					"srcpos":"30:20",
+					"type":{
+						"endpos":"30:28",
+						"ident":"Button",
+						"kind":"ident",
+						"srcpos":"30:22"
+					}
+				}],
+				"retType":{
+					"endpos":"30:19",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"30:19"
+				},
+				"srcpos":"30:19"
+			}
+		},{
+			"endpos":"41:0",
+			"flags":513,
+			"ident":"OnMouseUp",
+			"kind":"method",
+			"srcpos":"36:1",
+			"stmts":[],
+			"type":{
+				"endpos":"36:27",
+				"kind":"functype",
+				"params":[{
+					"endpos":"36:26",
+					"flags":1,
+					"ident":"b",
+					"kind":"param",
+					"semtype":"VectorSite.Button",
+					"srcpos":"36:18",
+					"type":{
+						"endpos":"36:26",
+						"ident":"Button",
+						"kind":"ident",
+						"srcpos":"36:20"
+					}
+				}],
+				"retType":{
+					"endpos":"36:17",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"36:17"
+				},
+				"srcpos":"36:17"
+			}
+		},{
+			"endpos":"51:0",
+			"flags":513,
+			"ident":"OnDraw",
+			"kind":"method",
+			"srcpos":"42:1",
+			"stmts":[],
+			"type":{
+				"endpos":"42:16",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"42:14",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"42:14"
+				},
+				"srcpos":"42:14"
 			}
 		}],
 		"srcpos":"4:0",

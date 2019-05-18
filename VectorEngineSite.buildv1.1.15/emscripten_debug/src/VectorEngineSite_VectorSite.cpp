@@ -26,7 +26,7 @@ bbInt g_VectorSite_VectorSite_TextW(bbString l_text){
   }f0{};
   bbDBFrame db_f{"TextW:monkey.types.Int(text:monkey.types.String)","D:/Git/VectorCMS/VectorSite.monkey2"};
   bbDBLocal("text",&l_text);
-  bbDBStmt(294914);
+  bbDBStmt(303106);
   return bbInt((f0.t1=(f0.t0=g_VectorSite_VectorSite_Can.get())->m_Font())->m_TextWidth(l_text));
 }
 
@@ -39,7 +39,7 @@ bbInt g_VectorSite_VectorSite_TextH(bbString l_text){
   }f0{};
   bbDBFrame db_f{"TextH:monkey.types.Int(text:monkey.types.String)","D:/Git/VectorCMS/VectorSite.monkey2"};
   bbDBLocal("text",&l_text);
-  bbDBStmt(323586);
+  bbDBStmt(331778);
   return bbInt((f0.t0=g_VectorSite_VectorSite_Can.get())->m_Font()->m_Height());
 }
 
@@ -57,9 +57,9 @@ void g_VectorSite_VectorSite_RectImg(t_mojo_graphics_Image* l_img,bbInt l_x,bbIn
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(348162);
-  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
   bbDBStmt(356354);
+  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
+  bbDBStmt(364546);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_DrawRect(bbFloat(l_x),bbFloat(l_y),bbFloat(l_w),bbFloat(l_h),l_img);
 }
 
@@ -76,12 +76,12 @@ void g_VectorSite_VectorSite_Rect(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,t_std_
   bbDBLocal("w",&l_w);
   bbDBLocal("h",&l_h);
   bbDBLocal("col",&l_col);
-  bbDBStmt(217096);
+  bbDBStmt(225288);
   t_std_geom_Rect_1f l_rr=t_std_geom_Rect_1f{bbFloat(l_x),bbFloat(l_y),bbFloat(l_w),bbFloat(l_h)};
   bbDBLocal("rr",&l_rr);
-  bbDBStmt(225282);
-  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
   bbDBStmt(233474);
+  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
+  bbDBStmt(241666);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_DrawRect(l_rr);
 }
 
@@ -97,9 +97,9 @@ void g_VectorSite_VectorSite_DrawText(bbString l_text,bbInt l_x,bbInt l_y,t_std_
   bbDBLocal("x",&l_x);
   bbDBLocal("y",&l_y);
   bbDBLocal("col",&l_col);
-  bbDBStmt(258050);
-  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
   bbDBStmt(266242);
+  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Color(l_col);
+  bbDBStmt(274434);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_DrawText(l_text,bbFloat(l_x),bbFloat(l_y),0.0f,0.0f);
 }
 
@@ -134,6 +134,21 @@ t_VectorSite_VectorSite::t_VectorSite_VectorSite(bbString l_title,bbInt l_width,
 t_VectorSite_VectorSite::~t_VectorSite_VectorSite(){
 }
 
+void t_VectorSite_VectorSite::m_UpdateUI(){
+  bbDBAssertSelf(this);
+  struct f0_t : public bbGCFrame{
+    t_VectorSite_VectorUI* t0{};
+    void gcMark(){
+      bbGCMark(t0);
+    }
+  }f0{};
+  bbDBFrame db_f{"UpdateUI:Void()","D:/Git/VectorCMS/VectorSite.monkey2"};
+  t_VectorSite_VectorSite*self=this;
+  bbDBLocal("Self",&self);
+  bbDBStmt(417794);
+  (f0.t0=this->m_UI.get())->m_Update();
+}
+
 void t_VectorSite_VectorSite::m_RenderUI(){
   bbDBAssertSelf(this);
   struct f0_t : public bbGCFrame{
@@ -145,7 +160,7 @@ void t_VectorSite_VectorSite::m_RenderUI(){
   bbDBFrame db_f{"RenderUI:Void()","D:/Git/VectorCMS/VectorSite.monkey2"};
   t_VectorSite_VectorSite*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(409602);
+  bbDBStmt(442370);
   (f0.t0=this->m_UI.get())->m_Render();
 }
 
@@ -160,15 +175,15 @@ void t_VectorSite_VectorSite::m_OnRender(t_mojo_graphics_Canvas* l_canvas){
   t_VectorSite_VectorSite*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("canvas",&l_canvas);
-  bbDBStmt(499714);
-  g_VectorSite_VectorSite_Can=l_canvas;
-  bbDBStmt(507906);
-  g_VectorSite_VectorSite_CC=g_VectorSite_VectorSite_Can.get();
-  bbDBStmt(516098);
-  (f0.t0=g_mojo_app_App.get())->m_RequestRender();
-  bbDBStmt(524290);
-  l_canvas->m_Clear(g_VectorSite_VectorSite_ClearCol);
   bbDBStmt(532482);
+  g_VectorSite_VectorSite_Can=l_canvas;
+  bbDBStmt(540674);
+  g_VectorSite_VectorSite_CC=g_VectorSite_VectorSite_Can.get();
+  bbDBStmt(548866);
+  (f0.t0=g_mojo_app_App.get())->m_RequestRender();
+  bbDBStmt(557058);
+  l_canvas->m_Clear(g_VectorSite_VectorSite_ClearCol);
+  bbDBStmt(565250);
   this->m_DoRender();
 }
 
@@ -192,7 +207,7 @@ void t_VectorSite_VectorSite::m_EndRender(){
   bbDBFrame db_f{"EndRender:Void()","D:/Git/VectorCMS/VectorSite.monkey2"};
   t_VectorSite_VectorSite*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(434178);
+  bbDBStmt(466946);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_PopMatrix();
 }
 
@@ -210,7 +225,7 @@ void t_VectorSite_VectorSite::m_DrawString(bbString l_txt,bbInt l_x,bbInt l_y){
   bbDBLocal("txt",&l_txt);
   bbDBLocal("x",&l_x);
   bbDBLocal("y",&l_y);
-  bbDBStmt(458754);
+  bbDBStmt(491522);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_DrawText(l_txt,bbFloat(l_x),bbFloat(l_y),0.0f,0.0f);
 }
 
@@ -231,9 +246,9 @@ void t_VectorSite_VectorSite::m_BeginRender(){
   bbDBFrame db_f{"BeginRender:Void()","D:/Git/VectorCMS/VectorSite.monkey2"};
   t_VectorSite_VectorSite*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(376834);
-  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_PushMatrix();
   bbDBStmt(385026);
+  (f0.t0=g_VectorSite_VectorSite_Can.get())->m_PushMatrix();
+  bbDBStmt(393218);
   (f0.t0=g_VectorSite_VectorSite_Can.get())->m_Scale((bbFloat(this->m_Width())/g_VectorSite_VectorSite_VirRes.m_x),(bbFloat(this->m_Height())/g_VectorSite_VectorSite_VirRes.m_y));
 }
 bbString bbDBType(t_VectorSite_VectorSite**){

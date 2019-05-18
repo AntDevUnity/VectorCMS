@@ -2,7 +2,7 @@ Namespace VectorSite
 
 #Import "VectorSite"
 
-
+' Built in site editor.
 
 Class VectorEngineSite Extends VectorSite
 	
@@ -10,22 +10,26 @@ Class VectorEngineSite Extends VectorSite
 		
 		Super.New("VectorEngine-Official Website",1024,768)
 
-		UI.Root = New PanelForm(10,10,400,400)
+		UI.Root = New PanelForm(10,10,700,400)
 		
-		Local test:LabelForm = New LabelForm("Testing",5,5)
+		Local test:LabelForm = New LabelForm("Welcome to our - VectorEngine - Website.",80,100)
 		
 		UI.Root.Add(test)
 		
-		Local but1:ButtonForm = New ButtonForm(40,50,180,35,"VectorEngine")
+		Local but1:ButtonForm = New ButtonForm(20,30,180,35,"VectorEngine")
+		Local but2:ButtonForm = New ButtonForm(220,30,180,35,"Starlit Empire")
+		Local but3:ButtonForm = New ButtonForm(420,30,180,35,"Forums")
 		
 		test.Add(but1)
+		test.Add(but2)
+		test.Add(but3)
 		
 	End 
 		
 	Method DoRender() Override 
 		
 	
-
+		UpdateUI()
 		
 		BeginRender()
 		

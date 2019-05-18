@@ -8,7 +8,7 @@ BB_CLASS(t_mojo_graphics_Shader)
 BB_ENUM(t_mojo_graphics_TextureFlags)
 
 void t_VectorSite_ButtonForm::init(){
-  m_ButCol=t_std_graphics_Color{0.80000000000000004f,0.80000000000000004f,0.80000000000000004f,0.80000000000000004f};
+  m_ButCol=t_std_graphics_Color{0.80000000000000004f,0.80000000000000004f,0.80000000000000004f,1.0f};
 }
 
 void t_VectorSite_ButtonForm::dbEmit(){
@@ -33,9 +33,27 @@ t_VectorSite_ButtonForm::t_VectorSite_ButtonForm(bbInt l_x,bbInt l_y,bbInt l_w,b
   this->m_Size=t_std_geom_Vec2_1f{bbFloat(l_w),bbFloat(l_h)};
   bbDBStmt(49154);
   this->m_Text=l_text;
+  this->m_TextCol=t_std_graphics_Color{0.10000000000000001f,0.10000000000000001f,0.10000000000000001f,1.0f};
+  bbDBStmt(57346);
   this->m_BackImg=g_mojo_graphics_Image_Load(bbString(L"asset::button1.png",18),((t_mojo_graphics_Shader*)0),t_mojo_graphics_TextureFlags(12));
 }
 t_VectorSite_ButtonForm::~t_VectorSite_ButtonForm(){
+}
+
+void t_VectorSite_ButtonForm::m_OnMouseLeave(){
+  bbDBFrame db_f{"OnMouseLeave:Void()","D:/Git/VectorCMS/Forms/ButtonForm.monkey2"};
+  t_VectorSite_ButtonForm*self=this;
+  bbDBLocal("Self",&self);
+  bbDBStmt(106498);
+  this->m_ButCol=t_std_graphics_Color{0.80000000000000004f,0.80000000000000004f,0.80000000000000004f,1.0f};
+}
+
+void t_VectorSite_ButtonForm::m_OnMouseEnter(){
+  bbDBFrame db_f{"OnMouseEnter:Void()","D:/Git/VectorCMS/Forms/ButtonForm.monkey2"};
+  t_VectorSite_ButtonForm*self=this;
+  bbDBLocal("Self",&self);
+  bbDBStmt(81922);
+  this->m_ButCol=t_std_graphics_Color{1.0f,1.0f,1.0f,1.0f};
 }
 
 void t_VectorSite_ButtonForm::m_OnDraw(){
@@ -48,9 +66,9 @@ void t_VectorSite_ButtonForm::m_OnDraw(){
   bbDBFrame db_f{"OnDraw:Void()","D:/Git/VectorCMS/Forms/ButtonForm.monkey2"};
   t_VectorSite_ButtonForm*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(77826);
+  bbDBStmt(131074);
   this->m_DrawImage(f0.t0=this->m_BackImg.get(),this->m_DrawX(),this->m_DrawY(),bbInt(this->m_Size.m_x),bbInt(this->m_Size.m_y),this->m_ButCol);
-  bbDBStmt(86018);
+  bbDBStmt(139266);
   this->m_DrawText(this->m_Text,bbInt(((bbFloat(this->m_DrawX())+(this->m_Size.m_x/2.0f))-bbFloat((this->m_TextW(this->m_Text)/2)))),bbInt(((bbFloat(this->m_DrawY())+(this->m_Size.m_y/2.0f))-bbFloat((this->m_TextH(this->m_Text)/2)))),this->m_TextCol);
 }
 bbString bbDBType(t_VectorSite_ButtonForm**){

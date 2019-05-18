@@ -1,42 +1,42 @@
 {
-	"endpos":"52:0",
+	"endpos":"56:0",
 	"flags":0,
 	"ident":"VectorEngineSite_VectorEngineSite",
 	"imports":["VectorSite.monkey2"],
 	"kind":"file",
 	"members":[{
-		"endpos":"42:0",
+		"endpos":"46:0",
 		"flags":1,
 		"ident":"VectorEngineSite",
 		"kind":"class",
 		"members":[{
-			"endpos":"24:0",
+			"endpos":"28:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
 			"srcpos":"9:1",
 			"stmts":[{
-				"endpos":"15:53",
+				"endpos":"15:89",
 				"flags":1,
 				"ident":"test",
 				"init":{
 					"args":[{
-						"endpos":"15:48",
+						"endpos":"15:81",
 						"kind":"literal",
 						"srcpos":"15:39",
-						"toke":"\"Testing\""
+						"toke":"\"Welcome to our - VectorEngine - Website.\""
 					},{
-						"endpos":"15:50",
+						"endpos":"15:84",
 						"kind":"literal",
-						"srcpos":"15:49",
-						"toke":"5"
+						"srcpos":"15:82",
+						"toke":"80"
 					},{
-						"endpos":"15:52",
+						"endpos":"15:88",
 						"kind":"literal",
-						"srcpos":"15:51",
-						"toke":"5"
+						"srcpos":"15:85",
+						"toke":"100"
 					}],
-					"endpos":"15:53",
+					"endpos":"15:89",
 					"kind":"newobject",
 					"srcpos":"15:25",
 					"type":{
@@ -64,12 +64,12 @@
 						"endpos":"19:43",
 						"kind":"literal",
 						"srcpos":"19:41",
-						"toke":"40"
+						"toke":"20"
 					},{
 						"endpos":"19:46",
 						"kind":"literal",
 						"srcpos":"19:44",
-						"toke":"50"
+						"toke":"30"
 					},{
 						"endpos":"19:50",
 						"kind":"literal",
@@ -105,6 +105,106 @@
 					"kind":"ident",
 					"srcpos":"19:13"
 				}
+			},{
+				"endpos":"20:72",
+				"flags":1,
+				"ident":"but2",
+				"init":{
+					"args":[{
+						"endpos":"20:44",
+						"kind":"literal",
+						"srcpos":"20:41",
+						"toke":"220"
+					},{
+						"endpos":"20:47",
+						"kind":"literal",
+						"srcpos":"20:45",
+						"toke":"30"
+					},{
+						"endpos":"20:51",
+						"kind":"literal",
+						"srcpos":"20:48",
+						"toke":"180"
+					},{
+						"endpos":"20:54",
+						"kind":"literal",
+						"srcpos":"20:52",
+						"toke":"35"
+					},{
+						"endpos":"20:71",
+						"kind":"literal",
+						"srcpos":"20:55",
+						"toke":"\"Starlit Empire\""
+					}],
+					"endpos":"20:72",
+					"kind":"newobject",
+					"srcpos":"20:26",
+					"type":{
+						"endpos":"20:40",
+						"ident":"ButtonForm",
+						"kind":"ident",
+						"srcpos":"20:30"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.ButtonForm",
+				"srcpos":"20:8",
+				"type":{
+					"endpos":"20:23",
+					"ident":"ButtonForm",
+					"kind":"ident",
+					"srcpos":"20:13"
+				}
+			},{
+				"endpos":"21:64",
+				"flags":1,
+				"ident":"but3",
+				"init":{
+					"args":[{
+						"endpos":"21:44",
+						"kind":"literal",
+						"srcpos":"21:41",
+						"toke":"420"
+					},{
+						"endpos":"21:47",
+						"kind":"literal",
+						"srcpos":"21:45",
+						"toke":"30"
+					},{
+						"endpos":"21:51",
+						"kind":"literal",
+						"srcpos":"21:48",
+						"toke":"180"
+					},{
+						"endpos":"21:54",
+						"kind":"literal",
+						"srcpos":"21:52",
+						"toke":"35"
+					},{
+						"endpos":"21:63",
+						"kind":"literal",
+						"srcpos":"21:55",
+						"toke":"\"Forums\""
+					}],
+					"endpos":"21:64",
+					"kind":"newobject",
+					"srcpos":"21:26",
+					"type":{
+						"endpos":"21:40",
+						"ident":"ButtonForm",
+						"kind":"ident",
+						"srcpos":"21:30"
+					}
+				},
+				"kind":"local",
+				"semtype":"VectorSite.ButtonForm",
+				"srcpos":"21:8",
+				"type":{
+					"endpos":"21:23",
+					"ident":"ButtonForm",
+					"kind":"ident",
+					"srcpos":"21:13"
+				}
 			}],
 			"type":{
 				"endpos":"9:13",
@@ -119,23 +219,23 @@
 				"srcpos":"9:11"
 			}
 		},{
-			"endpos":"40:0",
+			"endpos":"44:0",
 			"flags":513,
 			"ident":"DoRender",
 			"kind":"method",
-			"srcpos":"25:1",
+			"srcpos":"29:1",
 			"stmts":[],
 			"type":{
-				"endpos":"25:18",
+				"endpos":"29:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"25:16",
+					"endpos":"29:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"25:16"
+					"srcpos":"29:16"
 				},
-				"srcpos":"25:16"
+				"srcpos":"29:16"
 			}
 		}],
 		"srcpos":"7:0",
@@ -146,23 +246,23 @@
 			"srcpos":"7:31"
 		}
 	},{
-		"endpos":"52:0",
+		"endpos":"56:0",
 		"flags":1,
 		"ident":"Main",
 		"kind":"function",
-		"srcpos":"43:0",
+		"srcpos":"47:0",
 		"stmts":[],
 		"type":{
-			"endpos":"43:15",
+			"endpos":"47:15",
 			"kind":"functype",
 			"params":[],
 			"retType":{
-				"endpos":"43:13",
+				"endpos":"47:13",
 				"ident":"void",
 				"kind":"ident",
-				"srcpos":"43:13"
+				"srcpos":"47:13"
 			},
-			"srcpos":"43:13"
+			"srcpos":"47:13"
 		}
 	}],
 	"namespace":"VectorSite",

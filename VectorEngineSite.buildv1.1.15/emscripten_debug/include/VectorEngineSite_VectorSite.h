@@ -41,6 +41,7 @@ struct t_VectorSite_VectorSite : public t_mojo_app_Window{
   t_VectorSite_VectorSite(bbString l_title,bbInt l_width,bbInt l_height,t_mojo_app_WindowFlags l_flags);
   ~t_VectorSite_VectorSite();
 
+  void m_UpdateUI();
   void m_RenderUI();
   void m_OnRender(t_mojo_graphics_Canvas* l_canvas);
   void m_InitSite();

@@ -8,7 +8,7 @@
 extern bbInt invoke(t_VectorSite_VectorUIForm* l_x,t_VectorSite_VectorUIForm* l_y);
 extern bbInt invoke(t_VectorSite_VectorUIForm* l_x,t_VectorSite_VectorUIForm* l_y);
 void g_std_collections_List_1Tt_VectorSite_VectorUIForm_2_AddAll_1Tt_std_collections_List_1Tt_VectorSite_VectorUIForm_2_2(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_self,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_values){
-  bbDBFrame db_f{"AddAll<std.collections.List<VectorSite.VectorUIForm>>:Void(values:std.collections.List<VectorSite.VectorUIForm>)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AddAll<std.collections.List<VectorSite.VectorUIForm>>:Void(values:std.collections.List<VectorSite.VectorUIForm>)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=l_self;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -40,7 +40,7 @@ void g_std_collections_List_1Tt_VectorSite_VectorUIForm_2_AddAll_1Tt_std_collect
 }
 
 void g_std_collections_List_1Tt_VectorSite_VectorUIForm_2_AddAll_1Tt_std_collections_Stack_1Tt_VectorSite_VectorUIForm_2_2(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_self,t_std_collections_Stack_1Tt_VectorSite_VectorUIForm_2* l_values){
-  bbDBFrame db_f{"AddAll<std.collections.Stack<VectorSite.VectorUIForm>>:Void(values:std.collections.Stack<VectorSite.VectorUIForm>)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AddAll<std.collections.Stack<VectorSite.VectorUIForm>>:Void(values:std.collections.Stack<VectorSite.VectorUIForm>)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=l_self;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -85,7 +85,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::dbEmit(){
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node(t_VectorSite_VectorUIForm* l_value,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* l_succ){
-  bbDBFrame db_f{"new:Void(value:VectorSite.VectorUIForm,succ:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(value:VectorSite.VectorUIForm,succ:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -103,7 +103,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::t_std_collections_Lis
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node(t_VectorSite_VectorUIForm* l_value){
-  bbDBFrame db_f{"new:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -119,7 +119,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::~t_std_collections_Li
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Value(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Value:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Value:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -129,7 +129,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Value(t_Vector
 
 t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Value(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Value:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Value:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(323587);
@@ -138,7 +138,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Succ(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Succ:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Succ:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(274435);
@@ -147,7 +147,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Remove(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Remove:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Remove:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(376835);
@@ -163,7 +163,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Remove(){
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_Pred(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Pred:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Pred:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(299011);
@@ -172,7 +172,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_InsertBefore(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* l_node){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"InsertBefore:Void(node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"InsertBefore:Void(node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("node",&l_node);
@@ -190,7 +190,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_InsertBefore(t
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node::m_InsertAfter(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* l_node){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"InsertAfter:Void(node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"InsertAfter:Void(node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("node",&l_node);
@@ -218,7 +218,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::dbEmit(t_std
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* l_node){
-  bbDBFrame db_f{"new:Void(list:std.collections.List<VectorSite.VectorUIForm>,node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(list:std.collections.List<VectorSite.VectorUIForm>,node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("list",&l_list);
@@ -238,7 +238,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Insert(t_V
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("value",&l_value);
@@ -253,7 +253,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Erase(){
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Erase:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Erase:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(761859);
@@ -265,7 +265,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Erase(){
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(t_VectorSite_VectorUIForm* l_current){
-  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("current",&l_current);
@@ -276,7 +276,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(t_
 }
 
 t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Current(){
-  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(663555);
@@ -286,7 +286,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Bump(){
-  bbDBFrame db_f{"Bump:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Bump:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(708611);
@@ -296,7 +296,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_Bump(){
 }
 
 bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AtEnd(){
-  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(638979);
@@ -304,7 +304,7 @@ bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AtEnd(){
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator::m_AssertCurrent(){
-  bbDBFrame db_f{"AssertCurrent:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AssertCurrent:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(577539);
@@ -334,7 +334,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::dbE
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* l_node){
-  bbDBFrame db_f{"new:Void(list:std.collections.List<VectorSite.VectorUIForm>,node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(list:std.collections.List<VectorSite.VectorUIForm>,node:std.collections.List<VectorSite.VectorUIForm>.Node)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("list",&l_list);
@@ -354,7 +354,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_I
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Insert:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("value",&l_value);
@@ -369,7 +369,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_E
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Erase:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Erase:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(1048579);
@@ -381,7 +381,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_E
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_Current(t_VectorSite_VectorUIForm* l_current){
-  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Current:Void(current:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBLocal("current",&l_current);
@@ -392,7 +392,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_C
 }
 
 t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_Current(){
-  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Current:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(950275);
@@ -402,7 +402,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_Bump(){
-  bbDBFrame db_f{"Bump:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Bump:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(995331);
@@ -412,7 +412,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_B
 }
 
 bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_AtEnd(){
-  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AtEnd:monkey.types.Bool()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(925699);
@@ -420,7 +420,7 @@ bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m
 }
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator::m_AssertCurrent(){
-  bbDBFrame db_f{"AssertCurrent:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AssertCurrent:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator*self=&(*this);
   bbDBLocal("Self",self);
   bbDBStmt(864259);
@@ -454,7 +454,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::dbEmit(){
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_values):t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(){
-  bbDBFrame db_f{"new:Void(values:std.collections.List<VectorSite.VectorUIForm>)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(values:std.collections.List<VectorSite.VectorUIForm>)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -463,7 +463,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(t_std_collections_Stack_1Tt_VectorSite_VectorUIForm_2* l_values):t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(){
-  bbDBFrame db_f{"new:Void(values:std.collections.Stack<VectorSite.VectorUIForm>)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(values:std.collections.Stack<VectorSite.VectorUIForm>)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -472,7 +472,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(bbArray<bbGCVar<t_VectorSite_VectorUIForm>> l_values):t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(){
-  bbDBFrame db_f{"new:Void(values:VectorSite.VectorUIForm[])","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void(values:VectorSite.VectorUIForm[])","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -481,7 +481,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt
 }
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::t_std_collections_List_1Tt_VectorSite_VectorUIForm_2(){
-  bbDBFrame db_f{"new:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"new:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1191938);
@@ -500,7 +500,7 @@ bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_List_1Tt_VectorSit
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"ToArray:VectorSite.VectorUIForm[]()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"ToArray:VectorSite.VectorUIForm[]()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1486856);
@@ -530,7 +530,7 @@ bbArray<bbGCVar<t_VectorSite_VectorUIForm>> t_std_collections_List_1Tt_VectorSit
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Sort(bbFunction<bbInt(t_VectorSite_VectorUIForm*,t_VectorSite_VectorUIForm*)> l_compareFunc){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Sort:Void(compareFunc:monkey.types.Int(VectorSite.VectorUIForm,VectorSite.VectorUIForm))","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Sort:Void(compareFunc:monkey.types.Int(VectorSite.VectorUIForm,VectorSite.VectorUIForm))","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("compareFunc",&l_compareFunc);
@@ -687,7 +687,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Sort(bbFunction<bbI
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Sort(bbInt l_ascending){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Sort:Void(ascending:monkey.types.Int)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Sort:Void(ascending:monkey.types.Int)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("ascending",&l_ascending);
@@ -706,7 +706,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Sort(bbInt l_ascend
       lambda0(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_self):l_self(l_self){
       }
       bbInt invoke(t_VectorSite_VectorUIForm* l_x,t_VectorSite_VectorUIForm* l_y){
-        bbDBFrame db_f{"?????:monkey.types.Int(x:VectorSite.VectorUIForm,y:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+        bbDBFrame db_f{"?????:monkey.types.Int(x:VectorSite.VectorUIForm,y:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
         bbDBLocal("x",&l_x);
         bbDBLocal("y",&l_y);
         bbDBStmt(2338820);
@@ -732,7 +732,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Sort(bbInt l_ascend
       lambda1(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_self):l_self(l_self){
       }
       bbInt invoke(t_VectorSite_VectorUIForm* l_x,t_VectorSite_VectorUIForm* l_y){
-        bbDBFrame db_f{"?????:monkey.types.Int(x:VectorSite.VectorUIForm,y:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+        bbDBFrame db_f{"?????:monkey.types.Int(x:VectorSite.VectorUIForm,y:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
         bbDBLocal("x",&l_x);
         bbDBLocal("y",&l_y);
         bbDBStmt(2355204);
@@ -756,7 +756,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2:
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveLast:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"RemoveLast:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(2142210);
@@ -778,7 +778,7 @@ bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_RemoveLast(t_Vect
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveLast:monkey.types.Bool(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"RemoveLast:monkey.types.Bool(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -804,7 +804,7 @@ bbInt t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_RemoveIf(bbFunctio
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveIf:monkey.types.Int(condition:monkey.types.Bool(VectorSite.VectorUIForm))","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"RemoveIf:monkey.types.Int(condition:monkey.types.Bool(VectorSite.VectorUIForm))","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("condition",&l_condition);
@@ -861,7 +861,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2:
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveFirst:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"RemoveFirst:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(2080770);
@@ -883,7 +883,7 @@ bbInt t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_RemoveEach(t_Vecto
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"RemoveEach:monkey.types.Int(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"RemoveEach:monkey.types.Int(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -932,7 +932,7 @@ bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Remove(t_VectorSi
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"Remove:monkey.types.Bool(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Remove:monkey.types.Bool(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -952,7 +952,7 @@ bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Remove(t_VectorSi
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_LastNode(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"LastNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"LastNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(2752514);
@@ -966,7 +966,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Last(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Last:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Last:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1609730);
@@ -977,7 +977,7 @@ t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2:
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_HeadNode(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"HeadNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"HeadNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(2674690);
@@ -986,7 +986,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_FirstNode(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"FirstNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"FirstNode:std.collections.List<VectorSite.VectorUIForm>.Node()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(2711554);
@@ -1000,7 +1000,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 t_VectorSite_VectorUIForm* t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_First(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"First:VectorSite.VectorUIForm()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"First:VectorSite.VectorUIForm()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1556482);
@@ -1017,7 +1017,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"FindNode:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"FindNode:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -1050,7 +1050,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"FindLastNode:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"FindLastNode:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -1077,7 +1077,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 bbBool t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Empty(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Empty:monkey.types.Bool()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Empty:monkey.types.Bool()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1380354);
@@ -1092,7 +1092,7 @@ bbInt t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Count(){
       bbGCMark(l_node);
     }
   }f0{};
-  bbDBFrame db_f{"Count:monkey.types.Int()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Count:monkey.types.Int()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1429512);
@@ -1117,7 +1117,7 @@ bbInt t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Count(){
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Clear(){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Clear:Void()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Clear:Void()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1646594);
@@ -1134,7 +1134,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_BackwardsIterator t_std_col
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"Backwards:std.collections.List<VectorSite.VectorUIForm>.BackwardsIterator()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Backwards:std.collections.List<VectorSite.VectorUIForm>.BackwardsIterator()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1343490);
@@ -1149,7 +1149,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator t_std_collections_
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"All:std.collections.List<VectorSite.VectorUIForm>.Iterator()","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"All:std.collections.List<VectorSite.VectorUIForm>.Iterator()","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBStmt(1298434);
@@ -1166,7 +1166,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"AddLast:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AddLast:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -1187,7 +1187,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
       bbGCMark(t0);
     }
   }f0{};
-  bbDBFrame db_f{"AddFirst:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AddFirst:std.collections.List<VectorSite.VectorUIForm>.Node(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
@@ -1200,7 +1200,7 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Node* t_std_collections_Lis
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_AddAll(bbArray<bbGCVar<t_VectorSite_VectorUIForm>> l_values){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"AddAll:Void(values:VectorSite.VectorUIForm[])","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"AddAll:Void(values:VectorSite.VectorUIForm[])","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("values",&l_values);
@@ -1229,7 +1229,7 @@ void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_AddAll(bbArray<bbGC
 
 void t_std_collections_List_1Tt_VectorSite_VectorUIForm_2::m_Add(t_VectorSite_VectorUIForm* l_value){
   bbDBAssertSelf(this);
-  bbDBFrame db_f{"Add:Void(value:VectorSite.VectorUIForm)","D:/Monkey2-v2018.09/modules/std/collections/list.monkey2"};
+  bbDBFrame db_f{"Add:Void(value:VectorSite.VectorUIForm)","D:/monk2/modules/std/collections/list.monkey2"};
   t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("value",&l_value);
