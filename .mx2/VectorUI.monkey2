@@ -133,7 +133,13 @@ Class VectorUI
 
 	Method AddToListForward(ui:VectorUIForm,list:List<VectorUIForm>)
 
+		If ui = Null Return 
+
 		list.Add(ui)
+		
+		If ui.Sub = Null Return 
+		
+		If ui.Sub.Count() = 0 Return 
 		
 		For Local form:=Eachin ui.Sub
 			

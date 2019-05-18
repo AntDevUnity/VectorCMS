@@ -1,10 +1,10 @@
 {
-	"endpos":"175:3",
+	"endpos":"181:3",
 	"flags":0,
 	"ident":"VectorEngineSite_VectorUI",
 	"kind":"file",
 	"members":[{
-		"endpos":"175:3",
+		"endpos":"181:3",
 		"flags":1,
 		"ident":"VectorUI",
 		"kind":"class",
@@ -443,21 +443,36 @@
 				"srcpos":"123:18"
 			}
 		},{
-			"endpos":"145:0",
+			"endpos":"151:0",
 			"flags":1,
 			"ident":"AddToListForward",
 			"kind":"method",
 			"srcpos":"134:1",
 			"stmts":[{
+				"endpos":"137:0",
+				"kind":"block",
+				"srcpos":"136:2",
+				"stmts":[]
+			},{
+				"endpos":"141:0",
+				"kind":"block",
+				"srcpos":"140:2",
+				"stmts":[]
+			},{
 				"endpos":"143:0",
 				"kind":"block",
-				"srcpos":"138:2",
+				"srcpos":"142:2",
+				"stmts":[]
+			},{
+				"endpos":"149:0",
+				"kind":"block",
+				"srcpos":"144:2",
 				"stmts":[{
-					"endpos":"140:4",
+					"endpos":"146:4",
 					"flags":1,
 					"ident":"form",
 					"kind":"local",
-					"srcpos":"138:12"
+					"srcpos":"144:12"
 				}]
 			}],
 			"type":{
@@ -510,181 +525,181 @@
 				"srcpos":"134:24"
 			}
 		},{
-			"endpos":"174:0",
+			"endpos":"180:0",
 			"flags":1,
 			"ident":"InvertList",
 			"kind":"method",
-			"srcpos":"146:1",
+			"srcpos":"152:1",
 			"stmts":[{
-				"endpos":"148:33",
+				"endpos":"154:33",
 				"flags":1,
 				"ident":"item_c",
 				"init":{
-					"endpos":"148:33",
+					"endpos":"154:33",
 					"kind":"????Expr?????",
-					"srcpos":"148:31"
+					"srcpos":"154:31"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.Int",
-				"srcpos":"148:8",
+				"srcpos":"154:8",
 				"type":{
-					"endpos":"148:18",
+					"endpos":"154:18",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"148:15"
+					"srcpos":"154:15"
 				}
 			},{
-				"endpos":"155:0",
+				"endpos":"161:0",
 				"kind":"block",
-				"srcpos":"150:2",
+				"srcpos":"156:2",
 				"stmts":[]
 			},{
-				"endpos":"156:60",
+				"endpos":"162:60",
 				"flags":1,
 				"ident":"new_list",
 				"init":{
 					"args":[],
-					"endpos":"156:60",
+					"endpos":"162:60",
 					"kind":"newobject",
-					"srcpos":"156:38",
+					"srcpos":"162:38",
 					"type":{
 						"args":[{
-							"endpos":"156:59",
+							"endpos":"162:59",
 							"ident":"VectorUIForm",
 							"kind":"ident",
-							"srcpos":"156:47"
+							"srcpos":"162:47"
 						}],
-						"endpos":"156:60",
+						"endpos":"162:60",
 						"expr":{
-							"endpos":"156:46",
+							"endpos":"162:46",
 							"ident":"List",
 							"kind":"ident",
-							"srcpos":"156:42"
+							"srcpos":"162:42"
 						},
 						"kind":"generic",
-						"srcpos":"156:42"
+						"srcpos":"162:42"
 					}
 				},
 				"kind":"local",
 				"semtype":"std.collections.List<VectorSite.VectorUIForm>",
-				"srcpos":"156:8",
+				"srcpos":"162:8",
 				"type":{
 					"args":[{
-						"endpos":"156:34",
+						"endpos":"162:34",
 						"ident":"VectorUIForm",
 						"kind":"ident",
-						"srcpos":"156:22"
+						"srcpos":"162:22"
 					}],
-					"endpos":"156:35",
+					"endpos":"162:35",
 					"expr":{
-						"endpos":"156:21",
+						"endpos":"162:21",
 						"ident":"List",
 						"kind":"ident",
-						"srcpos":"156:17"
+						"srcpos":"162:17"
 					},
 					"kind":"generic",
-					"srcpos":"156:17"
+					"srcpos":"162:17"
 				}
 			},{
-				"endpos":"158:45",
+				"endpos":"164:45",
 				"flags":1,
 				"ident":"items",
 				"init":{
-					"endpos":"158:45",
+					"endpos":"164:45",
 					"kind":"????Expr?????",
-					"srcpos":"158:43"
+					"srcpos":"164:43"
 				},
 				"kind":"local",
 				"semtype":"VectorSite.VectorUIForm[]",
-				"srcpos":"158:8",
+				"srcpos":"164:8",
 				"type":{
-					"endpos":"158:28",
+					"endpos":"164:28",
 					"kind":"arraytype",
 					"rank":1,
-					"srcpos":"158:14",
+					"srcpos":"164:14",
 					"type":{
-						"endpos":"158:26",
+						"endpos":"164:26",
 						"ident":"VectorUIForm",
 						"kind":"ident",
-						"srcpos":"158:14"
+						"srcpos":"164:14"
 					}
 				}
 			},{
-				"endpos":"169:0",
+				"endpos":"175:0",
 				"kind":"block",
-				"srcpos":"160:2",
+				"srcpos":"166:2",
 				"stmts":[{
-					"endpos":"162:3",
+					"endpos":"168:3",
 					"flags":1,
 					"ident":"i",
 					"kind":"local",
-					"srcpos":"160:12"
+					"srcpos":"166:12"
 				},{
-					"endpos":"162:37",
+					"endpos":"168:37",
 					"flags":1,
 					"ident":"item",
 					"init":{
-						"endpos":"162:37",
+						"endpos":"168:37",
 						"kind":"????Expr?????",
-						"srcpos":"162:34"
+						"srcpos":"168:34"
 					},
 					"kind":"local",
 					"semtype":"VectorSite.VectorUIForm",
-					"srcpos":"162:9",
+					"srcpos":"168:9",
 					"type":{
-						"endpos":"162:26",
+						"endpos":"168:26",
 						"ident":"VectorUIForm",
 						"kind":"ident",
-						"srcpos":"162:14"
+						"srcpos":"168:14"
 					}
 				}]
 			}],
 			"type":{
-				"endpos":"146:62",
+				"endpos":"152:62",
 				"kind":"functype",
 				"params":[{
-					"endpos":"146:61",
+					"endpos":"152:61",
 					"flags":1,
 					"ident":"list",
 					"kind":"param",
 					"semtype":"std.collections.List<VectorSite.VectorUIForm>",
-					"srcpos":"146:38",
+					"srcpos":"152:38",
 					"type":{
 						"args":[{
-							"endpos":"146:60",
+							"endpos":"152:60",
 							"ident":"VectorUIForm",
 							"kind":"ident",
-							"srcpos":"146:48"
+							"srcpos":"152:48"
 						}],
-						"endpos":"146:61",
+						"endpos":"152:61",
 						"expr":{
-							"endpos":"146:47",
+							"endpos":"152:47",
 							"ident":"List",
 							"kind":"ident",
-							"srcpos":"146:43"
+							"srcpos":"152:43"
 						},
 						"kind":"generic",
-						"srcpos":"146:43"
+						"srcpos":"152:43"
 					}
 				}],
 				"retType":{
 					"args":[{
-						"endpos":"146:36",
+						"endpos":"152:36",
 						"ident":"VectorUIForm",
 						"kind":"ident",
-						"srcpos":"146:24"
+						"srcpos":"152:24"
 					}],
-					"endpos":"146:37",
+					"endpos":"152:37",
 					"expr":{
-						"endpos":"146:23",
+						"endpos":"152:23",
 						"ident":"List",
 						"kind":"ident",
-						"srcpos":"146:19"
+						"srcpos":"152:19"
 					},
 					"kind":"generic",
-					"srcpos":"146:19"
+					"srcpos":"152:19"
 				},
-				"srcpos":"146:19"
+				"srcpos":"152:19"
 			}
 		}],
 		"srcpos":"4:0"

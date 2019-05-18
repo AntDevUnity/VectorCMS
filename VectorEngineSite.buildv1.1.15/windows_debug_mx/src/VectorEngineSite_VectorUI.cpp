@@ -267,22 +267,22 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t_VectorSite_VectorUI::m_I
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("list",&l_list);
-  bbDBStmt(606216);
+  bbDBStmt(630792);
   bbInt l_item_0c=l_list->m_Count();
   bbDBLocal("item_c",&l_item_0c);
-  bbDBStmt(614402);
+  bbDBStmt(638978);
   if((l_item_0c==bbInt(0))){
     bbDBBlock db_blk;
-    bbDBStmt(622595);
+    bbDBStmt(647171);
     return l_list;
   }
-  bbDBStmt(638984);
+  bbDBStmt(663560);
   f0.l_new_0list=bbGCNew<t_std_collections_List_1Tt_VectorSite_VectorUIForm_2>();
   bbDBLocal("new_list",&f0.l_new_0list);
-  bbDBStmt(647176);
+  bbDBStmt(671752);
   f0.l_items=l_list->m_ToArray();
   bbDBLocal("items",&f0.l_items);
-  bbDBStmt(655362);
+  bbDBStmt(679938);
   {
     bbDBLoop db_loop;
     bbInt l_i=(l_item_0c-1);
@@ -295,27 +295,48 @@ t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t_VectorSite_VectorUI::m_I
         }
       }f2{};
       bbDBBlock db_blk;
-      bbDBStmt(663561);
+      bbDBStmt(688137);
       f2.l_item=f0.l_items[l_i].get();
       bbDBLocal("item",&f2.l_item);
-      bbDBStmt(675843);
+      bbDBStmt(700419);
       f0.l_new_0list->m_Add(f2.l_item);
     }
   }
-  bbDBStmt(700418);
+  bbDBStmt(724994);
   return f0.l_new_0list;
 }
 
 void t_VectorSite_VectorUI::m_AddToListForward(t_VectorSite_VectorUIForm* l_ui,t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list){
   bbDBAssertSelf(this);
+  struct f0_t : public bbGCFrame{
+    t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t0{};
+    void gcMark(){
+      bbGCMark(t0);
+    }
+  }f0{};
   bbDBFrame db_f{"AddToListForward:Void(ui:VectorSite.VectorUIForm,list:std.collections.List<VectorSite.VectorUIForm>)","D:/Git/VectorCMS/VectorUI.monkey2"};
   t_VectorSite_VectorUI*self=this;
   bbDBLocal("Self",&self);
   bbDBLocal("ui",&l_ui);
   bbDBLocal("list",&l_list);
   bbDBStmt(557058);
-  l_list->m_Add(l_ui);
+  if((l_ui==((t_VectorSite_VectorUIForm*)0))){
+    bbDBBlock db_blk;
+    return;
+  }
   bbDBStmt(565250);
+  l_list->m_Add(l_ui);
+  bbDBStmt(573442);
+  if((l_ui->m_Sub.get()==((t_std_collections_List_1Tt_VectorSite_VectorUIForm_2*)0))){
+    bbDBBlock db_blk;
+    return;
+  }
+  bbDBStmt(581634);
+  if(((f0.t0=l_ui->m_Sub.get())->m_Count()==bbInt(0))){
+    bbDBBlock db_blk;
+    return;
+  }
+  bbDBStmt(589826);
   {
     struct f1_t : public bbGCFrame{
       t_std_collections_List_1Tt_VectorSite_VectorUIForm_2_Iterator l_0{};
@@ -338,7 +359,7 @@ void t_VectorSite_VectorUI::m_AddToListForward(t_VectorSite_VectorUIForm* l_ui,t
       bbDBBlock db_blk;
       f2.l_form=f1.l_0.m_Current();
       bbDBLocal("form",&f2.l_form);
-      bbDBStmt(573444);
+      bbDBStmt(598020);
       this->m_AddToListForward(f2.l_form,l_list);
     }
   }

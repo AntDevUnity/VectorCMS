@@ -1,764 +1,764 @@
 {
-	"endpos":"143:0",
+	"endpos":"145:0",
 	"flags":0,
 	"ident":"VectorEngineSite_VectorSite",
-	"imports":["<std.monkey2>","<mojo.monkey2>","VectorObject.monkey2","VectorUIForm.monkey2","VectorUI.monkey2","Forms/PanelForm.monkey2","Forms/LabelForm.monkey2","Forms/ButtonForm.monkey2","data/"],
+	"imports":["<std.monkey2>","<mojo.monkey2>","VectorObject.monkey2","VectorUIForm.monkey2","VectorUI.monkey2","Forms/PanelForm.monkey2","Forms/LabelForm.monkey2","Forms/ButtonForm.monkey2","data/","VectorPage.monkey2","Pages/LoginPage.monkey2"],
 	"kind":"file",
 	"members":[{
-		"endpos":"143:0",
+		"endpos":"145:0",
 		"flags":1,
 		"ident":"VectorSite",
 		"kind":"class",
 		"members":[{
-			"endpos":"21:28",
+			"endpos":"23:28",
 			"flags":1,
 			"ident":"Settings",
 			"kind":"field",
 			"semtype":"VectorSite.VectorUIForm",
-			"srcpos":"21:7",
+			"srcpos":"23:7",
 			"type":{
-				"endpos":"21:28",
+				"endpos":"23:28",
 				"ident":"VectorUIForm",
 				"kind":"ident",
-				"srcpos":"21:16"
+				"srcpos":"23:16"
 			}
 		},{
-			"endpos":"23:18",
+			"endpos":"25:18",
 			"flags":1,
 			"ident":"UI",
 			"kind":"field",
 			"semtype":"VectorSite.VectorUI",
-			"srcpos":"23:7",
+			"srcpos":"25:7",
 			"type":{
-				"endpos":"23:18",
+				"endpos":"25:18",
 				"ident":"VectorUI",
 				"kind":"ident",
-				"srcpos":"23:10"
+				"srcpos":"25:10"
 			}
 		},{
-			"endpos":"25:17",
+			"endpos":"27:17",
 			"flags":1,
 			"ident":"CC",
 			"kind":"global",
 			"semtype":"mojo.graphics.Canvas",
-			"srcpos":"25:8",
+			"srcpos":"27:8",
 			"type":{
-				"endpos":"25:17",
+				"endpos":"27:17",
 				"ident":"Canvas",
 				"kind":"ident",
-				"srcpos":"25:11"
+				"srcpos":"27:11"
 			}
 		},{
-			"endpos":"38:0",
+			"endpos":"40:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
-			"srcpos":"27:1",
+			"srcpos":"29:1",
 			"stmts":[],
 			"type":{
-				"endpos":"27:110",
+				"endpos":"29:110",
 				"kind":"functype",
 				"params":[{
-					"endpos":"27:38",
+					"endpos":"29:38",
 					"flags":1,
 					"ident":"title",
 					"init":{
-						"endpos":"27:38",
+						"endpos":"29:38",
 						"kind":"literal",
-						"srcpos":"27:26",
+						"srcpos":"29:26",
 						"toke":"\"VectorSite\""
 					},
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"27:13",
+					"srcpos":"29:13",
 					"type":{
-						"endpos":"27:25",
+						"endpos":"29:25",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"27:19"
+						"srcpos":"29:19"
 					}
 				},{
-					"endpos":"27:53",
+					"endpos":"29:53",
 					"flags":1,
 					"ident":"width",
 					"init":{
-						"endpos":"27:53",
+						"endpos":"29:53",
 						"kind":"literal",
-						"srcpos":"27:49",
+						"srcpos":"29:49",
 						"toke":"1024"
 					},
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"27:39",
+					"srcpos":"29:39",
 					"type":{
-						"endpos":"27:48",
+						"endpos":"29:48",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"27:45"
+						"srcpos":"29:45"
 					}
 				},{
-					"endpos":"27:68",
+					"endpos":"29:68",
 					"flags":1,
 					"ident":"height",
 					"init":{
-						"endpos":"27:68",
+						"endpos":"29:68",
 						"kind":"literal",
-						"srcpos":"27:65",
+						"srcpos":"29:65",
 						"toke":"768"
 					},
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"27:54",
+					"srcpos":"29:54",
 					"type":{
-						"endpos":"27:64",
+						"endpos":"29:64",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"27:61"
+						"srcpos":"29:61"
 					}
 				},{
-					"endpos":"27:108",
+					"endpos":"29:108",
 					"flags":1,
 					"ident":"flags",
 					"init":{
-						"endpos":"27:108",
+						"endpos":"29:108",
 						"expr":{
-							"endpos":"27:87",
+							"endpos":"29:87",
 							"ident":"WindowFlags",
 							"kind":"ident",
-							"srcpos":"27:87"
+							"srcpos":"29:87"
 						},
 						"ident":"Resizable",
 						"kind":"member",
-						"srcpos":"27:98"
+						"srcpos":"29:98"
 					},
 					"kind":"param",
 					"semtype":"mojo.app.WindowFlags",
-					"srcpos":"27:69",
+					"srcpos":"29:69",
 					"type":{
-						"endpos":"27:86",
+						"endpos":"29:86",
 						"ident":"WindowFlags",
 						"kind":"ident",
-						"srcpos":"27:75"
+						"srcpos":"29:75"
 					}
 				}],
 				"retType":{
-					"endpos":"27:11",
+					"endpos":"29:11",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"27:11"
+					"srcpos":"29:11"
 				},
-				"srcpos":"27:11"
+				"srcpos":"29:11"
 			}
 		},{
-			"endpos":"44:0",
+			"endpos":"46:0",
 			"flags":1,
 			"ident":"InitSite",
 			"kind":"method",
-			"srcpos":"39:1",
+			"srcpos":"41:1",
 			"stmts":[],
 			"type":{
-				"endpos":"39:18",
+				"endpos":"41:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"39:16",
+					"endpos":"41:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"39:16"
+					"srcpos":"41:16"
 				},
-				"srcpos":"39:16"
+				"srcpos":"41:16"
 			}
 		},{
-			"endpos":"47:20",
+			"endpos":"49:20",
 			"flags":1,
 			"ident":"VirRes",
 			"kind":"global",
 			"semtype":"std.geom.Vec2f",
-			"srcpos":"47:8",
+			"srcpos":"49:8",
 			"type":{
-				"endpos":"47:20",
+				"endpos":"49:20",
 				"ident":"Vec2f",
 				"kind":"ident",
-				"srcpos":"47:15"
+				"srcpos":"49:15"
 			}
 		},{
-			"endpos":"49:18",
+			"endpos":"51:18",
 			"flags":1,
 			"ident":"Can",
 			"kind":"global",
 			"semtype":"mojo.graphics.Canvas",
-			"srcpos":"49:8",
+			"srcpos":"51:8",
 			"type":{
-				"endpos":"49:18",
+				"endpos":"51:18",
 				"ident":"Canvas",
 				"kind":"ident",
-				"srcpos":"49:12"
+				"srcpos":"51:12"
 			}
 		},{
-			"endpos":"51:22",
+			"endpos":"53:22",
 			"flags":1,
 			"ident":"ClearCol",
 			"kind":"global",
 			"semtype":"std.graphics.Color",
-			"srcpos":"51:8",
+			"srcpos":"53:8",
 			"type":{
-				"endpos":"51:22",
+				"endpos":"53:22",
 				"ident":"Color",
 				"kind":"ident",
-				"srcpos":"51:17"
+				"srcpos":"53:17"
 			}
 		},{
-			"endpos":"62:0",
+			"endpos":"64:0",
 			"flags":1,
 			"ident":"Rect",
 			"kind":"function",
-			"srcpos":"53:1",
+			"srcpos":"55:1",
 			"stmts":[{
-				"endpos":"55:37",
+				"endpos":"57:37",
 				"flags":1,
 				"ident":"rr",
 				"init":{
 					"args":[{
-						"endpos":"55:29",
+						"endpos":"57:29",
 						"ident":"x",
 						"kind":"ident",
-						"srcpos":"55:29"
+						"srcpos":"57:29"
 					},{
-						"endpos":"55:31",
+						"endpos":"57:31",
 						"ident":"y",
 						"kind":"ident",
-						"srcpos":"55:31"
+						"srcpos":"57:31"
 					},{
-						"endpos":"55:33",
+						"endpos":"57:33",
 						"ident":"w",
 						"kind":"ident",
-						"srcpos":"55:33"
+						"srcpos":"57:33"
 					},{
-						"endpos":"55:35",
+						"endpos":"57:35",
 						"ident":"h",
 						"kind":"ident",
-						"srcpos":"55:35"
+						"srcpos":"57:35"
 					}],
-					"endpos":"55:37",
+					"endpos":"57:37",
 					"kind":"newobject",
-					"srcpos":"55:19",
+					"srcpos":"57:19",
 					"type":{
-						"endpos":"55:28",
+						"endpos":"57:28",
 						"ident":"Rectf",
 						"kind":"ident",
-						"srcpos":"55:23"
+						"srcpos":"57:23"
 					}
 				},
 				"kind":"local",
 				"semtype":"std.geom.Rectf",
-				"srcpos":"55:8",
+				"srcpos":"57:8",
 				"type":{
-					"endpos":"55:16",
+					"endpos":"57:16",
 					"ident":"Rectf",
 					"kind":"ident",
-					"srcpos":"55:11"
+					"srcpos":"57:11"
 				}
 			}],
 			"type":{
-				"endpos":"53:49",
+				"endpos":"55:49",
 				"kind":"functype",
 				"params":[{
-					"endpos":"53:20",
+					"endpos":"55:20",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"53:15",
+					"srcpos":"55:15",
 					"type":{
-						"endpos":"53:20",
+						"endpos":"55:20",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"53:17"
+						"srcpos":"55:17"
 					}
 				},{
-					"endpos":"53:26",
+					"endpos":"55:26",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"53:21",
+					"srcpos":"55:21",
 					"type":{
-						"endpos":"53:26",
+						"endpos":"55:26",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"53:23"
+						"srcpos":"55:23"
 					}
 				},{
-					"endpos":"53:32",
+					"endpos":"55:32",
 					"flags":1,
 					"ident":"w",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"53:27",
+					"srcpos":"55:27",
 					"type":{
-						"endpos":"53:32",
+						"endpos":"55:32",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"53:29"
+						"srcpos":"55:29"
 					}
 				},{
-					"endpos":"53:38",
+					"endpos":"55:38",
 					"flags":1,
 					"ident":"h",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"53:33",
+					"srcpos":"55:33",
 					"type":{
-						"endpos":"53:38",
+						"endpos":"55:38",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"53:35"
+						"srcpos":"55:35"
 					}
 				},{
-					"endpos":"53:48",
+					"endpos":"55:48",
 					"flags":1,
 					"ident":"col",
 					"kind":"param",
 					"semtype":"std.graphics.Color",
-					"srcpos":"53:39",
+					"srcpos":"55:39",
 					"type":{
-						"endpos":"53:48",
+						"endpos":"55:48",
 						"ident":"Color",
 						"kind":"ident",
-						"srcpos":"53:43"
+						"srcpos":"55:43"
 					}
 				}],
 				"retType":{
-					"endpos":"53:14",
+					"endpos":"55:14",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"53:14"
+					"srcpos":"55:14"
 				},
-				"srcpos":"53:14"
+				"srcpos":"55:14"
 			}
 		},{
-			"endpos":"71:0",
+			"endpos":"73:0",
 			"flags":1,
 			"ident":"DrawText",
 			"kind":"function",
-			"srcpos":"63:1",
+			"srcpos":"65:1",
 			"stmts":[],
 			"type":{
-				"endpos":"63:53",
+				"endpos":"65:53",
 				"kind":"functype",
 				"params":[{
-					"endpos":"63:30",
+					"endpos":"65:30",
 					"flags":1,
 					"ident":"text",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"63:19",
+					"srcpos":"65:19",
 					"type":{
-						"endpos":"63:30",
+						"endpos":"65:30",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"63:24"
+						"srcpos":"65:24"
 					}
 				},{
-					"endpos":"63:36",
+					"endpos":"65:36",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"63:31",
+					"srcpos":"65:31",
 					"type":{
-						"endpos":"63:36",
+						"endpos":"65:36",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"63:33"
+						"srcpos":"65:33"
 					}
 				},{
-					"endpos":"63:42",
+					"endpos":"65:42",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"63:37",
+					"srcpos":"65:37",
 					"type":{
-						"endpos":"63:42",
+						"endpos":"65:42",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"63:39"
+						"srcpos":"65:39"
 					}
 				},{
-					"endpos":"63:52",
+					"endpos":"65:52",
 					"flags":1,
 					"ident":"col",
 					"kind":"param",
 					"semtype":"std.graphics.Color",
-					"srcpos":"63:43",
+					"srcpos":"65:43",
 					"type":{
-						"endpos":"63:52",
+						"endpos":"65:52",
 						"ident":"Color",
 						"kind":"ident",
-						"srcpos":"63:47"
+						"srcpos":"65:47"
 					}
 				}],
 				"retType":{
-					"endpos":"63:18",
+					"endpos":"65:18",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"63:18"
+					"srcpos":"65:18"
 				},
-				"srcpos":"63:18"
+				"srcpos":"65:18"
 			}
 		},{
-			"endpos":"78:0",
+			"endpos":"80:0",
 			"flags":1,
 			"ident":"TextW",
 			"kind":"function",
-			"srcpos":"72:1",
+			"srcpos":"74:1",
 			"stmts":[],
 			"type":{
-				"endpos":"72:32",
+				"endpos":"74:32",
 				"kind":"functype",
 				"params":[{
-					"endpos":"72:31",
+					"endpos":"74:31",
 					"flags":1,
 					"ident":"text",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"72:20",
+					"srcpos":"74:20",
 					"type":{
-						"endpos":"72:31",
+						"endpos":"74:31",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"72:25"
+						"srcpos":"74:25"
 					}
 				}],
 				"retType":{
-					"endpos":"72:19",
+					"endpos":"74:19",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"72:16"
+					"srcpos":"74:16"
 				},
-				"srcpos":"72:16"
+				"srcpos":"74:16"
 			}
 		},{
-			"endpos":"84:0",
+			"endpos":"86:0",
 			"flags":1,
 			"ident":"TextH",
 			"kind":"function",
-			"srcpos":"79:1",
+			"srcpos":"81:1",
 			"stmts":[],
 			"type":{
-				"endpos":"79:32",
+				"endpos":"81:32",
 				"kind":"functype",
 				"params":[{
-					"endpos":"79:31",
+					"endpos":"81:31",
 					"flags":1,
 					"ident":"text",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"79:20",
+					"srcpos":"81:20",
 					"type":{
-						"endpos":"79:31",
+						"endpos":"81:31",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"79:25"
+						"srcpos":"81:25"
 					}
 				}],
 				"retType":{
-					"endpos":"79:19",
+					"endpos":"81:19",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"79:16"
+					"srcpos":"81:16"
 				},
-				"srcpos":"79:16"
+				"srcpos":"81:16"
 			}
 		},{
-			"endpos":"91:0",
+			"endpos":"93:0",
 			"flags":1,
 			"ident":"RectImg",
 			"kind":"function",
-			"srcpos":"85:1",
+			"srcpos":"87:1",
 			"stmts":[],
 			"type":{
-				"endpos":"85:62",
+				"endpos":"87:62",
 				"kind":"functype",
 				"params":[{
-					"endpos":"85:27",
+					"endpos":"87:27",
 					"flags":1,
 					"ident":"img",
 					"kind":"param",
 					"semtype":"mojo.graphics.Image",
-					"srcpos":"85:18",
+					"srcpos":"87:18",
 					"type":{
-						"endpos":"85:27",
+						"endpos":"87:27",
 						"ident":"Image",
 						"kind":"ident",
-						"srcpos":"85:22"
+						"srcpos":"87:22"
 					}
 				},{
-					"endpos":"85:33",
+					"endpos":"87:33",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"85:28",
+					"srcpos":"87:28",
 					"type":{
-						"endpos":"85:33",
+						"endpos":"87:33",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"85:30"
+						"srcpos":"87:30"
 					}
 				},{
-					"endpos":"85:39",
+					"endpos":"87:39",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"85:34",
+					"srcpos":"87:34",
 					"type":{
-						"endpos":"85:39",
+						"endpos":"87:39",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"85:36"
+						"srcpos":"87:36"
 					}
 				},{
-					"endpos":"85:45",
+					"endpos":"87:45",
 					"flags":1,
 					"ident":"w",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"85:40",
+					"srcpos":"87:40",
 					"type":{
-						"endpos":"85:45",
+						"endpos":"87:45",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"85:42"
+						"srcpos":"87:42"
 					}
 				},{
-					"endpos":"85:51",
+					"endpos":"87:51",
 					"flags":1,
 					"ident":"h",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"85:46",
+					"srcpos":"87:46",
 					"type":{
-						"endpos":"85:51",
+						"endpos":"87:51",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"85:48"
+						"srcpos":"87:48"
 					}
 				},{
-					"endpos":"85:61",
+					"endpos":"87:61",
 					"flags":1,
 					"ident":"col",
 					"kind":"param",
 					"semtype":"std.graphics.Color",
-					"srcpos":"85:52",
+					"srcpos":"87:52",
 					"type":{
-						"endpos":"85:61",
+						"endpos":"87:61",
 						"ident":"Color",
 						"kind":"ident",
-						"srcpos":"85:56"
+						"srcpos":"87:56"
 					}
 				}],
 				"retType":{
-					"endpos":"85:17",
+					"endpos":"87:17",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"85:17"
+					"srcpos":"87:17"
 				},
-				"srcpos":"85:17"
+				"srcpos":"87:17"
 			}
 		},{
-			"endpos":"99:0",
+			"endpos":"101:0",
 			"flags":1,
 			"ident":"BeginRender",
 			"kind":"method",
-			"srcpos":"92:1",
+			"srcpos":"94:1",
 			"stmts":[],
 			"type":{
-				"endpos":"92:21",
+				"endpos":"94:21",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"92:19",
+					"endpos":"94:19",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"92:19"
+					"srcpos":"94:19"
 				},
-				"srcpos":"92:19"
+				"srcpos":"94:19"
 			}
 		},{
-			"endpos":"105:0",
+			"endpos":"107:0",
 			"flags":1,
 			"ident":"UpdateUI",
 			"kind":"method",
-			"srcpos":"100:1",
+			"srcpos":"102:1",
 			"stmts":[],
 			"type":{
-				"endpos":"100:18",
+				"endpos":"102:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"100:16",
+					"endpos":"102:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"100:16"
+					"srcpos":"102:16"
 				},
-				"srcpos":"100:16"
+				"srcpos":"102:16"
 			}
 		},{
-			"endpos":"111:0",
+			"endpos":"113:0",
 			"flags":1,
 			"ident":"RenderUI",
 			"kind":"method",
-			"srcpos":"106:1",
+			"srcpos":"108:1",
 			"stmts":[],
 			"type":{
-				"endpos":"106:18",
+				"endpos":"108:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"106:16",
+					"endpos":"108:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"106:16"
+					"srcpos":"108:16"
 				},
-				"srcpos":"106:16"
+				"srcpos":"108:16"
 			}
 		},{
-			"endpos":"117:0",
+			"endpos":"119:0",
 			"flags":1,
 			"ident":"EndRender",
 			"kind":"method",
-			"srcpos":"112:1",
+			"srcpos":"114:1",
 			"stmts":[],
 			"type":{
-				"endpos":"112:19",
+				"endpos":"114:19",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"112:17",
+					"endpos":"114:17",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"112:17"
+					"srcpos":"114:17"
 				},
-				"srcpos":"112:17"
+				"srcpos":"114:17"
 			}
 		},{
-			"endpos":"123:0",
+			"endpos":"125:0",
 			"flags":1,
 			"ident":"DrawString",
 			"kind":"method",
-			"srcpos":"118:1",
+			"srcpos":"120:1",
 			"stmts":[],
 			"type":{
-				"endpos":"118:42",
+				"endpos":"120:42",
 				"kind":"functype",
 				"params":[{
-					"endpos":"118:29",
+					"endpos":"120:29",
 					"flags":1,
 					"ident":"txt",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"118:19",
+					"srcpos":"120:19",
 					"type":{
-						"endpos":"118:29",
+						"endpos":"120:29",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"118:23"
+						"srcpos":"120:23"
 					}
 				},{
-					"endpos":"118:35",
+					"endpos":"120:35",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"118:30",
+					"srcpos":"120:30",
 					"type":{
-						"endpos":"118:35",
+						"endpos":"120:35",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"118:32"
+						"srcpos":"120:32"
 					}
 				},{
-					"endpos":"118:41",
+					"endpos":"120:41",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"118:36",
+					"srcpos":"120:36",
 					"type":{
-						"endpos":"118:41",
+						"endpos":"120:41",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"118:38"
+						"srcpos":"120:38"
 					}
 				}],
 				"retType":{
-					"endpos":"118:18",
+					"endpos":"120:18",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"118:18"
+					"srcpos":"120:18"
 				},
-				"srcpos":"118:18"
+				"srcpos":"120:18"
 			}
 		},{
-			"endpos":"127:0",
+			"endpos":"129:0",
 			"flags":257,
 			"ident":"DoRender",
 			"kind":"method",
-			"srcpos":"124:1",
+			"srcpos":"126:1",
 			"type":{
-				"endpos":"124:18",
+				"endpos":"126:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"124:16",
+					"endpos":"126:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"124:16"
+					"srcpos":"126:16"
 				},
-				"srcpos":"124:16"
+				"srcpos":"126:16"
 			}
 		},{
-			"endpos":"141:0",
+			"endpos":"143:0",
 			"flags":513,
 			"ident":"OnRender",
 			"kind":"method",
-			"srcpos":"128:1",
+			"srcpos":"130:1",
 			"stmts":[],
 			"type":{
-				"endpos":"128:31",
+				"endpos":"130:31",
 				"kind":"functype",
 				"params":[{
-					"endpos":"128:30",
+					"endpos":"130:30",
 					"flags":1,
 					"ident":"canvas",
 					"kind":"param",
 					"semtype":"mojo.graphics.Canvas",
-					"srcpos":"128:17",
+					"srcpos":"130:17",
 					"type":{
-						"endpos":"128:30",
+						"endpos":"130:30",
 						"ident":"Canvas",
 						"kind":"ident",
-						"srcpos":"128:24"
+						"srcpos":"130:24"
 					}
 				}],
 				"retType":{
-					"endpos":"128:16",
+					"endpos":"130:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"128:16"
+					"srcpos":"130:16"
 				},
-				"srcpos":"128:16"
+				"srcpos":"130:16"
 			}
 		}],
-		"srcpos":"19:0",
+		"srcpos":"21:0",
 		"superType":{
-			"endpos":"19:31",
+			"endpos":"21:31",
 			"ident":"Window",
 			"kind":"ident",
-			"srcpos":"19:25"
+			"srcpos":"21:25"
 		}
 	}],
 	"namespace":"VectorSite",

@@ -12,6 +12,8 @@ Namespace VectorSite
 #Import "Forms/LabelForm"
 #Import "Forms/ButtonForm"
 #Import "data/"
+#Import "VectorPage"
+#Import "Pages/LoginPage"
 
 Using std..
 Using mojo..
