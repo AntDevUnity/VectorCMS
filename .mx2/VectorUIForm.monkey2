@@ -16,6 +16,7 @@ Class VectorUIForm Extends VectorObject
 	Field BackImg:Image
 	Field Text:String 
 	Field TextCol:Color = New Color(1,1,1,1)
+	Field OnClick:Bool(b:Int)
 	
 	Method Add:VectorUIForm(add:VectorUIForm)
 		
@@ -89,7 +90,7 @@ Class VectorUIForm Extends VectorObject
 		
 	End 
 	
-	Method OnMouseMove(x:Int,y:Int,dx:Int,dy:Int)
+	Method OnMouseMove(x:Int,y:Int,dx:Int,dy:Int) Virtual
 	
 	End 
 	

@@ -20,9 +20,19 @@ Class VectorEngineSite Extends VectorSite
 		Local but2:ButtonForm = New ButtonForm(220,30,180,35,"Starlit Empire")
 		Local but3:ButtonForm = New ButtonForm(420,30,180,35,"Forums")
 		
+		but1.OnClick = But1
+		
 		test.Add(but1)
 		test.Add(but2)
 		test.Add(but3)
+		
+	End 
+	
+	Function But1:Bool(b:Int)
+		
+		Print("Button 1!")
+		
+		Return True
 		
 	End 
 		

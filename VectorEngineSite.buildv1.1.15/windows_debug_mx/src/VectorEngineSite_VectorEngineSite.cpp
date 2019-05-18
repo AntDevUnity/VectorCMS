@@ -10,6 +10,15 @@
 
 BB_ENUM(t_mojo_app_WindowFlags)
 
+bbBool g_VectorSite_VectorEngineSite_But1(bbInt l_b){
+  bbDBFrame db_f{"But1:monkey.types.Bool(b:monkey.types.Int)","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
+  bbDBLocal("b",&l_b);
+  bbDBStmt(135170);
+  bb_print(bbString(L"Button 1!",9));
+  bbDBStmt(143362);
+  return true;
+}
+
 void bbMain(){
   static bool done;
   if(done) return;
@@ -36,11 +45,11 @@ void bbMain(){
     }
   }f0{};
   bbDBFrame db_f{"Main:Void()","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
-  bbDBStmt(200705);
+  bbDBStmt(241665);
   bbGCNew<t_mojo_app_AppInstance>();
-  bbDBStmt(208897);
+  bbDBStmt(249857);
   bbGCNew<t_VectorSite_VectorEngineSite>();
-  bbDBStmt(217089);
+  bbDBStmt(258049);
   (f0.t0=g_mojo_app_App.get())->m_Run();
 }
 
@@ -84,10 +93,12 @@ t_VectorSite_VectorEngineSite::t_VectorSite_VectorEngineSite():t_VectorSite_Vect
   f0.l_but3=bbGCNew<t_VectorSite_ButtonForm>(420,30,180,35,bbString(L"Forums",6));
   bbDBLocal("but3",&f0.l_but3);
   bbDBStmt(94210);
-  f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but1)));
-  bbDBStmt(98306);
-  f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but2)));
+  f0.l_but1->m_OnClick=g_VectorSite_VectorEngineSite_But1;
   bbDBStmt(102402);
+  f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but1)));
+  bbDBStmt(106498);
+  f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but2)));
+  bbDBStmt(110594);
   f0.l_test->m_Add(((t_VectorSite_VectorUIForm*)(f0.l_but3)));
 }
 t_VectorSite_VectorEngineSite::~t_VectorSite_VectorEngineSite(){
@@ -97,15 +108,15 @@ void t_VectorSite_VectorEngineSite::m_DoRender(){
   bbDBFrame db_f{"DoRender:Void()","D:/Git/VectorCMS/VectorEngineSite.monkey2"};
   t_VectorSite_VectorEngineSite*self=this;
   bbDBLocal("Self",&self);
-  bbDBStmt(131074);
+  bbDBStmt(172034);
   this->m_UpdateUI();
-  bbDBStmt(139266);
+  bbDBStmt(180226);
   this->m_BeginRender();
-  bbDBStmt(147458);
+  bbDBStmt(188418);
   this->m_RenderUI();
-  bbDBStmt(155650);
+  bbDBStmt(196610);
   this->m_EndRender();
-  bbDBStmt(163842);
+  bbDBStmt(204802);
   this->m_DrawString(bbString(L"Hey!",4),5,5);
 }
 bbString bbDBType(t_VectorSite_VectorEngineSite**){

@@ -30,12 +30,31 @@ Class ButtonForm Extends VectorUIForm
 	Method OnMouseDown(b:Button) Override 
 		
 		ButCol = New Color(1,0,0,1)
+		Down = True
+		
+		If OnClick <> Null
+			
+			OnClick(0)
+			
+		End 
 		
 	End 
+	
+	Field Down:Bool = False
 	
 	Method OnMouseUp(b:Button) Override 
 		
 		ButCol = New Color(0.8,0.8,0.8,1)
+		Down = False
+		
+		
+	End 
+	
+	Method OnMouseMove( x:Int,y:Int,dx:Int,dy:Int ) Override
+		
+		If Not Down Return
+		
+
 		
 	End 
 	

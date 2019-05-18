@@ -1,16 +1,16 @@
 {
-	"endpos":"56:0",
+	"endpos":"66:0",
 	"flags":0,
 	"ident":"VectorEngineSite_VectorEngineSite",
 	"imports":["VectorSite.monkey2"],
 	"kind":"file",
 	"members":[{
-		"endpos":"46:0",
+		"endpos":"56:0",
 		"flags":1,
 		"ident":"VectorEngineSite",
 		"kind":"class",
 		"members":[{
-			"endpos":"28:0",
+			"endpos":"30:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
@@ -219,23 +219,55 @@
 				"srcpos":"9:11"
 			}
 		},{
-			"endpos":"44:0",
+			"endpos":"38:0",
+			"flags":1,
+			"ident":"But1",
+			"kind":"function",
+			"srcpos":"31:1",
+			"stmts":[],
+			"type":{
+				"endpos":"31:26",
+				"kind":"functype",
+				"params":[{
+					"endpos":"31:25",
+					"flags":1,
+					"ident":"b",
+					"kind":"param",
+					"semtype":"monkey.types.Int",
+					"srcpos":"31:20",
+					"type":{
+						"endpos":"31:25",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"31:22"
+					}
+				}],
+				"retType":{
+					"endpos":"31:19",
+					"ident":"bool",
+					"kind":"ident",
+					"srcpos":"31:15"
+				},
+				"srcpos":"31:15"
+			}
+		},{
+			"endpos":"54:0",
 			"flags":513,
 			"ident":"DoRender",
 			"kind":"method",
-			"srcpos":"29:1",
+			"srcpos":"39:1",
 			"stmts":[],
 			"type":{
-				"endpos":"29:18",
+				"endpos":"39:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"29:16",
+					"endpos":"39:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"29:16"
+					"srcpos":"39:16"
 				},
-				"srcpos":"29:16"
+				"srcpos":"39:16"
 			}
 		}],
 		"srcpos":"7:0",
@@ -246,23 +278,23 @@
 			"srcpos":"7:31"
 		}
 	},{
-		"endpos":"56:0",
+		"endpos":"66:0",
 		"flags":1,
 		"ident":"Main",
 		"kind":"function",
-		"srcpos":"47:0",
+		"srcpos":"57:0",
 		"stmts":[],
 		"type":{
-			"endpos":"47:15",
+			"endpos":"57:15",
 			"kind":"functype",
 			"params":[],
 			"retType":{
-				"endpos":"47:13",
+				"endpos":"57:13",
 				"ident":"void",
 				"kind":"ident",
-				"srcpos":"47:13"
+				"srcpos":"57:13"
 			},
-			"srcpos":"47:13"
+			"srcpos":"57:13"
 		}
 	}],
 	"namespace":"VectorSite",

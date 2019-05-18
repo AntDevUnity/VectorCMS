@@ -16,6 +16,7 @@ struct t_VectorSite_ButtonForm : public t_VectorSite_VectorUIForm{
   const char *typeName()const{return "t_VectorSite_ButtonForm";}
 
   t_std_graphics_Color m_ButCol{};
+  bbBool m_Down{false};
 
   void init();
   void dbEmit();
@@ -24,6 +25,7 @@ struct t_VectorSite_ButtonForm : public t_VectorSite_VectorUIForm{
   ~t_VectorSite_ButtonForm();
 
   void m_OnMouseUp(t_VectorSite_Button l_b);
+  void m_OnMouseMove(bbInt l_x,bbInt l_y,bbInt l_dx,bbInt l_dy);
   void m_OnMouseLeave();
   void m_OnMouseEnter();
   void m_OnMouseDown(t_VectorSite_Button l_b);

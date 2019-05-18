@@ -8,6 +8,7 @@
 
 BB_CLASS(t_VectorSite_VectorEngineSite)
 
+bbBool g_VectorSite_VectorEngineSite_But1(bbInt l_b);
 void bbMain();
 
 struct t_VectorSite_VectorEngineSite : public t_VectorSite_VectorSite{
