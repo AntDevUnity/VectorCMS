@@ -76,6 +76,14 @@ Class VectorUIForm Extends VectorObject
 		
 	End 
 	
+	Method ShiftDown() Virtual
+		
+	End 
+	
+	Method ShiftUp() Virtual
+		
+	End 
+	
 	Method OnKeyDown(c:Int) Virtual
 		
 	End 

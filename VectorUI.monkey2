@@ -120,6 +120,15 @@ Class VectorUI
 				
 		If ActiveForm <> Null
 			
+			If Keyboard.Modifiers = Modifier.LeftShift
+				
+				ActiveForm.ShiftDown()
+				
+			Else
+				
+				ActiveForm.ShiftUp()
+				
+			End 
 			
 			While True
 				

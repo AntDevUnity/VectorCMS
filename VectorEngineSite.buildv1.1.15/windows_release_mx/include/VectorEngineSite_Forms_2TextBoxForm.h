@@ -21,10 +21,13 @@ struct t_VectorSite_TextBoxForm : public t_VectorSite_VectorUIForm{
   bbInt m_KeyNext{bbInt(0)};
   bbInt m_ClaretX{bbInt(0)};
   bbInt m_StartX{bbInt(0)};
+  bbBool m_Shift{false};
 
   t_VectorSite_TextBoxForm(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,bbString l_def);
   ~t_VectorSite_TextBoxForm();
 
+  void m_ShiftUp();
+  void m_ShiftDown();
   void m_ProcessKey(bbInt l_c);
   void m_OnKeyUp(bbInt l_c);
   void m_OnKeyDown(bbInt l_c);

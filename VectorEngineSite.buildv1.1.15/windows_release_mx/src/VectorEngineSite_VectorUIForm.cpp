@@ -41,6 +41,12 @@ bbInt t_VectorSite_VectorUIForm::m_TextH(bbString l_text){
   return g_VectorSite_VectorSite_TextH(this->m_Text);
 }
 
+void t_VectorSite_VectorUIForm::m_ShiftUp(){
+}
+
+void t_VectorSite_VectorUIForm::m_ShiftDown(){
+}
+
 void t_VectorSite_VectorUIForm::m_OnUpdate(){
 }
 

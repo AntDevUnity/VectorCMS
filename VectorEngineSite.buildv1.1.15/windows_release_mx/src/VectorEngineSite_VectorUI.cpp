@@ -8,6 +8,7 @@
 #include "std/std.buildv1.1.15/windows_release_mx/include/std_geom_2vec2.h"
 
 BB_ENUM(t_mojo_input_Key)
+BB_ENUM(t_mojo_input_Modifier)
 
 bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_ActiveForm;
 bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_OverForm;
@@ -146,6 +147,23 @@ void t_VectorSite_VectorUI::m_Update(){
     }
   }
   if((g_VectorSite_VectorUI_ActiveForm.get()!=((t_VectorSite_VectorUIForm*)0))){
+    if((g_mojo_input_Keyboard.get()->m_Modifiers()==t_mojo_input_Modifier(1))){
+      struct f2_t : public bbGCFrame{
+        t_VectorSite_VectorUIForm* t0{};
+        void gcMark(){
+          bbGCMark(t0);
+        }
+      }f2{};
+      (f2.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_ShiftDown();
+    }else{
+      struct f2_t : public bbGCFrame{
+        t_VectorSite_VectorUIForm* t0{};
+        void gcMark(){
+          bbGCMark(t0);
+        }
+      }f2{};
+      (f2.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_ShiftUp();
+    }
     while(true){
       bbInt l_c=g_mojo_input_Keyboard.get()->m_GetChar();
       if((l_c==bbInt(0))){

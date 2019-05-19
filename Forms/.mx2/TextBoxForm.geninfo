@@ -1,11 +1,11 @@
 {
-	"endpos":"115:3",
+	"endpos":"143:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2TextBoxForm",
 	"imports":["data/textbox1.png"],
 	"kind":"file",
 	"members":[{
-		"endpos":"115:3",
+		"endpos":"143:3",
 		"flags":1,
 		"ident":"TextBoxForm",
 		"kind":"class",
@@ -143,361 +143,446 @@
 				"srcpos":"13:14"
 			}
 		},{
-			"endpos":"26:0",
+			"endpos":"14:25",
+			"flags":1,
+			"ident":"Shift",
+			"init":{
+				"endpos":"14:25",
+				"kind":"literal",
+				"srcpos":"14:20",
+				"toke":"false"
+			},
+			"kind":"field",
+			"semtype":"monkey.types.Bool",
+			"srcpos":"14:7",
+			"type":{
+				"endpos":"14:17",
+				"ident":"bool",
+				"kind":"ident",
+				"srcpos":"14:13"
+			}
+		},{
+			"endpos":"27:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
-			"srcpos":"15:1",
+			"srcpos":"16:1",
 			"stmts":[],
 			"type":{
-				"endpos":"15:47",
+				"endpos":"16:47",
 				"kind":"functype",
 				"params":[{
-					"endpos":"15:17",
+					"endpos":"16:17",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"15:12",
+					"srcpos":"16:12",
 					"type":{
-						"endpos":"15:17",
+						"endpos":"16:17",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"15:14"
+						"srcpos":"16:14"
 					}
 				},{
-					"endpos":"15:23",
+					"endpos":"16:23",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"15:18",
+					"srcpos":"16:18",
 					"type":{
-						"endpos":"15:23",
+						"endpos":"16:23",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"15:20"
+						"srcpos":"16:20"
 					}
 				},{
-					"endpos":"15:29",
+					"endpos":"16:29",
 					"flags":1,
 					"ident":"w",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"15:24",
+					"srcpos":"16:24",
 					"type":{
-						"endpos":"15:29",
+						"endpos":"16:29",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"15:26"
+						"srcpos":"16:26"
 					}
 				},{
-					"endpos":"15:35",
+					"endpos":"16:35",
 					"flags":1,
 					"ident":"h",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"15:30",
+					"srcpos":"16:30",
 					"type":{
-						"endpos":"15:35",
+						"endpos":"16:35",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"15:32"
+						"srcpos":"16:32"
 					}
 				},{
-					"endpos":"15:46",
+					"endpos":"16:46",
 					"flags":1,
 					"ident":"def",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"15:36",
+					"srcpos":"16:36",
 					"type":{
-						"endpos":"15:46",
+						"endpos":"16:46",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"15:40"
+						"srcpos":"16:40"
 					}
 				}],
 				"retType":{
-					"endpos":"15:11",
+					"endpos":"16:11",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"15:11"
+					"srcpos":"16:11"
 				},
-				"srcpos":"15:11"
+				"srcpos":"16:11"
 			}
 		},{
-			"endpos":"35:0",
+			"endpos":"36:0",
 			"flags":513,
 			"ident":"Activate",
 			"kind":"method",
-			"srcpos":"27:1",
+			"srcpos":"28:1",
 			"stmts":[],
 			"type":{
-				"endpos":"27:18",
+				"endpos":"28:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"27:16",
+					"endpos":"28:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"27:16"
+					"srcpos":"28:16"
 				},
-				"srcpos":"27:16"
+				"srcpos":"28:16"
 			}
 		},{
-			"endpos":"41:0",
+			"endpos":"42:0",
 			"flags":513,
 			"ident":"Deactivate",
 			"kind":"method",
-			"srcpos":"36:1",
+			"srcpos":"37:1",
 			"stmts":[],
 			"type":{
-				"endpos":"36:20",
+				"endpos":"37:20",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"36:18",
+					"endpos":"37:18",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"36:18"
+					"srcpos":"37:18"
 				},
-				"srcpos":"36:18"
+				"srcpos":"37:18"
 			}
 		},{
-			"endpos":"52:0",
+			"endpos":"65:0",
 			"flags":1,
 			"ident":"ProcessKey",
 			"kind":"method",
-			"srcpos":"42:1",
+			"srcpos":"43:1",
 			"stmts":[{
-				"endpos":"44:38",
+				"endpos":"45:38",
 				"flags":1,
 				"ident":"sa",
 				"init":{
-					"endpos":"44:38",
+					"endpos":"45:38",
 					"kind":"????Expr?????",
-					"srcpos":"44:35"
+					"srcpos":"45:35"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.String",
-				"srcpos":"44:8",
+				"srcpos":"45:8",
 				"type":{
-					"endpos":"44:17",
+					"endpos":"45:17",
 					"ident":"string",
 					"kind":"ident",
-					"srcpos":"44:11"
+					"srcpos":"45:11"
 				}
+			},{
+				"endpos":"58:0",
+				"kind":"block",
+				"srcpos":"47:2",
+				"stmts":[{
+					"endpos":"55:3",
+					"kind":"block",
+					"srcpos":"51:4",
+					"stmts":[]
+				}]
 			}],
 			"type":{
-				"endpos":"42:25",
+				"endpos":"43:25",
 				"kind":"functype",
 				"params":[{
-					"endpos":"42:24",
+					"endpos":"43:24",
 					"flags":1,
 					"ident":"c",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"42:19",
+					"srcpos":"43:19",
 					"type":{
-						"endpos":"42:24",
+						"endpos":"43:24",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"42:21"
+						"srcpos":"43:21"
 					}
 				}],
 				"retType":{
-					"endpos":"42:18",
+					"endpos":"43:18",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"42:18"
+					"srcpos":"43:18"
 				},
-				"srcpos":"42:18"
+				"srcpos":"43:18"
 			}
 		},{
-			"endpos":"60:0",
+			"endpos":"73:0",
 			"flags":513,
 			"ident":"OnKeyDown",
 			"kind":"method",
-			"srcpos":"53:1",
+			"srcpos":"66:1",
 			"stmts":[],
 			"type":{
-				"endpos":"53:24",
+				"endpos":"66:24",
 				"kind":"functype",
 				"params":[{
-					"endpos":"53:23",
+					"endpos":"66:23",
 					"flags":1,
 					"ident":"c",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"53:18",
+					"srcpos":"66:18",
 					"type":{
-						"endpos":"53:23",
+						"endpos":"66:23",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"53:20"
+						"srcpos":"66:20"
 					}
 				}],
 				"retType":{
-					"endpos":"53:17",
+					"endpos":"66:17",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"53:17"
+					"srcpos":"66:17"
 				},
-				"srcpos":"53:17"
+				"srcpos":"66:17"
 			}
 		},{
-			"endpos":"66:0",
+			"endpos":"79:0",
 			"flags":513,
 			"ident":"OnKeyUp",
 			"kind":"method",
-			"srcpos":"61:1",
+			"srcpos":"74:1",
 			"stmts":[],
 			"type":{
-				"endpos":"61:22",
+				"endpos":"74:22",
 				"kind":"functype",
 				"params":[{
-					"endpos":"61:21",
+					"endpos":"74:21",
 					"flags":1,
 					"ident":"c",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"61:16",
+					"srcpos":"74:16",
 					"type":{
-						"endpos":"61:21",
+						"endpos":"74:21",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"61:18"
+						"srcpos":"74:18"
 					}
 				}],
 				"retType":{
-					"endpos":"61:15",
+					"endpos":"74:15",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"61:15"
+					"srcpos":"74:15"
 				},
-				"srcpos":"61:15"
+				"srcpos":"74:15"
 			}
 		},{
-			"endpos":"113:0",
+			"endpos":"85:0",
+			"flags":513,
+			"ident":"ShiftDown",
+			"kind":"method",
+			"srcpos":"80:1",
+			"stmts":[],
+			"type":{
+				"endpos":"80:19",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"80:17",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"80:17"
+				},
+				"srcpos":"80:17"
+			}
+		},{
+			"endpos":"91:0",
+			"flags":513,
+			"ident":"ShiftUp",
+			"kind":"method",
+			"srcpos":"86:1",
+			"stmts":[],
+			"type":{
+				"endpos":"86:17",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"86:15",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"86:15"
+				},
+				"srcpos":"86:15"
+			}
+		},{
+			"endpos":"141:0",
 			"flags":513,
 			"ident":"OnDraw",
 			"kind":"method",
-			"srcpos":"67:1",
+			"srcpos":"92:1",
 			"stmts":[{
-				"endpos":"79:0",
+				"endpos":"104:0",
 				"kind":"block",
-				"srcpos":"69:2",
+				"srcpos":"94:2",
 				"stmts":[{
-					"endpos":"77:0",
+					"endpos":"102:0",
 					"kind":"block",
-					"srcpos":"71:3",
+					"srcpos":"96:3",
 					"stmts":[]
 				}]
 			},{
-				"endpos":"80:23",
+				"endpos":"105:23",
 				"flags":1,
 				"ident":"x",
 				"init":{
-					"endpos":"80:23",
+					"endpos":"105:23",
 					"kind":"????Expr?????",
-					"srcpos":"80:21"
+					"srcpos":"105:21"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.Int",
-				"srcpos":"80:8",
+				"srcpos":"105:8",
 				"type":{
-					"endpos":"80:13",
+					"endpos":"105:13",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"80:10"
+					"srcpos":"105:10"
 				}
 			},{
-				"endpos":"81:23",
+				"endpos":"106:23",
 				"flags":1,
 				"ident":"y",
 				"init":{
-					"endpos":"81:23",
+					"endpos":"106:23",
 					"kind":"????Expr?????",
-					"srcpos":"81:21"
+					"srcpos":"106:21"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.Int",
-				"srcpos":"81:8",
+				"srcpos":"106:8",
 				"type":{
-					"endpos":"81:13",
+					"endpos":"106:13",
 					"ident":"int",
 					"kind":"ident",
-					"srcpos":"81:10"
+					"srcpos":"106:10"
 				}
 			},{
-				"endpos":"85:56",
+				"endpos":"110:56",
 				"flags":1,
 				"ident":"rs",
 				"init":{
-					"endpos":"85:56",
+					"endpos":"110:56",
 					"kind":"????Expr?????",
-					"srcpos":"85:29"
+					"srcpos":"110:29"
 				},
 				"kind":"local",
 				"semtype":"monkey.types.String",
-				"srcpos":"85:9",
+				"srcpos":"110:9",
 				"type":{
-					"endpos":"85:18",
+					"endpos":"110:18",
 					"ident":"string",
 					"kind":"ident",
-					"srcpos":"85:12"
+					"srcpos":"110:12"
 				}
 			},{
-				"endpos":"100:0",
+				"endpos":"128:0",
 				"kind":"block",
-				"srcpos":"89:2",
+				"srcpos":"114:2",
 				"stmts":[{
-					"endpos":"93:34",
+					"endpos":"118:34",
 					"flags":1,
 					"ident":"cx",
 					"init":{
-						"endpos":"93:27",
+						"endpos":"118:27",
 						"kind":"????Expr?????",
-						"srcpos":"93:18"
+						"srcpos":"118:18"
 					},
 					"kind":"local",
 					"semtype":"monkey.types.Int",
-					"srcpos":"93:9",
+					"srcpos":"118:9",
 					"type":{
-						"endpos":"93:15",
+						"endpos":"118:15",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"93:12"
+						"srcpos":"118:12"
+					}
+				},{
+					"endpos":"120:37",
+					"flags":1,
+					"ident":"cw",
+					"init":{
+						"endpos":"120:37",
+						"kind":"????Expr?????",
+						"srcpos":"120:23"
+					},
+					"kind":"local",
+					"semtype":"monkey.types.Int",
+					"srcpos":"120:9",
+					"type":{
+						"endpos":"120:15",
+						"ident":"int",
+						"kind":"ident",
+						"srcpos":"120:12"
 					}
 				}]
 			},{
-				"endpos":"111:0",
+				"endpos":"139:0",
 				"kind":"block",
-				"srcpos":"101:2",
+				"srcpos":"129:2",
 				"stmts":[{
-					"endpos":"105:0",
+					"endpos":"133:0",
 					"kind":"block",
-					"srcpos":"103:3",
+					"srcpos":"131:3",
 					"stmts":[]
 				},{
-					"endpos":"108:0",
+					"endpos":"136:0",
 					"kind":"block",
-					"srcpos":"105:3",
+					"srcpos":"133:3",
 					"stmts":[]
 				}]
 			}],
 			"type":{
-				"endpos":"67:16",
+				"endpos":"92:16",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"67:14",
+					"endpos":"92:14",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"67:14"
+					"srcpos":"92:14"
 				},
-				"srcpos":"67:14"
+				"srcpos":"92:14"
 			}
 		}],
 		"srcpos":"5:0",

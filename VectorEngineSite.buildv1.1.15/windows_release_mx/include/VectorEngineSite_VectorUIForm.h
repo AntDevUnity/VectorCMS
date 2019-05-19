@@ -36,6 +36,8 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
 
   bbInt m_TextW(bbString l_text);
   bbInt m_TextH(bbString l_text);
+  virtual void m_ShiftUp();
+  virtual void m_ShiftDown();
   virtual void m_OnUpdate();
   virtual void m_OnMouseUp(t_VectorSite_Button l_b);
   virtual void m_OnMouseMove(bbInt l_x,bbInt l_y,bbInt l_dx,bbInt l_dy);

@@ -11,6 +11,7 @@ Class TextBoxForm Extends VectorUIForm
 	Field KeyNext:Int = 0
 	Field ClaretX:Int = 0
 	Field StartX:Int = 0
+	Field Shift:Bool = False
 	
 	Method New(x:Int,y:Int,w:Int,h:Int,def:String)
 	
@@ -43,6 +44,18 @@ Class TextBoxForm Extends VectorUIForm
 	
 		Local sa:String = String.FromChar(c)
 		
+		If Shift 
+			
+			Select sa
+				
+				Case "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"
+				
+					sa = sa.ToUpper()
+				
+			End 
+			
+		End 
+		
 		Text = Text + sa
 		
 		ClaretX = ClaretX+1
@@ -61,6 +74,18 @@ Class TextBoxForm Extends VectorUIForm
 	Method OnKeyUp(c:Int) Override 
 		
 		KeyDown = 0
+		
+	End 
+	
+	Method ShiftDown() Override
+		
+		Shift = True
+		
+	End 
+	
+	Method ShiftUp() Override
+		
+		Shift = False
 		
 	End 
 	
@@ -92,7 +117,10 @@ Class TextBoxForm Extends VectorUIForm
 			
 			Local cx:Int = ClaretX - StartX
 			
-			cx = cx * 10
+			Local cw:Int = TextW(rs.Mid(0,cx))
+			
+			cx = cw
+			
 			
 			DrawRect(x+5+cx,y+3,2,Size.y-6,New Color(0,0,0,1))
 			
