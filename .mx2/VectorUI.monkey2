@@ -120,7 +120,7 @@ Class VectorUI
 				
 		If ActiveForm <> Null
 			
-			If Keyboard.Modifiers = Modifier.LeftShift
+			If Keyboard.Modifiers = Modifier.LeftShift Or Keyboard.Modifiers = Modifier.RightShift Or Keyboard.Modifiers = Modifier.Shift
 				
 				ActiveForm.ShiftDown()
 				
@@ -155,11 +155,27 @@ Class VectorUI
 				
 				Local ck:Key = Key.Pause
 				
+				
+				
 				If cs = "a"
 					
 					ck = Key.A
 					
 				End 
+				
+				If cs= "{" ck = Key.LeftBracket
+					
+				If cs= "}" ck = Key.RightBracket
+				
+				If cs = "(" ck = Key.LeftBracket
+					
+				If cs = ")" ck = Key.RightBracket
+				
+				If cs = "+" ck = Key.Equals
+				
+				If cs = "=" ck = Key.Equals
+				
+				If cs = "-" ck = Key.Minus
 				
 				If cs = "b" ck = Key.B
 					
@@ -211,6 +227,43 @@ Class VectorUI
 				
 				If cs = "z" ck = Key.Z
 					
+				If cs = "0" ck = Key.Key0
+					
+				If cs = "1" ck = Key.Key1
+				
+				If cs = "2" ck = Key.Key2
+					
+				If cs = "3" ck = Key.Key3
+					
+				If cs = "4" ck = Key.Key4
+					
+				If cs = "5" ck = Key.Key5
+					
+				If cs = "6" ck = Key.Key6
+					
+				If cs = "7" ck = Key.Key7
+					
+				If cs = "8" ck = Key.Key8
+					
+				If cs = "9" ck = Key.Key9
+					
+				If cs = "!" ck = Key.Key1
+					
+				If cs = "@" ck = Key.Key2
+					
+				If cs = "#" ck = Key.Key3
+					
+				If cs = "$" ck = Key.Key4
+					
+				If cs = "%" ck = Key.Key5
+					
+				If cs = "^" ck = Key.Key6
+					
+				If cs = "&" ck = Key.Key7
+					
+				If cs = "*" ck = Key.Key8
+					
+				If cs = "(" ck = Key.Key9
 				
 				If ck <> Key.Pause
 					
@@ -220,8 +273,13 @@ Class VectorUI
 				End 
 				
 				
-			End 
+			End
 		
+			
+		Else
+			
+			Keyboard.FlushChars()
+			Keyboard.FlushKeys()
 			
 		End 
 				
@@ -229,7 +287,7 @@ Class VectorUI
 	End 
 	Global ckey:Int = 0
 	
-	Global okeys:String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	Global okeys:String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-=_+,.<>/?\||}{[]()!@#$%^&*()"
 
 	Method Render()
 		

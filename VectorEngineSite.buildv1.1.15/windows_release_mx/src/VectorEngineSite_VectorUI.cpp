@@ -147,7 +147,7 @@ void t_VectorSite_VectorUI::m_Update(){
     }
   }
   if((g_VectorSite_VectorUI_ActiveForm.get()!=((t_VectorSite_VectorUIForm*)0))){
-    if((g_mojo_input_Keyboard.get()->m_Modifiers()==t_mojo_input_Modifier(1))){
+    if((((g_mojo_input_Keyboard.get()->m_Modifiers()==t_mojo_input_Modifier(1))||(g_mojo_input_Keyboard.get()->m_Modifiers()==t_mojo_input_Modifier(2)))||(g_mojo_input_Keyboard.get()->m_Modifiers()==t_mojo_input_Modifier(3)))){
       struct f2_t : public bbGCFrame{
         t_VectorSite_VectorUIForm* t0{};
         void gcMark(){
@@ -187,6 +187,27 @@ void t_VectorSite_VectorUI::m_Update(){
       t_mojo_input_Key l_ck=t_mojo_input_Key(200);
       if((l_cs==bbString(L"a",1))){
         l_ck=t_mojo_input_Key(97);
+      }
+      if((l_cs==bbString(L"{",1))){
+        l_ck=t_mojo_input_Key(91);
+      }
+      if((l_cs==bbString(L"}",1))){
+        l_ck=t_mojo_input_Key(93);
+      }
+      if((l_cs==bbString(L"(",1))){
+        l_ck=t_mojo_input_Key(91);
+      }
+      if((l_cs==bbString(L")",1))){
+        l_ck=t_mojo_input_Key(93);
+      }
+      if((l_cs==bbString(L"+",1))){
+        l_ck=t_mojo_input_Key(61);
+      }
+      if((l_cs==bbString(L"=",1))){
+        l_ck=t_mojo_input_Key(61);
+      }
+      if((l_cs==bbString(L"-",1))){
+        l_ck=t_mojo_input_Key(45);
       }
       if((l_cs==bbString(L"b",1))){
         l_ck=t_mojo_input_Key(98);
@@ -263,6 +284,63 @@ void t_VectorSite_VectorUI::m_Update(){
       if((l_cs==bbString(L"z",1))){
         l_ck=t_mojo_input_Key(122);
       }
+      if((l_cs==bbString(L"0",1))){
+        l_ck=t_mojo_input_Key(48);
+      }
+      if((l_cs==bbString(L"1",1))){
+        l_ck=t_mojo_input_Key(49);
+      }
+      if((l_cs==bbString(L"2",1))){
+        l_ck=t_mojo_input_Key(50);
+      }
+      if((l_cs==bbString(L"3",1))){
+        l_ck=t_mojo_input_Key(51);
+      }
+      if((l_cs==bbString(L"4",1))){
+        l_ck=t_mojo_input_Key(52);
+      }
+      if((l_cs==bbString(L"5",1))){
+        l_ck=t_mojo_input_Key(53);
+      }
+      if((l_cs==bbString(L"6",1))){
+        l_ck=t_mojo_input_Key(54);
+      }
+      if((l_cs==bbString(L"7",1))){
+        l_ck=t_mojo_input_Key(55);
+      }
+      if((l_cs==bbString(L"8",1))){
+        l_ck=t_mojo_input_Key(56);
+      }
+      if((l_cs==bbString(L"9",1))){
+        l_ck=t_mojo_input_Key(57);
+      }
+      if((l_cs==bbString(L"!",1))){
+        l_ck=t_mojo_input_Key(49);
+      }
+      if((l_cs==bbString(L"@",1))){
+        l_ck=t_mojo_input_Key(50);
+      }
+      if((l_cs==bbString(L"#",1))){
+        l_ck=t_mojo_input_Key(51);
+      }
+      if((l_cs==bbString(L"$",1))){
+        l_ck=t_mojo_input_Key(52);
+      }
+      if((l_cs==bbString(L"%",1))){
+        l_ck=t_mojo_input_Key(53);
+      }
+      if((l_cs==bbString(L"^",1))){
+        l_ck=t_mojo_input_Key(54);
+      }
+      if((l_cs==bbString(L"&",1))){
+        l_ck=t_mojo_input_Key(55);
+      }
+      if((l_cs==bbString(L"*",1))){
+        l_ck=t_mojo_input_Key(56);
+      }
+      if((l_cs==bbString(L"(",1))){
+        l_ck=t_mojo_input_Key(57);
+      }
       if((l_ck!=t_mojo_input_Key(200))){
         struct f3_t : public bbGCFrame{
           t_VectorSite_VectorUIForm* t0{};
@@ -274,6 +352,9 @@ void t_VectorSite_VectorUI::m_Update(){
         g_VectorSite_VectorUI_ckey=bbInt(0);
       }
     }
+  }else{
+    g_mojo_input_Keyboard.get()->m_FlushChars();
+    g_mojo_input_Keyboard.get()->m_FlushKeys();
   }
 }
 
@@ -387,7 +468,7 @@ void t_VectorSite_VectorUI::m_AddToListForward(t_VectorSite_VectorUIForm* l_ui,t
 void mx2_VectorEngineSite_VectorUI_init_f(){
   g_VectorSite_VectorUI_PressedForm=bbArray<bbGCVar<t_VectorSite_VectorUIForm>>(32);
   g_VectorSite_VectorUI_ckey=bbInt(0);
-  g_VectorSite_VectorUI_okeys=bbString(L"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",62);
+  g_VectorSite_VectorUI_okeys=bbString(L"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-=_+,.<>/?\\||}{[]()!@#$%^&*()",91);
 }
 
 struct mx2_VectorEngineSite_VectorUI_roots_t : bbGCRoot{

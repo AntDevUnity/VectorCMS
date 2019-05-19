@@ -32,6 +32,7 @@ void t_VectorSite_TextBoxForm::m_ProcessKey(bbInt l_c){
   if(this->m_Shift){
     if((l_sa==bbString(L"a",1))||(l_sa==bbString(L"b",1))||(l_sa==bbString(L"c",1))||(l_sa==bbString(L"d",1))||(l_sa==bbString(L"e",1))||(l_sa==bbString(L"f",1))||(l_sa==bbString(L"g",1))||(l_sa==bbString(L"h",1))||(l_sa==bbString(L"i",1))||(l_sa==bbString(L"j",1))||(l_sa==bbString(L"k",1))||(l_sa==bbString(L"l",1))||(l_sa==bbString(L"m",1))||(l_sa==bbString(L"n",1))||(l_sa==bbString(L"o",1))||(l_sa==bbString(L"p",1))||(l_sa==bbString(L"q",1))||(l_sa==bbString(L"r",1))||(l_sa==bbString(L"s",1))||(l_sa==bbString(L"t",1))||(l_sa==bbString(L"u",1))||(l_sa==bbString(L"v",1))||(l_sa==bbString(L"w",1))||(l_sa==bbString(L"x",1))||(l_sa==bbString(L"y",1))||(l_sa==bbString(L"z",1))){
       l_sa=l_sa.toUpper();
+    }else if((l_sa==bbString(L"-",1))){
     }
   }
   this->m_Text=(this->m_Text+l_sa);
