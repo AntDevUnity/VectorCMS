@@ -3,12 +3,17 @@
 
 #include "VectorEngineSite.buildv1.1.15/windows_release_mx/include/VectorEngineSite_VectorUIForm.h"
 #include "VectorEngineSite.buildv1.1.15/windows_release_mx/include/VectorEngineSite_std_collections_2list.h"
+#include "mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_input_2keyboard.h"
 #include "mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_input_2mouse.h"
 #include "std/std.buildv1.1.15/windows_release_mx/include/std_geom_2vec2.h"
+
+BB_ENUM(t_mojo_input_Key)
 
 bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_ActiveForm;
 bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_OverForm;
 bbArray<bbGCVar<t_VectorSite_VectorUIForm>> g_VectorSite_VectorUI_PressedForm;
+bbInt g_VectorSite_VectorUI_ckey;
+bbString g_VectorSite_VectorUI_okeys;
 
 void t_VectorSite_VectorUI::gcMark(){
   bbGCMark(m_Root);
@@ -140,6 +145,118 @@ void t_VectorSite_VectorUI::m_Update(){
       g_VectorSite_VectorUI_PressedForm[bbInt(0)]=((t_VectorSite_VectorUIForm*)0);
     }
   }
+  if((g_VectorSite_VectorUI_ActiveForm.get()!=((t_VectorSite_VectorUIForm*)0))){
+    while(true){
+      bbInt l_c=g_mojo_input_Keyboard.get()->m_GetChar();
+      if((l_c==bbInt(0))){
+        break;
+      }
+      bbString l_cs=bbString::fromChar(l_c);
+      if(g_VectorSite_VectorUI_okeys.contains(l_cs)){
+        struct f3_t : public bbGCFrame{
+          t_VectorSite_VectorUIForm* t0{};
+          void gcMark(){
+            bbGCMark(t0);
+          }
+        }f3{};
+        g_VectorSite_VectorUI_ckey=l_c;
+        (f3.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_OnKeyDown(l_c);
+      }
+    }
+    if((g_VectorSite_VectorUI_ckey!=bbInt(0))){
+      bbString l_cs=bbString::fromChar(g_VectorSite_VectorUI_ckey);
+      l_cs=l_cs.toLower();
+      t_mojo_input_Key l_ck=t_mojo_input_Key(200);
+      if((l_cs==bbString(L"a",1))){
+        l_ck=t_mojo_input_Key(97);
+      }
+      if((l_cs==bbString(L"b",1))){
+        l_ck=t_mojo_input_Key(98);
+      }
+      if((l_cs==bbString(L"c",1))){
+        l_ck=t_mojo_input_Key(99);
+      }
+      if((l_cs==bbString(L"d",1))){
+        l_ck=t_mojo_input_Key(100);
+      }
+      if((l_cs==bbString(L"e",1))){
+        l_ck=t_mojo_input_Key(101);
+      }
+      if((l_cs==bbString(L"f",1))){
+        l_ck=t_mojo_input_Key(102);
+      }
+      if((l_cs==bbString(L"g",1))){
+        l_ck=t_mojo_input_Key(103);
+      }
+      if((l_cs==bbString(L"h",1))){
+        l_ck=t_mojo_input_Key(104);
+      }
+      if((l_cs==bbString(L"i",1))){
+        l_ck=t_mojo_input_Key(105);
+      }
+      if((l_cs==bbString(L"j",1))){
+        l_ck=t_mojo_input_Key(106);
+      }
+      if((l_cs==bbString(L"k",1))){
+        l_ck=t_mojo_input_Key(107);
+      }
+      if((l_cs==bbString(L"l",1))){
+        l_ck=t_mojo_input_Key(108);
+      }
+      if((l_cs==bbString(L"m",1))){
+        l_ck=t_mojo_input_Key(109);
+      }
+      if((l_cs==bbString(L"n",1))){
+        l_ck=t_mojo_input_Key(110);
+      }
+      if((l_cs==bbString(L"o",1))){
+        l_ck=t_mojo_input_Key(111);
+      }
+      if((l_cs==bbString(L"p",1))){
+        l_ck=t_mojo_input_Key(112);
+      }
+      if((l_cs==bbString(L"q",1))){
+        l_ck=t_mojo_input_Key(113);
+      }
+      if((l_cs==bbString(L"r",1))){
+        l_ck=t_mojo_input_Key(114);
+      }
+      if((l_cs==bbString(L"s",1))){
+        l_ck=t_mojo_input_Key(115);
+      }
+      if((l_cs==bbString(L"t",1))){
+        l_ck=t_mojo_input_Key(116);
+      }
+      if((l_cs==bbString(L"u",1))){
+        l_ck=t_mojo_input_Key(117);
+      }
+      if((l_cs==bbString(L"v",1))){
+        l_ck=t_mojo_input_Key(118);
+      }
+      if((l_cs==bbString(L"w",1))){
+        l_ck=t_mojo_input_Key(119);
+      }
+      if((l_cs==bbString(L"x",1))){
+        l_ck=t_mojo_input_Key(120);
+      }
+      if((l_cs==bbString(L"y",1))){
+        l_ck=t_mojo_input_Key(121);
+      }
+      if((l_cs==bbString(L"z",1))){
+        l_ck=t_mojo_input_Key(122);
+      }
+      if((l_ck!=t_mojo_input_Key(200))){
+        struct f3_t : public bbGCFrame{
+          t_VectorSite_VectorUIForm* t0{};
+          void gcMark(){
+            bbGCMark(t0);
+          }
+        }f3{};
+        (f3.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_OnKeyUp(g_VectorSite_VectorUI_ckey);
+        g_VectorSite_VectorUI_ckey=bbInt(0);
+      }
+    }
+  }
 }
 
 void t_VectorSite_VectorUI::m_RenderList(t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* l_list){
@@ -251,6 +368,8 @@ void t_VectorSite_VectorUI::m_AddToListForward(t_VectorSite_VectorUIForm* l_ui,t
 
 void mx2_VectorEngineSite_VectorUI_init_f(){
   g_VectorSite_VectorUI_PressedForm=bbArray<bbGCVar<t_VectorSite_VectorUIForm>>(32);
+  g_VectorSite_VectorUI_ckey=bbInt(0);
+  g_VectorSite_VectorUI_okeys=bbString(L"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",62);
 }
 
 struct mx2_VectorEngineSite_VectorUI_roots_t : bbGCRoot{

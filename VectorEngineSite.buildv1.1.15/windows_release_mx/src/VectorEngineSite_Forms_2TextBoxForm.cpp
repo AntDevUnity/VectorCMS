@@ -2,6 +2,7 @@
 #include "VectorEngineSite.buildv1.1.15/windows_release_mx/include/VectorEngineSite_Forms_2TextBoxForm.h"
 
 #include "mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_graphics_2image.h"
+#include "monkey/monkey.buildv1.1.15/windows_release_mx/include/monkey_types.h"
 #include "std/std.buildv1.1.15/windows_release_mx/include/std_geom_2vec2.h"
 #include "std/std.buildv1.1.15/windows_release_mx/include/std_graphics_2color.h"
 
@@ -18,6 +19,22 @@ t_VectorSite_TextBoxForm::t_VectorSite_TextBoxForm(bbInt l_x,bbInt l_y,bbInt l_w
 t_VectorSite_TextBoxForm::~t_VectorSite_TextBoxForm(){
 }
 
+void t_VectorSite_TextBoxForm::m_ProcessKey(bbInt l_c){
+  bbString l_sa=bbString::fromChar(l_c);
+  this->m_Text=(this->m_Text+l_sa);
+  this->m_ClaretX=(this->m_ClaretX+1);
+}
+
+void t_VectorSite_TextBoxForm::m_OnKeyUp(bbInt l_c){
+  this->m_KeyDown=bbInt(0);
+}
+
+void t_VectorSite_TextBoxForm::m_OnKeyDown(bbInt l_c){
+  this->m_KeyDown=l_c;
+  this->m_ProcessKey(l_c);
+  this->m_KeyNext=(g_std_time_Millisecs()+350);
+}
+
 void t_VectorSite_TextBoxForm::m_OnDraw(){
   struct f0_t : public bbGCFrame{
     t_mojo_graphics_Image* t0{};
@@ -25,11 +42,21 @@ void t_VectorSite_TextBoxForm::m_OnDraw(){
       bbGCMark(t0);
     }
   }f0{};
+  if((this->m_KeyDown!=bbInt(0))){
+    if((g_std_time_Millisecs()>this->m_KeyNext)){
+      this->m_ProcessKey(this->m_KeyDown);
+      this->m_KeyNext=(g_std_time_Millisecs()+200);
+    }
+  }
   bbInt l_x=this->m_DrawX();
   bbInt l_y=this->m_DrawY();
   this->m_DrawImage(f0.t0=this->m_BackImg.get(),l_x,l_y,bbInt(this->m_Size.m_x),bbInt(this->m_Size.m_y),t_std_graphics_Color{1.0f,1.0f,1.0f,1.0f});
+  bbString l_rs=this->m_Text.mid(this->m_StartX,(this->m_Text.length()-this->m_StartX));
+  this->m_DrawText(l_rs,(l_x+5),(l_y+3),t_std_graphics_Color{0.0f,0.0f,0.0f,1.0f});
   if((this->m_ClaretOn&&this->m_Active)){
-    this->m_DrawRect((l_x+5),(l_y+3),2,bbInt((this->m_Size.m_y-6.0f)),t_std_graphics_Color{0.0f,0.0f,0.0f,1.0f});
+    bbInt l_cx=(this->m_ClaretX-this->m_StartX);
+    l_cx=(l_cx*10);
+    this->m_DrawRect(((l_x+5)+l_cx),(l_y+3),2,bbInt((this->m_Size.m_y-6.0f)),t_std_graphics_Color{0.0f,0.0f,0.0f,1.0f});
   }
   if((g_std_time_Millisecs()>this->m_NextOn)){
     if(this->m_ClaretOn){

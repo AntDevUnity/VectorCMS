@@ -7,6 +7,10 @@ Class TextBoxForm Extends VectorUIForm
 	Field Active:Bool = False
 	Field ClaretOn:Bool = True
 	Field NextOn:Int = 0
+	Field KeyDown:Int = 0 
+	Field KeyNext:Int = 0
+	Field ClaretX:Int = 0
+	Field StartX:Int = 0
 	
 	Method New(x:Int,y:Int,w:Int,h:Int,def:String)
 	
@@ -24,7 +28,7 @@ Class TextBoxForm Extends VectorUIForm
 		
 		Active=True
 		NextOn = Millisecs()+300
-		ClaretOn = true
+		ClaretOn = True
 		
 		
 	End 
@@ -35,16 +39,62 @@ Class TextBoxForm Extends VectorUIForm
 	
 	End 
 	
+	Method ProcessKey(c:Int)
+	
+		Local sa:String = String.FromChar(c)
+		
+		Text = Text + sa
+		
+		ClaretX = ClaretX+1
+		
+	
+	End 
+	
+	Method OnKeyDown(c:Int) Override
+		
+		KeyDown = c
+		ProcessKey(c)
+		KeyNext = Millisecs()+350
+		
+	End 
+	
+	Method OnKeyUp(c:Int) Override 
+		
+		KeyDown = 0
+		
+	End 
+	
 	Method OnDraw() Override
+		
+		If KeyDown <> 0
+			
+			If Millisecs()>KeyNext
+				
+				ProcessKey(KeyDown)
+				KeyNext = Millisecs()+200
+				
+			End 
+			
+		End 
 		
 		Local x:Int = DrawX()
 		Local y:Int = DrawY()
 		
 		DrawImage(BackImg,x,y,Size.x,Size.y,New Color(1,1,1,1))
 		
+			Local rs:String = Text.Mid(StartX,Text.Length-StartX)
+		
+		DrawText(rs,x+5,y+3,New Color(0,0,0,1))
+		
 		If ClaretOn And Active
 			
-			DrawRect(x+5,y+3,2,Size.y-6,New Color(0,0,0,1))
+	
+			
+			Local cx:Int = ClaretX - StartX
+			
+			cx = cx * 10
+			
+			DrawRect(x+5+cx,y+3,2,Size.y-6,New Color(0,0,0,1))
 			
 		End 
 		

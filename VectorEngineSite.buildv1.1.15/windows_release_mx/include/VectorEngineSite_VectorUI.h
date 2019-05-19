@@ -14,6 +14,8 @@ BB_CLASS(t_VectorSite_VectorUI)
 extern bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_ActiveForm;
 extern bbGCVar<t_VectorSite_VectorUIForm> g_VectorSite_VectorUI_OverForm;
 extern bbArray<bbGCVar<t_VectorSite_VectorUIForm>> g_VectorSite_VectorUI_PressedForm;
+extern bbInt g_VectorSite_VectorUI_ckey;
+extern bbString g_VectorSite_VectorUI_okeys;
 
 struct t_VectorSite_VectorUI : public bbObject{
   typedef t_VectorSite_VectorUI *bb_object_type;

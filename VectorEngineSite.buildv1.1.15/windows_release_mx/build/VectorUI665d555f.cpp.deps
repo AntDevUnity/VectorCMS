@@ -23,7 +23,8 @@ D:/Git/VectorCMS/VectorEngineSite.buildv1.1.15/windows_release_mx/include/Vector
 D:/monk2/modules/std/std.buildv1.1.15/windows_release_mx/include/std_collections_2list.h
 D:/monk2/modules/std/std.buildv1.1.15/windows_release_mx/include/std_collections_2container.h
 D:/Git/VectorCMS/VectorEngineSite.buildv1.1.15/windows_release_mx/include/VectorEngineSite_std_collections_2container.h
-D:/monk2/modules/mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_input_2mouse.h
+D:/monk2/modules/mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_input_2keyboard.h
+D:/monk2/modules/mojo/input/native/keyinfo.h
 D:/monk2/modules/sdl2/sdl2.buildv1.1.15/windows_release_mx/include/sdl2_sdl2.h
 D:/monk2/modules/sdl2/SDL/include/SDL.h
 D:/monk2/modules/sdl2/SDL/include/SDL_main.h
@@ -69,3 +70,4 @@ D:/monk2/modules/sdl2/SDL/include/SDL_render.h
 D:/monk2/modules/sdl2/SDL/include/SDL_system.h
 D:/monk2/modules/sdl2/SDL/include/SDL_timer.h
 D:/monk2/modules/sdl2/SDL/include/SDL_version.h
+D:/monk2/modules/mojo/mojo.buildv1.1.15/windows_release_mx/include/mojo_input_2mouse.h

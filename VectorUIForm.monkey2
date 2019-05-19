@@ -76,6 +76,14 @@ Class VectorUIForm Extends VectorObject
 		
 	End 
 	
+	Method OnKeyDown(c:Int) Virtual
+		
+	End 
+	
+	Method OnKeyUp(c:Int) Virtual
+		
+	End 
+	
 	Method Activate() Virtual
 		
 	End 

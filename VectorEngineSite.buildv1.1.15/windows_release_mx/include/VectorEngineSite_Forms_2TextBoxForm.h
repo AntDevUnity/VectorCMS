@@ -17,10 +17,17 @@ struct t_VectorSite_TextBoxForm : public t_VectorSite_VectorUIForm{
   bbBool m_Active{false};
   bbBool m_ClaretOn{true};
   bbInt m_NextOn{bbInt(0)};
+  bbInt m_KeyDown{bbInt(0)};
+  bbInt m_KeyNext{bbInt(0)};
+  bbInt m_ClaretX{bbInt(0)};
+  bbInt m_StartX{bbInt(0)};
 
   t_VectorSite_TextBoxForm(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,bbString l_def);
   ~t_VectorSite_TextBoxForm();
 
+  void m_ProcessKey(bbInt l_c);
+  void m_OnKeyUp(bbInt l_c);
+  void m_OnKeyDown(bbInt l_c);
   void m_OnDraw();
   void m_Deactivate();
   void m_Activate();

@@ -42,6 +42,8 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
   virtual void m_OnMouseLeave();
   virtual void m_OnMouseEnter();
   virtual void m_OnMouseDown(t_VectorSite_Button l_b);
+  virtual void m_OnKeyUp(bbInt l_c);
+  virtual void m_OnKeyDown(bbInt l_c);
   virtual void m_OnDraw();
   bbBool m_InBounds(bbInt l_mx,bbInt l_my);
   bbInt m_DrawY();

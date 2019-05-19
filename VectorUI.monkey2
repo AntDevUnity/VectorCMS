@@ -118,10 +118,109 @@ Class VectorUI
 		End 
 			
 				
+		If ActiveForm <> Null
+			
+			
+			While True
 				
+				Local c:Int = Keyboard.GetChar()
+				
+				If c = 0 Exit 
+				
+				Local cs:String = String.FromChar(c)
+				
+				If okeys.Contains(cs)
+					
+					ckey = c
+					ActiveForm.OnKeyDown(c)
+					
+				End 
+				
+			
+			Wend 
+			
+			If ckey <>0
+				
+				Local cs:String = String.FromChar(ckey)
+				cs = cs.ToLower()
+				
+				Local ck:Key = Key.Pause
+				
+				If cs = "a"
+					
+					ck = Key.A
+					
+				End 
+				
+				If cs = "b" ck = Key.B
+					
+				If cs = "c" ck = Key.C
+				
+				If cs = "d" ck = Key.D
+					
+				If cs = "e" ck = Key.E
+					
+				If cs = "f" ck = Key.F
+					
+				If cs = "g" ck = Key.G
+					
+				If cs = "h" ck = Key.H
+					
+				If cs = "i" ck = Key.I
+					
+				If cs = "j" ck = Key.J
+					
+				If cs = "k" ck = Key.K
+					
+				If cs = "l" ck = Key.L
+					
+				If cs = "m" ck = Key.M
+					
+				If cs = "n"  ck = Key.N
+				
+				If cs = "o" ck = Key.O
+					
+				If cs = "p" ck = Key.P
+					
+				If cs = "q" ck = Key.Q
+					
+				If cs= "r" ck = Key.R
+					
+				If cs = "s" ck = Key.S
+					
+			 	If cs = "t" ck = Key.T
+				 
+				If cs = "u" ck = Key.U
+				
+				If cs= "v" ck = Key.V
+					
+				If cs= "w" ck = Key.W
+					
+				If cs = "x" ck = Key.X
+					
+				If cs = "y" ck = Key.Y
+				
+				If cs = "z" ck = Key.Z
+					
+				
+				If ck <> Key.Pause
+					
+					ActiveForm.OnKeyUp(ckey)
+					ckey = 0
+					
+				End 
+				
+				
+			End 
+		
+			
+		End 
 				
 
 	End 
+	Global ckey:Int = 0
+	
+	Global okeys:String = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 	Method Render()
 		

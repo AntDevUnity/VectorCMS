@@ -59,6 +59,12 @@ void t_VectorSite_VectorUIForm::m_OnMouseEnter(){
 void t_VectorSite_VectorUIForm::m_OnMouseDown(t_VectorSite_Button l_b){
 }
 
+void t_VectorSite_VectorUIForm::m_OnKeyUp(bbInt l_c){
+}
+
+void t_VectorSite_VectorUIForm::m_OnKeyDown(bbInt l_c){
+}
+
 void t_VectorSite_VectorUIForm::m_OnDraw(){
 }
 
