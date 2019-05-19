@@ -81,7 +81,15 @@ Class VectorUI
 				If PressedForm[0] = Null
 					
 					PressedForm[0] = OverForm
+					
+					If ActiveForm <> OverForm And ActiveForm <> Null
+						
+						ActiveForm.Deactivate()
+						
+					End 
+					
 					ActiveForm = OverForm
+					ActiveForm.Activate()
 				
 					PressedForm[0].OnMouseDown(Button.Left)
 				

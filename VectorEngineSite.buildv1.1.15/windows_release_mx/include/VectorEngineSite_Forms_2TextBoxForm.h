@@ -14,10 +14,16 @@ struct t_VectorSite_TextBoxForm : public t_VectorSite_VectorUIForm{
   bbTypeInfo *typeof()const;
   const char *typeName()const{return "t_VectorSite_TextBoxForm";}
 
+  bbBool m_Active{false};
+  bbBool m_ClaretOn{true};
+  bbInt m_NextOn{bbInt(0)};
+
   t_VectorSite_TextBoxForm(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,bbString l_def);
   ~t_VectorSite_TextBoxForm();
 
   void m_OnDraw();
+  void m_Deactivate();
+  void m_Activate();
 
   t_VectorSite_TextBoxForm(){
   }

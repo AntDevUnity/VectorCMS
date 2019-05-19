@@ -103,7 +103,17 @@ void t_VectorSite_VectorUI::m_Update(){
           }
         }f3{};
         g_VectorSite_VectorUI_PressedForm[bbInt(0)]=g_VectorSite_VectorUI_OverForm.get();
+        if(((g_VectorSite_VectorUI_ActiveForm.get()!=g_VectorSite_VectorUI_OverForm.get())&&(g_VectorSite_VectorUI_ActiveForm.get()!=((t_VectorSite_VectorUIForm*)0)))){
+          struct f4_t : public bbGCFrame{
+            t_VectorSite_VectorUIForm* t0{};
+            void gcMark(){
+              bbGCMark(t0);
+            }
+          }f4{};
+          (f4.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_Deactivate();
+        }
         g_VectorSite_VectorUI_ActiveForm=g_VectorSite_VectorUI_OverForm.get();
+        (f3.t0=g_VectorSite_VectorUI_ActiveForm.get())->m_Activate();
         (f3.t0=g_VectorSite_VectorUI_PressedForm[bbInt(0)].get())->m_OnMouseDown(t_VectorSite_Button(0));
       }else if((g_VectorSite_VectorUI_PressedForm[bbInt(0)].get()==g_VectorSite_VectorUI_OverForm.get())){
         struct f3_t : public bbGCFrame{

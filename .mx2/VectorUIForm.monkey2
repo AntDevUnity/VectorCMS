@@ -76,6 +76,14 @@ Class VectorUIForm Extends VectorObject
 		
 	End 
 	
+	Method Activate() Virtual
+		
+	End 
+	
+	Method Deactivate() Virtual
+		
+	End 
+	
 	Method OnMouseLeave() Virtual 
 		
 	End 

@@ -49,7 +49,9 @@ struct t_VectorSite_VectorUIForm : public t_VectorSite_VectorObject{
   void m_DrawText(bbString l_text,bbInt l_x,bbInt l_y,t_std_graphics_Color l_col);
   void m_DrawRect(bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,t_std_graphics_Color l_col);
   void m_DrawImage(t_mojo_graphics_Image* l_img,bbInt l_x,bbInt l_y,bbInt l_w,bbInt l_h,t_std_graphics_Color l_col);
+  virtual void m_Deactivate();
   t_VectorSite_VectorUIForm* m_Add(t_VectorSite_VectorUIForm* l_add);
+  virtual void m_Activate();
 
   t_VectorSite_VectorUIForm(){
     init();

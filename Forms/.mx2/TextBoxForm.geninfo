@@ -1,152 +1,267 @@
 {
-	"endpos":"30:3",
+	"endpos":"65:3",
 	"flags":0,
 	"ident":"VectorEngineSite_Forms_2TextBoxForm",
 	"imports":["data/textbox1.png"],
 	"kind":"file",
 	"members":[{
-		"endpos":"30:3",
+		"endpos":"65:3",
 		"flags":1,
 		"ident":"TextBoxForm",
 		"kind":"class",
 		"members":[{
-			"endpos":"18:0",
+			"endpos":"7:26",
+			"flags":1,
+			"ident":"Active",
+			"init":{
+				"endpos":"7:26",
+				"kind":"literal",
+				"srcpos":"7:21",
+				"toke":"false"
+			},
+			"kind":"field",
+			"semtype":"monkey.types.Bool",
+			"srcpos":"7:7",
+			"type":{
+				"endpos":"7:18",
+				"ident":"bool",
+				"kind":"ident",
+				"srcpos":"7:14"
+			}
+		},{
+			"endpos":"8:27",
+			"flags":1,
+			"ident":"ClaretOn",
+			"init":{
+				"endpos":"8:27",
+				"kind":"literal",
+				"srcpos":"8:23",
+				"toke":"true"
+			},
+			"kind":"field",
+			"semtype":"monkey.types.Bool",
+			"srcpos":"8:7",
+			"type":{
+				"endpos":"8:20",
+				"ident":"bool",
+				"kind":"ident",
+				"srcpos":"8:16"
+			}
+		},{
+			"endpos":"9:21",
+			"flags":1,
+			"ident":"NextOn",
+			"init":{
+				"endpos":"9:21",
+				"kind":"literal",
+				"srcpos":"9:20",
+				"toke":"0"
+			},
+			"kind":"field",
+			"semtype":"monkey.types.Int",
+			"srcpos":"9:7",
+			"type":{
+				"endpos":"9:17",
+				"ident":"int",
+				"kind":"ident",
+				"srcpos":"9:14"
+			}
+		},{
+			"endpos":"22:0",
 			"flags":1,
 			"ident":"new",
 			"kind":"method",
-			"srcpos":"7:1",
+			"srcpos":"11:1",
 			"stmts":[],
 			"type":{
-				"endpos":"7:47",
+				"endpos":"11:47",
 				"kind":"functype",
 				"params":[{
-					"endpos":"7:17",
+					"endpos":"11:17",
 					"flags":1,
 					"ident":"x",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"7:12",
+					"srcpos":"11:12",
 					"type":{
-						"endpos":"7:17",
+						"endpos":"11:17",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"7:14"
+						"srcpos":"11:14"
 					}
 				},{
-					"endpos":"7:23",
+					"endpos":"11:23",
 					"flags":1,
 					"ident":"y",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"7:18",
+					"srcpos":"11:18",
 					"type":{
-						"endpos":"7:23",
+						"endpos":"11:23",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"7:20"
+						"srcpos":"11:20"
 					}
 				},{
-					"endpos":"7:29",
+					"endpos":"11:29",
 					"flags":1,
 					"ident":"w",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"7:24",
+					"srcpos":"11:24",
 					"type":{
-						"endpos":"7:29",
+						"endpos":"11:29",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"7:26"
+						"srcpos":"11:26"
 					}
 				},{
-					"endpos":"7:35",
+					"endpos":"11:35",
 					"flags":1,
 					"ident":"h",
 					"kind":"param",
 					"semtype":"monkey.types.Int",
-					"srcpos":"7:30",
+					"srcpos":"11:30",
 					"type":{
-						"endpos":"7:35",
+						"endpos":"11:35",
 						"ident":"int",
 						"kind":"ident",
-						"srcpos":"7:32"
+						"srcpos":"11:32"
 					}
 				},{
-					"endpos":"7:46",
+					"endpos":"11:46",
 					"flags":1,
 					"ident":"def",
 					"kind":"param",
 					"semtype":"monkey.types.String",
-					"srcpos":"7:36",
+					"srcpos":"11:36",
 					"type":{
-						"endpos":"7:46",
+						"endpos":"11:46",
 						"ident":"string",
 						"kind":"ident",
-						"srcpos":"7:40"
+						"srcpos":"11:40"
 					}
 				}],
 				"retType":{
-					"endpos":"7:11",
+					"endpos":"11:11",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"7:11"
+					"srcpos":"11:11"
 				},
-				"srcpos":"7:11"
+				"srcpos":"11:11"
 			}
 		},{
-			"endpos":"28:0",
+			"endpos":"31:0",
 			"flags":513,
-			"ident":"OnDraw",
+			"ident":"Activate",
 			"kind":"method",
-			"srcpos":"19:1",
-			"stmts":[{
-				"endpos":"21:23",
-				"flags":1,
-				"ident":"x",
-				"init":{
-					"endpos":"21:23",
-					"kind":"????Expr?????",
-					"srcpos":"21:21"
-				},
-				"kind":"local",
-				"semtype":"monkey.types.Int",
-				"srcpos":"21:8",
-				"type":{
-					"endpos":"21:13",
-					"ident":"int",
-					"kind":"ident",
-					"srcpos":"21:10"
-				}
-			},{
-				"endpos":"22:23",
-				"flags":1,
-				"ident":"y",
-				"init":{
-					"endpos":"22:23",
-					"kind":"????Expr?????",
-					"srcpos":"22:21"
-				},
-				"kind":"local",
-				"semtype":"monkey.types.Int",
-				"srcpos":"22:8",
-				"type":{
-					"endpos":"22:13",
-					"ident":"int",
-					"kind":"ident",
-					"srcpos":"22:10"
-				}
-			}],
+			"srcpos":"23:1",
+			"stmts":[],
 			"type":{
-				"endpos":"19:16",
+				"endpos":"23:18",
 				"kind":"functype",
 				"params":[],
 				"retType":{
-					"endpos":"19:14",
+					"endpos":"23:16",
 					"ident":"void",
 					"kind":"ident",
-					"srcpos":"19:14"
+					"srcpos":"23:16"
 				},
-				"srcpos":"19:14"
+				"srcpos":"23:16"
+			}
+		},{
+			"endpos":"37:0",
+			"flags":513,
+			"ident":"Deactivate",
+			"kind":"method",
+			"srcpos":"32:1",
+			"stmts":[],
+			"type":{
+				"endpos":"32:20",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"32:18",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"32:18"
+				},
+				"srcpos":"32:18"
+			}
+		},{
+			"endpos":"63:0",
+			"flags":513,
+			"ident":"OnDraw",
+			"kind":"method",
+			"srcpos":"38:1",
+			"stmts":[{
+				"endpos":"40:23",
+				"flags":1,
+				"ident":"x",
+				"init":{
+					"endpos":"40:23",
+					"kind":"????Expr?????",
+					"srcpos":"40:21"
+				},
+				"kind":"local",
+				"semtype":"monkey.types.Int",
+				"srcpos":"40:8",
+				"type":{
+					"endpos":"40:13",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"40:10"
+				}
+			},{
+				"endpos":"41:23",
+				"flags":1,
+				"ident":"y",
+				"init":{
+					"endpos":"41:23",
+					"kind":"????Expr?????",
+					"srcpos":"41:21"
+				},
+				"kind":"local",
+				"semtype":"monkey.types.Int",
+				"srcpos":"41:8",
+				"type":{
+					"endpos":"41:13",
+					"ident":"int",
+					"kind":"ident",
+					"srcpos":"41:10"
+				}
+			},{
+				"endpos":"50:0",
+				"kind":"block",
+				"srcpos":"45:2",
+				"stmts":[]
+			},{
+				"endpos":"61:0",
+				"kind":"block",
+				"srcpos":"51:2",
+				"stmts":[{
+					"endpos":"55:0",
+					"kind":"block",
+					"srcpos":"53:3",
+					"stmts":[]
+				},{
+					"endpos":"58:0",
+					"kind":"block",
+					"srcpos":"55:3",
+					"stmts":[]
+				}]
+			}],
+			"type":{
+				"endpos":"38:16",
+				"kind":"functype",
+				"params":[],
+				"retType":{
+					"endpos":"38:14",
+					"ident":"void",
+					"kind":"ident",
+					"srcpos":"38:14"
+				},
+				"srcpos":"38:14"
 			}
 		}],
 		"srcpos":"5:0",

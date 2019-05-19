@@ -115,6 +115,9 @@ void t_VectorSite_VectorUIForm::m_DrawImage(t_mojo_graphics_Image* l_img,bbInt l
   g_VectorSite_VectorSite_RectImg(l_img,l_x,l_y,l_w,l_h,l_col);
 }
 
+void t_VectorSite_VectorUIForm::m_Deactivate(){
+}
+
 t_VectorSite_VectorUIForm* t_VectorSite_VectorUIForm::m_Add(t_VectorSite_VectorUIForm* l_add){
   struct f0_t : public bbGCFrame{
     t_std_collections_List_1Tt_VectorSite_VectorUIForm_2* t0{};
@@ -125,6 +128,9 @@ t_VectorSite_VectorUIForm* t_VectorSite_VectorUIForm::m_Add(t_VectorSite_VectorU
   (f0.t0=this->m_Sub.get())->m_Add(l_add);
   l_add->m_Root=this;
   return l_add;
+}
+
+void t_VectorSite_VectorUIForm::m_Activate(){
 }
 
 void mx2_VectorEngineSite_VectorUIForm_init_f(){
